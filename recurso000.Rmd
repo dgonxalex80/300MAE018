@@ -1,0 +1,27 @@
+---
+title: <span style="color:#034a94">**Titulo**</span>
+subtitle: "Unidad "
+author: "dgonzalez80"
+date: ""
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
+    code_folding: hide
+    theme: cerulean
+---
+
+
+```{r setup, include=FALSE}
+library(knitr)
+opts_knit$set()
+
+```
+
+# **EN CONSTRUCCIÓN**
+
+
+```{r, echo=FALSE, out.width="30%", fig.align = "center"}
+knitr::include_graphics("img/enconstruccion.gif")
+```

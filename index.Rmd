@@ -1,0 +1,110 @@
+---
+title: <span style="color:#034a94">**Estadística para la toma de decisiones**</span>
+subtitle: " "
+author: "dgonzalez80"
+date: ""
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
+    code_folding: hide
+    theme: cerulean
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA)
+```
+
+<br/><br/>
+
+
+## **Información básica**
+
+* Código : 30MAE018
+* Departamento que la ofrece : Ciencias Naturales y  Matemáticas
+* Área de conocimiento. Estadística -Matemáticas y Ciencias Naturales  
+* Nucleo básico de conocimiento : Estadística
+* Créditos : 3
+* Número total de horas : 144
+* Horas de clase semanales : 4
+* Horas de trabajo independiente : 5 (2 con monitor, 3 estudiante solo)
+
+* Prerrequisitos : Teoría de Probabilidad (300MAE013)
+* Correquisitos : ninguno
+* Asignaturas equivalentes : ninguna
+* Modalidad : Presencial
+* Idioma en que se imparte : Español
+* Profesor : Daniel Enrique González Gómez - dgonzalez@javerianacali.edu.co
+
+
+<br/><br/>
+
+## **Descripción de la asignatura**
+
+
+
+<br/><br/>
+
+## **Objetivos de la asignatura**    
+
+
+
+<br/><br/>
+
+## **Contenidos de la asignatura** 
+
+<br/>
+
+### **Unidad 1:** 
+
+
+<br/><br/>
+
+### **Unidad 2:** 
+
+
+ <br/><br/>
+
+### **Unidad 3:** 
+
+
+
+<br/><br/>
+
+### **Unidad 4:** 
+
+
+
+<br/><br/>
+
+### **Unidad 5:** 
+
+
+
+<br/><br/>
+
+## **Estrategias pedagógicas** 
+
+
+
+<br/><br/>
+
+## **Evaluación** 
+
+|Actividades porcentajes | Número de actividades | porcentaje por actividad | Porcentaje Total por actividad | 
+|:-----------------------|:---------------------:|:------------------------:|:------------------------------:|
+| Exámenes               | 3                     |  20                      | 60                             |
+| Quices                 | 3                     |   5                      | 15                             | 
+| Laboratorio            | 3                     |   5                      | 15                             | 
+| Proyecto               | 1                     |  10                      | 10                             | 
+
+ 
+
+<br/><br/>
+
+## **Referencias bibliográficas** 
+
+
+ 
