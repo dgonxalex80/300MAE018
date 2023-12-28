@@ -1,0 +1,20 @@
+---
+title: <span style="color:#034a94">**Módulo 0**</span>
+subtitle: "Lo que debes saber al comenzar"
+author: "dgonzalez80"
+date: ""
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
+    code_folding: hide
+    theme: cerulean
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA)
+```
+
+<br/><br/>

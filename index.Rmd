@@ -19,8 +19,15 @@ knitr::opts_chunk$set(echo = TRUE, comment = NA)
 
 <br/><br/>
 
+# **Cronograma de actividades**
 
-## **Información básica**
+<br/><br/>
+
+# **Horarios de atención**
+
+<br/><br/>
+
+# **Información básica**
 
 * Código : 30MAE018
 * Departamento que la ofrece : Ciencias Naturales y  Matemáticas
@@ -43,43 +50,109 @@ knitr::opts_chunk$set(echo = TRUE, comment = NA)
 
 ## **Descripción de la asignatura**
 
+Existe un llamado frecuente de múltiples estamentos nacionales e internacionales hacia la consolidación de bases de datos que permitan el análisis de indicadores cuantitativos que evidencien el estado, las tendencias y la proyección de los aspectos prioritarios en el desarrollo de las regiones. 
 
+La constante en todos estos casos, es el apoyo que han brindado los métodos estadísticos en la valoración, análisis y seguimiento de los indicadores de desarrollo desde cada panorama para los nuevos desarrollos y la prosperidad de muchas regiones e instituciones. 
+
+En el curso Estadística para la toma de decisiones se propone aportar a los estudiantes las herramientas teóricas y prácticas del análisis cuantitativo de datos con el fin de fortalecer habilidades y destrezas en la recolección, procesamiento, interpretación y comunicación de resultados ligados al análisis de datos en situaciones del diario vivir o del desarrollo profesional en el campo de las ciencias económicas y administrativas. 
+
+El curso se desarrolla bajo modalidad remoto digital a través de actividades en encuentros sincrónicos y asincrónicos en plataformas de Blackboard, Zoom, Teams o Panopto. Se ha programado a través de módulos que faciliten el alcance de los objetivos. Dentro de cada módulo se articulan las temáticas, los recursos tecnológicos, las actividades de aprendizaje y evaluativas orientadas desde una guía de aprendizaje. 
+
+<br/><br/>
+
+
+## **Intencionalidades formativas**
+
+| Competencias                    | Indicadores                 |
+|:--------------------------------|:----------------------------|
+|**Comunicativa**: Leer, interpretar y expresar, conceptos básicos de la estadística en situaciones y contextos diversos. | **C**: Transmite con leguaje estadístico las ideas, análisis e interpretaciones situaciones planteadas.|
+|**Resolución de problemas**: Conocer, aplicar y calcular técnicas estadísticas, indicadores y probabilidades en situaciones y contextos diversos| **R1**. Identifica y aplica indicadores, técnicas estadísticas de procesamiento de datos y modelos probabilísticos necesarios para comprender el problema de interés.  |
+||**R2**. Comprende la información estadística disponible en tablas, bases de datos, resultados de procesamientos, publicaciones, indicadores descriptivos y probabilísticos.|
+||**R3**. Resuelve el problema usando indicadores,  técnicas estadísticas de procesamiento de datos y modelos probabilísticos.|
 
 <br/><br/>
 
 ## **Objetivos de la asignatura**    
 
+* Comprender conceptos estadísticos para aplicarlos en situaciones de interés, mediante las lecturas, talleres, interacción en clase y la búsqueda bibliográfica.
+
+* Procesar información estadística para analizar una situación de interés en un contexto determinado, mediante la elaboración de talleres, laboratorios, interacción en clase y un proyecto aplicado.
+
+* Interpretar información estadística proveniente de diferentes fuentes, para el análisis y soporte en la toma de decisiones, mediante lecturas, talleres, laboratorios y trabajos en grupo.
+
+* Comunicar con lenguaje estadístico, las interpretaciones y exposiciones de sus análisis alrededor de diferentes situaciones de interés, mediante la interacción en clase, informes escritos y presentaciones orales.
+
+<br/><br/>
+
+Las siguientes son las competencias que priorizan el seguimiento al aprendizaje de los estudiantes: 
+
+### **Objetivos Instruccionales**:
+
+* Reconoce los elementos primordiales de la metodología estadística.
+
+* Se apoya de medios tecnológicos y software para procesar datos estadísticos.
+
+* Interpreta en contextos específicos los indicadores de centramiento, dispersión, posición y correlación más frecuentes. 
+
+* Identifica las condiciones de un experimento y define en él variables aleatorias y sus propiedades para usarlas en el cálculo de probabilidades de eventos asociados.
+
+* Diferenciar un estimador de un parámetro y lo usa al abordar una inferencia. 
+
+* Comprende y usa la estimación, el procedimiento de hipótesis estadística y la estimación por mínimos cuadrados en el modelo de regresión lineal en situaciones de interés.
+
+* Interpretar los resultados en la estimación de la media y la proporción en situaciones con una población involucrada.
 
 
 <br/><br/>
+
+<br/><br/>
+
 
 ## **Contenidos de la asignatura** 
 
 <br/>
 
-### **Unidad 1:** 
+### **Módulo 1:** Estadística descriptiva 
 
+* Conceptos básicos. Pasos de la metodología estadística, diferencia un estudio descriptivo de uno inferencial. 
+
+* Análisis univariado: Resumen de información estadística a través de tablas, gráficos de frecuencia, indicadores de tendencia central, dispersión y posición.
+
+* Análisis bivariado: Análisis de información cruzada, frecuencias marginales, conjuntas y condicionales.  Análisis de la relación lineal entre variables cuantitativas. Gráficos de dispersión. Coeficiente de correlación lineal
 
 <br/><br/>
 
-### **Unidad 2:** 
+### **Módulo 2:** Probabilidad y Variable aleatoria
 
+* Axiomas de probabilidad
+* Probabilidad de eventos, combinación y permutación. Probabilidad condicional, de la unión y de la intersección de eventos. Independencia de eventos. 
+* Estrategias de análisis: tabla de probabilidad, diagrama de árbol, diagrama de Venn
+* Función de probabilidad para una variable aleatoria. 
+* Esperanza matemática y varianza de una variable aleatoria 
+* Función bivariada. Independencia entre variables aleatorias. 
+* Valor esperado, varianza y desviación estándar de la combinación lineal de variables aleatorias independientes.
+* Modelos discretos: Bernoulli, Binomial y Poisson
+* Distribución Normal
 
  <br/><br/>
 
-### **Unidad 3:** 
+### **Módulo 3:**  Nociones de Inferencia Estadística 
 
-
-
-<br/><br/>
-
-### **Unidad 4:** 
-
-
+* Introducción al muestreo, Muestreo probabilístico: aleatorio simple, estratificado, por conglomerado, sistemático.  Muestreo no probabilístico. 	
+* Estimación Puntual, Teorema del límite central. Distribución de muestreo de los estadísticos , 
+* Distribución de muestreo Chi cuadrada, T de Student  y F.
+* Hipótesis estadística: Elementos y tipo de errores posibles en una prueba de hipótesis estadística. 
+* Procedimientos de Prueba de Hipótesis para la media y para la proporción en una población y dos poblaciones.
 
 <br/><br/>
 
-### **Unidad 5:** 
+### **Módulo 4:** Regresión Lineal
+
+* Introducción Modelo de Regresión Lineal 
+* Estimación del Modelo de Regresión Lineal Simple
+* Análisis del modelo: coeficiente de correlación lineal, validación de supuestos. Prueba F para la bondad de ajuste. 
+
+
 
 
 
@@ -87,7 +160,14 @@ knitr::opts_chunk$set(echo = TRUE, comment = NA)
 
 ## **Estrategias pedagógicas** 
 
+El curso se desarrolla en modalidad remoto digital y mediada por actividades sincrónicas o asincrónicas previas, durante o posteriores a cada sesión como exposiciones sincrónicas, talleres, simulaciones, laboratorios computacionales, lecturas y ejercicios análisis de situaciones y aplicaciones directas en el contexto de las ciencias económicas y administrativas.
 
+Cada semana, los estudiantes cuentan con la asistencia de un monitor que guiará el desarrollo de un taller diseñado para fortalecer la comprensión y habilidad resolutiva de los estudiantes.
+
+También se contemplan espacios para el acompañamiento fuera de clase y bajo la tutoría de diferentes profesores 
+La plataforma Blackboard será el principal canal de comunicación para el desarrollo del curso.
+
+Se planea un proyecto de aplicación para desarrollar en por fases donde los estudiantes enfrentan situaciones críticas con la teoría o los métodos estadísticos.
 
 <br/><br/>
 
@@ -96,15 +176,65 @@ knitr::opts_chunk$set(echo = TRUE, comment = NA)
 |Actividades porcentajes | Número de actividades | porcentaje por actividad | Porcentaje Total por actividad | 
 |:-----------------------|:---------------------:|:------------------------:|:------------------------------:|
 | Exámenes               | 3                     |  20                      | 60                             |
-| Quices                 | 3                     |   5                      | 15                             | 
-| Laboratorio            | 3                     |   5                      | 15                             | 
-| Proyecto               | 1                     |  10                      | 10                             | 
+| Actividades            | 5                     |   4                      | 20                             | 
+| Trabajo aplicado       | 1                     |  20                      | 20                             | 
 
- 
 
 <br/><br/>
 
 ## **Referencias bibliográficas** 
 
+* Anderson, D. Sweeney, D. Williams, T. (2016) Estadística para administración y economía. Décima segunda edición. México, Internacional Thomson Editores. Biblioteca General Colección Abierta Semisótano 519.5 E792e
+* Arroyo A. (2020). Estadística con aplicaciones a la ingeniería y a la administración. Libro en construcción 
+* Levin, R. y Rubin, D. (2010).  Estadística para Administración y Economía.   Séptima edición.   Editorial Prentice Hall
+* Levine, D. Krehbiel, T. Berenson, M. (2014) Estadística para Administración.   Sexta 
+edición.   Editorial Pearson
+* Lind D, Marchal, W.  Wathen S. (2008). Estadística aplicada a los negocios y a la economía. Decimotercera edición. Mc Graw Hill
+* Newbold, P.  Carlson, W. y Thorne, B. (2013). Estadística para administración y economía. Sexta edición. Pearson Prentice Hall.
+* Pérez, Cesar, (2002) Estadística Aplicada a través de Excel, Madrid, Prentice 
+* Webster, A. (2000) Estadística aplicada a los negocios y a la economía. Tercera edición. Mc Graw Hill
+Recursos de Apoyo
+* An Introduction to R.  Notes on R: A Programming Environment for Data Analysis and Graphics Version 4.0.2 (2020-06-22) W. N. Venables, D. M. Smith
+https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf.
+ <br/><br/>
+ 
+# **Curso A**
+
+
+<br/><br/>
 
  
+ 
+# **Cronograma**
+
+
+```{r, echo=FALSE, out.width="80%", fig.align = "center"}
+knitr::include_graphics("img/ene2024.png")
+```
+
+
+```{r, echo=FALSE, out.width="80%", fig.align = "center"}
+knitr::include_graphics("img/feb2024.png")
+```
+
+
+```{r, echo=FALSE, out.width="80%", fig.align = "center"}
+knitr::include_graphics("img/mar2024.png")
+```
+
+
+```{r, echo=FALSE, out.width="80%", fig.align = "center"}
+knitr::include_graphics("img/abr2024.png")
+```
+
+
+```{r, echo=FALSE, out.width="80%", fig.align = "center"}
+knitr::include_graphics("img/may2024.png")
+```
+
+
+```{r, echo=FALSE, out.width="80%", fig.align = "center"}
+knitr::include_graphics("img/jun2024.png")
+```
+<br/><br/>
+
