@@ -19,13 +19,12 @@ knitr::opts_chunk$set(echo = TRUE, comment = NA)
 
 <br/><br/>
 
-# **Cronograma de actividades**
+
+
 
 <br/><br/>
 
-# **Horarios de atención**
 
-<br/><br/>
 
 # **Información básica**
 
@@ -69,6 +68,8 @@ El curso se desarrolla bajo modalidad remoto digital a través de actividades en
 |**Resolución de problemas**: Conocer, aplicar y calcular técnicas estadísticas, indicadores y probabilidades en situaciones y contextos diversos| **R1**. Identifica y aplica indicadores, técnicas estadísticas de procesamiento de datos y modelos probabilísticos necesarios para comprender el problema de interés.  |
 ||**R2**. Comprende la información estadística disponible en tablas, bases de datos, resultados de procesamientos, publicaciones, indicadores descriptivos y probabilísticos.|
 ||**R3**. Resuelve el problema usando indicadores,  técnicas estadísticas de procesamiento de datos y modelos probabilísticos.|
+|**Computacional** ||
+|||
 
 <br/><br/>
 
@@ -102,8 +103,6 @@ Las siguientes son las competencias que priorizan el seguimiento al aprendizaje 
 
 * Interpretar los resultados en la estimación de la media y la proporción en situaciones con una población involucrada.
 
-
-<br/><br/>
 
 <br/><br/>
 
@@ -153,21 +152,19 @@ Las siguientes son las competencias que priorizan el seguimiento al aprendizaje 
 * Análisis del modelo: coeficiente de correlación lineal, validación de supuestos. Prueba F para la bondad de ajuste. 
 
 
-
-
-
-<br/><br/>
+<br/><br/><br/>
 
 ## **Estrategias pedagógicas** 
 
-El curso se desarrolla en modalidad remoto digital y mediada por actividades sincrónicas o asincrónicas previas, durante o posteriores a cada sesión como exposiciones sincrónicas, talleres, simulaciones, laboratorios computacionales, lecturas y ejercicios análisis de situaciones y aplicaciones directas en el contexto de las ciencias económicas y administrativas.
+* El curso se desarrolla en modalidad presencial, con dos encuentros los dias miercoles y viernes y un encuentro con el acompañamiento de un monitor los dias lunes, que guiará el desarrollo de un taller diseñado para fortalecer la comprensión y habilidad resolutiva de los estudiantes.
 
-Cada semana, los estudiantes cuentan con la asistencia de un monitor que guiará el desarrollo de un taller diseñado para fortalecer la comprensión y habilidad resolutiva de los estudiantes.
+* Cada semana se presentará una unidad que será trabajada durantes las sesiones con talleres, simulaciones, laboratorios computacionales, lecturas y ejercicios análisis de situaciones y aplicaciones directas en el contexto de las ciencias económicas y administrativas.
 
-También se contemplan espacios para el acompañamiento fuera de clase y bajo la tutoría de diferentes profesores 
-La plataforma Blackboard será el principal canal de comunicación para el desarrollo del curso.
+* También se contemplan espacios para el acompañamiento fuera de clase y bajo la tutoría de diferentes profesores 
 
-Se planea un proyecto de aplicación para desarrollar en por fases donde los estudiantes enfrentan situaciones críticas con la teoría o los métodos estadísticos.
+* La plataforma Bs será el principal canal de comunicación para el desarrollo del curso.
+
+* Se planea un proyecto de aplicación para desarrollar en por fases donde los estudiantes enfrentan situaciones críticas con la teoría o los métodos estadísticos.
 
 <br/><br/>
 
@@ -185,23 +182,14 @@ Se planea un proyecto de aplicación para desarrollar en por fases donde los est
 ## **Referencias bibliográficas** 
 
 * Anderson, D. Sweeney, D. Williams, T. (2016) Estadística para administración y economía. Décima segunda edición. México, Internacional Thomson Editores. Biblioteca General Colección Abierta Semisótano 519.5 E792e
-* Arroyo A. (2020). Estadística con aplicaciones a la ingeniería y a la administración. Libro en construcción 
-* Levin, R. y Rubin, D. (2010).  Estadística para Administración y Economía.   Séptima edición.   Editorial Prentice Hall
 * Levine, D. Krehbiel, T. Berenson, M. (2014) Estadística para Administración.   Sexta 
 edición.   Editorial Pearson
 * Lind D, Marchal, W.  Wathen S. (2008). Estadística aplicada a los negocios y a la economía. Decimotercera edición. Mc Graw Hill
 * Newbold, P.  Carlson, W. y Thorne, B. (2013). Estadística para administración y economía. Sexta edición. Pearson Prentice Hall.
-* Pérez, Cesar, (2002) Estadística Aplicada a través de Excel, Madrid, Prentice 
 * Webster, A. (2000) Estadística aplicada a los negocios y a la economía. Tercera edición. Mc Graw Hill
 Recursos de Apoyo
-* An Introduction to R.  Notes on R: A Programming Environment for Data Analysis and Graphics Version 4.0.2 (2020-06-22) W. N. Venables, D. M. Smith
-https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf.
- <br/><br/>
- 
-# **Curso A**
 
-
-<br/><br/>
+<br/><br/><br/>
 
  
  
@@ -209,32 +197,10 @@ https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf.
 
 
 ```{r, echo=FALSE, out.width="80%", fig.align = "center"}
-knitr::include_graphics("img/ene2024.png")
+knitr::include_graphics("img/calendario_018_20241.png")
 ```
 
 
-```{r, echo=FALSE, out.width="80%", fig.align = "center"}
-knitr::include_graphics("img/feb2024.png")
-```
+# **Horarios de atención**
 
-
-```{r, echo=FALSE, out.width="80%", fig.align = "center"}
-knitr::include_graphics("img/mar2024.png")
-```
-
-
-```{r, echo=FALSE, out.width="80%", fig.align = "center"}
-knitr::include_graphics("img/abr2024.png")
-```
-
-
-```{r, echo=FALSE, out.width="80%", fig.align = "center"}
-knitr::include_graphics("img/may2024.png")
-```
-
-
-```{r, echo=FALSE, out.width="80%", fig.align = "center"}
-knitr::include_graphics("img/jun2024.png")
-```
 <br/><br/>
-
