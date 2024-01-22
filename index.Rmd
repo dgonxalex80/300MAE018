@@ -5,7 +5,7 @@ author: "dgonzalez80"
 date: ""
 output:
   html_document:
-    toc: yes
+    toc: no
     toc_depth: 2
     toc_float: yes
     code_folding: hide

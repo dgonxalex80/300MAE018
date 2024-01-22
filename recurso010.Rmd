@@ -4,7 +4,7 @@ author: "dgonzalez "
 subtitle: <span style="color:#235784">**Módulo 0- Unidad 0.1**</span> 
 output:
   html_document:
-    toc: yes
+    toc: no
     toc_depth: 2
     toc_float: yes
     code_folding: hide

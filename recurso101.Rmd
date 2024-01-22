@@ -104,11 +104,11 @@ Una forma de abordar el curso de Probabilidad y Estadística e mediante la metod
 
 <br/>
 
-##### 1. **Definición del problema**
-##### 2. **Definición de los objetivos**
-##### 3. **Definición de las variables de interés**
+##### 1. **Definición problema**
+##### 2. **Definición objetivos**
+##### 3. **Definición variables de interés**
 ##### 4. **Diseño del experimento**
-##### 5. **Recolección de la información**
+##### 5. **Recolección información**
 ##### 6. **Procesamiento de los datos**
 ##### 7. **Análisis descriptivo**
 ##### 8. **Inferencia estadística**
