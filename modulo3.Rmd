@@ -22,7 +22,7 @@ knitr::opts_chunk$set(echo = TRUE, comment = NA)
 # **Introducción**
 
 
-## **Nociones de Inferencia Estadística**
+## **Contenido**
 
 * Introducción al muestreo, Muestreo probabilístico: aleatorio simple, estratificado, por conglomerado, sistemático.  Muestreo no probabilístico. 
 

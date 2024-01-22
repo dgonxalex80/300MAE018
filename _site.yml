@@ -24,7 +24,7 @@ navbar:
           href: modulo1.html
         - text: "---------"          
         - text: "Recursos 1.1"
-          href: recurso000.html  
+          href: recurso101.html  
         - text: "Recursos 1.2"
           href: recurso000.html  
         - text: "Recursos 1.3"
@@ -92,8 +92,16 @@ navbar:
           href: recurso000.html
     - text: "Módulo 5"
       menu:
-        - text: "Módulo 5"
+        - text: "RStudio-R"
           href: modulo5.html
+        - text: "---------"          
+        - text: "Introducción a R"
+          href: recurso501.html
+        - text: "Recursos 5.1"
+          href: recurso000.html
+        - text: "Recursos 5.3"
+          href: recurso000.html          
+          
     - text: "Proyecto"
       menu:
         - text: "Guía proyecto"

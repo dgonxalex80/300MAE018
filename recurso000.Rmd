@@ -1,8 +1,7 @@
 ---
-title: <span style="color:#034a94">**Titulo**</span>
-subtitle: "Unidad "
-author: "dgonzalez80"
-date: ""
+title: <span style="color:#235784"> **Recursos 1.1**</span>  
+author: "dgonzalez "
+subtitle: <span style="color:#235784">**Módulo 1- Unidad 1.1**</span> 
 output:
   html_document:
     toc: yes
@@ -12,16 +11,38 @@ output:
     theme: flatly
 ---    
 
-
 ```{r setup, include=FALSE}
-library(knitr)
-opts_knit$set()
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, comment = NA)
+library(psych)
+library(summarytools)
+
+# install.packages("devtools")
+#devtools::install_github("dgonxalex80/paqueteDEG")
+#library(paqueteDEG)
+
+# colores
+c0= "#F7AA00"
+c1= "#235784"
+c2= "#40A8C4"
+c3= "#EEF6F7"
+
+c4= "#11224D"
+c5= "#5B84C4"
+
+# install.packages('gtools')
+# install.packages("TeachingSampling")
+
+#load library
+#library(gtools)
+#library(TeachingSampling)
+#library(readr)
+#base_muestreo <- read_delim("data/base_muestreo.csv", 
+#    delim = ";", escape_double = FALSE, col_types = cols(ID = col_integer()), 
+#    trim_ws = TRUE)
+
+
 
 ```
 
-# **EN CONSTRUCCIÓN**
 
-
-```{r, echo=FALSE, out.width="30%", fig.align = "center"}
-knitr::include_graphics("img/enconstruccion.gif")
-```
+![](img/enconstruccion.jpg)

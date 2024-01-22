@@ -28,6 +28,8 @@ knitr::opts_chunk$set(echo = TRUE, comment = NA)
 
 # **Información básica**
 
+<br/>
+
 * Código : 30MAE018
 * Departamento que la ofrece : Ciencias Naturales y  Matemáticas
 * Área de conocimiento. Estadística -Matemáticas y Ciencias Naturales  
@@ -50,6 +52,8 @@ knitr::opts_chunk$set(echo = TRUE, comment = NA)
 
 ## **Descripción de la asignatura**
 
+<br/>
+
 Existe un llamado frecuente de múltiples estamentos nacionales e internacionales hacia la consolidación de bases de datos que permitan el análisis de indicadores cuantitativos que evidencien el estado, las tendencias y la proyección de los aspectos prioritarios en el desarrollo de las regiones. 
 
 La constante en todos estos casos, es el apoyo que han brindado los métodos estadísticos en la valoración, análisis y seguimiento de los indicadores de desarrollo desde cada panorama para los nuevos desarrollos y la prosperidad de muchas regiones e instituciones. 
@@ -62,6 +66,8 @@ El curso se desarrolla bajo modalidad remoto digital a través de actividades en
 
 
 ## **Intencionalidades formativas**
+
+<br/>
 
 | Competencias                    | Indicadores                 |
 |:--------------------------------|:----------------------------|
@@ -76,6 +82,8 @@ El curso se desarrolla bajo modalidad remoto digital a través de actividades en
 
 ## **Objetivos de la asignatura**    
 
+<br/>
+
 * Comprender conceptos estadísticos para aplicarlos en situaciones de interés, mediante las lecturas, talleres, interacción en clase y la búsqueda bibliográfica.
 
 * Procesar información estadística para analizar una situación de interés en un contexto determinado, mediante la elaboración de talleres, laboratorios, interacción en clase y un proyecto aplicado.
@@ -88,7 +96,11 @@ El curso se desarrolla bajo modalidad remoto digital a través de actividades en
 
 Las siguientes son las competencias que priorizan el seguimiento al aprendizaje de los estudiantes: 
 
+<br/>
+
 ### **Objetivos Instruccionales**:
+
+<br/>
 
 * Reconoce los elementos primordiales de la metodología estadística.
 
@@ -114,6 +126,8 @@ Las siguientes son las competencias que priorizan el seguimiento al aprendizaje 
 
 ### **Módulo 1:** Estadística descriptiva 
 
+<br/>
+
 * Conceptos básicos. Pasos de la metodología estadística, diferencia un estudio descriptivo de uno inferencial. 
 
 * Análisis univariado: Resumen de información estadística a través de tablas, gráficos de frecuencia, indicadores de tendencia central, dispersión y posición.
@@ -123,6 +137,8 @@ Las siguientes son las competencias que priorizan el seguimiento al aprendizaje 
 <br/><br/>
 
 ### **Módulo 2:** Probabilidad y Variable aleatoria
+
+<br/>
 
 * Axiomas de probabilidad
 * Probabilidad de eventos, combinación y permutación. Probabilidad condicional, de la unión y de la intersección de eventos. Independencia de eventos. 
@@ -138,6 +154,8 @@ Las siguientes son las competencias que priorizan el seguimiento al aprendizaje 
 
 ### **Módulo 3:**  Nociones de Inferencia Estadística 
 
+<br/>
+
 * Introducción al muestreo, Muestreo probabilístico: aleatorio simple, estratificado, por conglomerado, sistemático.  Muestreo no probabilístico. 	
 * Estimación Puntual, Teorema del límite central. Distribución de muestreo de los estadísticos , 
 * Distribución de muestreo Chi cuadrada, T de Student  y F.
@@ -148,6 +166,8 @@ Las siguientes son las competencias que priorizan el seguimiento al aprendizaje 
 
 ### **Módulo 4:** Regresión Lineal
 
+<br/>
+
 * Introducción Modelo de Regresión Lineal 
 * Estimación del Modelo de Regresión Lineal Simple
 * Análisis del modelo: coeficiente de correlación lineal, validación de supuestos. Prueba F para la bondad de ajuste. 
@@ -156,6 +176,8 @@ Las siguientes son las competencias que priorizan el seguimiento al aprendizaje 
 <br/><br/><br/>
 
 ## **Estrategias pedagógicas** 
+
+<br/>
 
 * El curso se desarrolla en modalidad presencial, con dos encuentros los dias miercoles y viernes y un encuentro con el acompañamiento de un monitor los dias lunes, que guiará el desarrollo de un taller diseñado para fortalecer la comprensión y habilidad resolutiva de los estudiantes.
 
@@ -170,6 +192,8 @@ Las siguientes son las competencias que priorizan el seguimiento al aprendizaje 
 <br/><br/>
 
 ## **Evaluación** 
+
+<br/>
 
 |Actividades porcentajes | Número de actividades | porcentaje por actividad | Porcentaje Total por actividad | 
 |:-----------------------|:---------------------:|:------------------------:|:------------------------------:|
@@ -196,6 +220,7 @@ Recursos de Apoyo
  
 # **Cronograma**
 
+<br/>
 
 ```{r, echo=FALSE, out.width="80%", fig.align = "center"}
 knitr::include_graphics("img/calendario_018_20241.png")

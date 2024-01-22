@@ -22,7 +22,7 @@ knitr::opts_chunk$set(echo = TRUE, comment = NA)
 # **Introducción**
 
 
-## **Regresión Lineal**
+## **Contenido**
 
 
 * Introducción Modelo de Regresión Lineal 
