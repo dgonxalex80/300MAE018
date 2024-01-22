@@ -9,7 +9,7 @@ output:
     toc_depth: 2
     toc_float: yes
     code_folding: hide
-    theme: cerulean
+    theme: flatly
 ---
 
 
@@ -18,3 +18,18 @@ knitr::opts_chunk$set(echo = TRUE, comment = NA)
 ```
 
 <br/><br/>
+
+# **Introducción**
+
+## **Estadística descriptiva** 
+
+* Conceptos básicos. Pasos de la metodología estadística, diferencia un estudio descriptivo de uno inferencial. 
+
+* Análisis univariado: Resumen de información estadística a través de tablas, gráficos de frecuencia, indicadores de tendencia central, dispersión y posición.
+
+* Análisis bivariado: Análisis de información cruzada, frecuencias marginales, conjuntas y condicionales.  Análisis de la relación lineal entre variables cuantitativas. Gráficos de dispersión. Coeficiente de correlación lineal
+
+<br/><br/><br/>
+
+# **Objetivo**
+

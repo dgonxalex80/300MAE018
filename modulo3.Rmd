@@ -9,7 +9,7 @@ output:
     toc_depth: 2
     toc_float: yes
     code_folding: hide
-    theme: cerulean
+    theme:  flatly
 ---
 
 
@@ -18,3 +18,22 @@ knitr::opts_chunk$set(echo = TRUE, comment = NA)
 ```
 
 <br/><br/>
+
+# **Introducción**
+
+
+## **Nociones de Inferencia Estadística**
+
+* Introducción al muestreo, Muestreo probabilístico: aleatorio simple, estratificado, por conglomerado, sistemático.  Muestreo no probabilístico. 
+
+* Estimación Puntual, Teorema del límite central. Distribución de muestreo de los estadísticos , 
+* Distribución de muestreo Chi cuadrada, T de Student  y F.
+
+* Hipótesis estadística: Elementos y tipo de errores posibles en una prueba de hipótesis estadística. 
+
+* Procedimientos de Prueba de Hipótesis para la media y para la proporción en una población y dos poblaciones.
+
+
+<br/><br/><br/>
+
+# **Objetivo**

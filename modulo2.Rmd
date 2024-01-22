@@ -9,7 +9,7 @@ output:
     toc_depth: 2
     toc_float: yes
     code_folding: hide
-    theme: cerulean
+    theme:  flatly
 ---
 
 
@@ -18,3 +18,22 @@ knitr::opts_chunk$set(echo = TRUE, comment = NA)
 ```
 
 <br/><br/>
+
+
+# **Introducción**
+
+## ** Probabilidad y Variable aleatoria**
+
+* Axiomas de probabilidad
+* Probabilidad de eventos, combinación y permutación. Probabilidad condicional, de la unión y de la intersección de eventos. Independencia de eventos. 
+* Estrategias de análisis: tabla de probabilidad, diagrama de árbol, diagrama de Venn
+* Función de probabilidad para una variable aleatoria. 
+* Esperanza matemática y varianza de una variable aleatoria 
+* Función bivariada. Independencia entre variables aleatorias. 
+* Valor esperado, varianza y desviación estándar de la combinación lineal de variables aleatorias independientes.
+* Modelos discretos: Bernoulli, Binomial y Poisson
+* Distribución Normal
+
+<br/><br/><br/>
+
+# **Objetivo**

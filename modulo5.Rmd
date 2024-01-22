@@ -9,7 +9,7 @@ output:
     toc_depth: 2
     toc_float: yes
     code_folding: hide
-    theme: cerulean
+    theme:  flatly
 ---
 
 
@@ -18,7 +18,11 @@ knitr::opts_chunk$set(echo = TRUE, comment = NA)
 ```
 
 <br/><br/>
-
+# **Introducción**
 
 # **R y RStudio**
 
+
+<br/><br/><br/>
+
+# **Objetivo**

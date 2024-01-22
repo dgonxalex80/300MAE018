@@ -11,7 +11,7 @@ navbar:
         - text: "Módulo 0"
           href: modulo0.html
         - text: "Recurso 0.1"
-          href: recurso000.html  
+          href: recurso010.html  
         - text: "Recurso 0.2"
           href: recurso000.html  
         - text: "Recurso 0.3"
@@ -93,7 +93,7 @@ navbar:
     - text: "Módulo 5"
       menu:
         - text: "Módulo 5"
-          href: modulo000.html
+          href: modulo5.html
     - text: "Proyecto"
       menu:
         - text: "Guía proyecto"
