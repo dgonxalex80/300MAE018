@@ -9,10 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="" />
+<meta name="author" content="dgonzalez" />
 
 
-<title>Módulo 5</title>
+<title> Caso de estudio 1</title>
 
 <script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -393,19 +393,69 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore"><span style="color:#FFFFFF"><strong>Módulo
-5</strong></span></h1>
-<h4 class="author"></h4>
+<h1 class="title toc-ignore"><span style="color:#ad6395"> <strong>Caso
+de estudio 1</strong></span></h1>
+<h3 class="subtitle"><span style="color:#ad6395"><strong>Módulo 1-
+Unidad 1.2</strong></span></h3>
+<h4 class="author">dgonzalez</h4>
 
 </div>
 
 
-<p><img src="img/banner500.png" width="100%" style="display: block; margin: auto;" />
-<br/><br/></p>
-<!-- # **Introducción** -->
-<!-- # **R y RStudio** -->
-<!-- <br/><br/><br/> -->
-<!-- # **Objetivo** -->
+<div id="enunciado" class="section level2">
+<h2><strong>Enunciado</strong></h2>
+<p><img src="img/cerveza.png" /></p>
+<p>La siguiente información recoge cinco de las principales
+características de un grupo de marcas de cerveza que fue recogida con la
+finalizad de clasificar los productos y además permita realizar un
+análisis descriptivo de las 69 marcas recogidas</p>
+<p>Inicialmente el director de investigación desea su apoyo en una
+primera etapa del análisis que consiste en resumir la información
+suministrada en tablas e indicadores que le permitan validar algunas de
+sus hipótesis.</p>
+<p>La base compartida contiene información sobre 69 marcas de cervezas
+que son distribuidas en la ciudad. Las variables recogidas corresponden
+a:</p>
+<ul>
+<li><p><span style="color:#b0394a"><strong>precio</strong></span> de la
+presentación en caja de seis botellas de 12 onzas,</p></li>
+<li><p>contendo de <span
+style="color:#b0394a"><strong>calorias</strong></span> congtenidas en
+una unidad de 12 onzas,</p></li>
+<li><p>porcentaje de contenido de <span
+style="color:#b0394a"><strong>alcohol</strong></span> por 12 onzas de
+contenido,</p></li>
+<li><p><span style="color:#b0394a"><strong>tipo</strong></span> de
+cerveza (1-lager artesanal, 2-clara artesanal, 3-lager importada,
+4-cerveza normal y helada, y 5-cerveza baja en calorías y sin alcohol)
+y</p></li>
+<li><p>país de <span
+style="color:#b0394a"><strong>origen</strong></span> (0-nacional, 1-
+importada).</p></li>
+</ul>
+<p>Su trabajo consiste en escribir un primer informe basado en una
+evaluación descriptiva, que contenga las tablas que resumen la
+información para cada variable de base de datos y resumen de sus
+indicadores estadísticos.</p>
+<p>Finalmente adjunte un análisis de los resultados obtenidos.</p>
+<p><br/><br/></p>
+</div>
+<div id="cargar-datos" class="section level2">
+<h2><strong>Cargar datos</strong></h2>
+<pre class="r"><code>install.packages(&quot;devtools&quot;) # solo una vez
+devtools::install_github(&quot;dgonxalex80/paquete018&quot;) # descarga paqueteDEG
+library(paquete018) # activa paquete018
+data(&quot;beer&quot;) # carga la base beer</code></pre>
+<p><br/><br/></p>
+</div>
+<div id="batos-de-datos" class="section level2">
+<h2><strong>Batos de datos</strong></h2>
+<pre class="r"><code>library(DT)
+library(paqueteDEG)
+data(beer)
+DT::datatable(head(beer, 69),fillContainer = FALSE, options = list(pageLength = 8))</code></pre>
+<p><br/></p>
+</div>
 
 
 

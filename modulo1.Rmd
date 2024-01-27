@@ -1,15 +1,15 @@
 ---
-title: <span style="color:#034a94">**Módulo 1**</span>
-subtitle: "Estadística Descriptiva"
-author: "dgonzalez80"
-date: ""
+title: <span style="color:#FFFFFF">**Módulo 1**</span>  
+subtitle: " "
+author: " "
+date: " "
 output:
   html_document:
     toc: no
     toc_depth: 2
     toc_float: yes
     code_folding: hide
-    theme: flatly
+    theme:  flatly
 ---
 
 
@@ -17,6 +17,10 @@ output:
 knitr::opts_chunk$set(echo = TRUE, comment = NA)
 ```
 
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("img/banner100.png")
+```
 <br/><br/>
 
 # **Introducción**
@@ -39,7 +43,5 @@ Al finalizar este módulo el estudiante estará en capacidad de RESUMIR e INTERP
 
 * Análisis bivariado: Análisis de información cruzada, frecuencias marginales, conjuntas y condicionales.  Análisis de la relación lineal entre variables cuantitativas. Gráficos de dispersión. Coeficiente de correlación lineal
 
-# **Mapa**
 
-![](img/mapU1.png)
 

@@ -30,9 +30,6 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script src="site_libs/navigation-1.1/codefolding.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
@@ -237,69 +234,6 @@ $(document).ready(function () {
 
 
 
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
 
 </head>
 
@@ -307,16 +241,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -353,15 +277,6 @@ div.tocify {
     <li>
       <a href="recurso010.html">Recurso 0.1</a>
     </li>
-    <li>
-      <a href="recurso000.html">Recurso 0.2</a>
-    </li>
-    <li>
-      <a href="recurso000.html">Recurso 0.3</a>
-    </li>
-    <li>
-      <a href="recurso000.html">Recurso 0.4</a>
-    </li>
   </ul>
 </li>
 <li class="dropdown">
@@ -376,15 +291,18 @@ div.tocify {
     </li>
     <li class="divider"></li>
     <li>
-      <a href="recurso101.html">Recursos 1.1</a>
+      <a href="guia101.html">Guía 1.1</a>
+    </li>
+    <li>
+      <a href="recurso101.html">Metodología Estadística</a>
     </li>
     <li>
       <a href="recurso000.html">Recursos 1.2</a>
     </li>
-    <li>
-      <a href="recurso000.html">Recursos 1.3</a>
-    </li>
     <li class="divider"></li>
+    <li>
+      <a href="caso1.html">Caso de estudio 1</a>
+    </li>
     <li>
       <a href="recurso000.html">Monitoria 1</a>
     </li>
@@ -401,37 +319,6 @@ div.tocify {
       <a href="modulo2.html">Módulo 2</a>
     </li>
     <li class="divider"></li>
-    <li>
-      <a href="recurso000.html">Recurso 2.1</a>
-    </li>
-    <li>
-      <a href="recurso000.html">Recurso 2.2</a>
-    </li>
-    <li>
-      <a href="recurso000.html">Recurso 2.3</a>
-    </li>
-    <li>
-      <a href="recurso000.html">Recurso 2.4</a>
-    </li>
-    <li>
-      <a href="recurso000.html">Recurso 2.5</a>
-    </li>
-    <li>
-      <a href="recurso000.html">Recurso 2.6</a>
-    </li>
-    <li>
-      <a href="recurso000.html">Recurso 2.7</a>
-    </li>
-    <li>
-      <a href="recurso000.html">Recurso 2.8</a>
-    </li>
-    <li>
-      <a href="recurso000.html">Recurso 2.9</a>
-    </li>
-    <li class="divider"></li>
-    <li>
-      <a href="recurso000.html">Monitoria 2</a>
-    </li>
   </ul>
 </li>
 <li class="dropdown">
@@ -445,25 +332,6 @@ div.tocify {
       <a href="modulo3.html">Módulo 3</a>
     </li>
     <li class="divider"></li>
-    <li>
-      <a href="recurso000.html">Recursos 3.1</a>
-    </li>
-    <li>
-      <a href="recurso000.html">Recursos 3.2</a>
-    </li>
-    <li>
-      <a href="recurso000.html">Recursos 3.3</a>
-    </li>
-    <li>
-      <a href="recurso000.html">Recursos 3.4</a>
-    </li>
-    <li>
-      <a href="recurso000.html">Recursos 3.5</a>
-    </li>
-    <li class="divider"></li>
-    <li>
-      <a href="recurso000.html">Monitoria 3</a>
-    </li>
   </ul>
 </li>
 <li class="dropdown">
@@ -477,19 +345,6 @@ div.tocify {
       <a href="modulo4.html">Módulo 4</a>
     </li>
     <li class="divider"></li>
-    <li>
-      <a href="recurso000.html">Recursos 4.1</a>
-    </li>
-    <li>
-      <a href="recurso000.html">Recursos 4.2</a>
-    </li>
-    <li>
-      <a href="recurso000.html">Recursos 4.3</a>
-    </li>
-    <li class="divider"></li>
-    <li>
-      <a href="recurso000.html">Monitoria 4</a>
-    </li>
   </ul>
 </li>
 <li class="dropdown">
@@ -555,10 +410,6 @@ Unidad 1.1</strong></span></h3>
 </div>
 
 
-<hr />
-<div id="analiza-tu-información" class="section level1">
-<h1><span style="color:#235784"> <strong>ANALIZA TU
-INFORMACIÓN</strong></span></h1>
 <p><br/><br/></p>
 <p>Con el fin de tener una idea inicial del propósito de este módulo, se
 presenta información relacionada con los estudiantes que toman el curso
@@ -588,7 +439,6 @@ podremos interpretar al finalizar el módulo.</p>
 <!--         geom_density(alpha = .5) -->
 <!-- ``` -->
 <!-- <br/><br/> -->
-</div>
 <div id="metodología-estadística" class="section level1">
 <h1><span style="color:#235784"> <strong>Metodología
 Estadística</strong></span></h1>
@@ -1581,8 +1431,6 @@ los datos</p>
 
 
 
-</div>
-</div>
 
 </div>
 
@@ -1620,35 +1468,6 @@ $(document).ready(function () {
 });
 </script>
 
-<script>
-$(document).ready(function ()  {
-
-    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
-    $('.unlisted.unnumbered').addClass('toc-ignore')
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

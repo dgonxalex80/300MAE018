@@ -1,8 +1,8 @@
 ---
-title: <span style="color:#034a94">**Módulo 0**</span>
-subtitle: "Lo que debes saber al comenzar"
-author: "dgonzalez80"
-date: ""
+title: <span style="color:#FFFFFF">**Módulo 0**</span>  
+subtitle: " "
+author: " "
+date: " "
 output:
   html_document:
     toc: no
@@ -16,6 +16,11 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, comment = NA)
 ```
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("img/banner010.png")
+```
+
 
 <br/><br/>
 

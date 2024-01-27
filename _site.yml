@@ -12,24 +12,20 @@ navbar:
           href: modulo0.html
         - text: "Recurso 0.1"
           href: recurso010.html  
-        - text: "Recurso 0.2"
-          href: recurso000.html  
-        - text: "Recurso 0.3"
-          href: recurso000.html  
-        - text: "Recurso 0.4"
-          href: recurso000.html  
     - text: "Módulo 1"
       menu:
         - text: "Módulo 1"
           href: modulo1.html
-        - text: "---------"          
-        - text: "Recursos 1.1"
+        - text: "---------"  
+        - text: "Guía 1.1"
+          href: guia101.html        
+        - text: "Metodología Estadística"
           href: recurso101.html  
         - text: "Recursos 1.2"
           href: recurso000.html  
-        - text: "Recursos 1.3"
-          href: recurso000.html
-        - text: "---------"            
+        - text: "---------"     
+        - text: "Caso de estudio 1"
+          href: caso1.html      
         - text: "Monitoria 1"
           href: recurso000.html
     - text: "Módulo 2"
@@ -37,59 +33,16 @@ navbar:
         - text: "Módulo 2"
           href: modulo2.html
         - text: "---------"            
-        - text: "Recurso 2.1"
-          href: recurso000.html
-        - text: "Recurso 2.2"
-          href: recurso000.html  
-        - text: "Recurso 2.3"
-          href: recurso000.html
-        - text: "Recurso 2.4"
-          href: recurso000.html  
-        - text: "Recurso 2.5"
-          href: recurso000.html
-        - text: "Recurso 2.6"
-          href: recurso000.html  
-        - text: "Recurso 2.7"
-          href: recurso000.html
-        - text: "Recurso 2.8"
-          href: recurso000.html  
-        - text: "Recurso 2.9"
-          href: recurso000.html
-        - text: "---------"    
-        - text: "Monitoria 2"
-          href: recurso000.html   
     - text: "Módulo 3"
       menu:
         - text: "Módulo 3"
           href: modulo3.html
         - text: "---------"  
-        - text: "Recursos 3.1"
-          href: recurso000.html  
-        - text: "Recursos 3.2"
-          href: recurso000.html  
-        - text: "Recursos 3.3"
-          href: recurso000.html 
-        - text: "Recursos 3.4"
-          href: recurso000.html  
-        - text: "Recursos 3.5"
-          href: recurso000.html           
-        - text: "---------"            
-        - text: "Monitoria 3"
-          href: recurso000.html
     - text: "Módulo 4"
       menu:
         - text: "Módulo 4"
           href: modulo4.html
         - text: "---------"          
-        - text: "Recursos 4.1"
-          href: recurso000.html
-        - text: "Recursos 4.2"
-          href: recurso000.html
-        - text: "Recursos 4.3"
-          href: recurso000.html
-        - text: "---------"  
-        - text: "Monitoria 4"
-          href: recurso000.html
     - text: "Módulo 5"
       menu:
         - text: "RStudio-R"

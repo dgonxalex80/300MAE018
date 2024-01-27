@@ -1,16 +1,16 @@
 ---
 title: <span style="color:#235784"> **Recursos 1.1**</span>  
-author: "dgonzalez "
 subtitle: <span style="color:#235784">**Módulo 1- Unidad 1.1**</span> 
+author: "dgonzalez "
 output:
   html_document:
-    toc: yes
+    toc: no
     toc_depth: 2
     toc_float: yes
     code_folding: hide
     theme: flatly
 ---    
----
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(comment = NA)
@@ -48,7 +48,6 @@ library(summarytools)
 
 
 ```
-#  <span style="color:#235784"> **ANALIZA TU INFORMACIÓN**</span>
 
 <br/><br/>
 
