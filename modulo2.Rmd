@@ -1,15 +1,11 @@
 ---
-title: <span style="color:#FFFFFF">**Módulo 2**</span>  
-subtitle: " "
-author: " "
-date: " "
 output:
   html_document:
     toc: no
     toc_depth: 2
     toc_float: yes
     code_folding: hide
-    theme:  flatly
+    css: style.css
 ---
 
 

@@ -1,15 +1,11 @@
 ---
-title: <span style="color:#FFFFFF"> **Estadística**</span>  
-subtitle: " "
-author: " "
-date: "2024-1"
 output:
   html_document:
     toc: no
     toc_depth: 2
     toc_float: yes
     code_folding: hide
-    theme:  flatly
+    css: style.css
 ---
 
 
@@ -119,7 +115,7 @@ Las siguientes son las competencias que priorizan el seguimiento al aprendizaje 
 
 <br/>
 
-### **Objetivos Instruccionales**:
+## **Objetivos Instruccionales**:
 
 <br/>
 
@@ -145,7 +141,7 @@ Las siguientes son las competencias que priorizan el seguimiento al aprendizaje 
 
 <br/>
 
-### **Módulo 1:** Estadística descriptiva 
+## **Módulo 1:** Estadística descriptiva 
 
 <br/>
 
@@ -157,7 +153,7 @@ Las siguientes son las competencias que priorizan el seguimiento al aprendizaje 
 
 <br/><br/>
 
-### **Módulo 2:** Probabilidad y Variable aleatoria
+## **Módulo 2:** Probabilidad y Variable aleatoria
 
 <br/>
 
@@ -173,7 +169,7 @@ Las siguientes son las competencias que priorizan el seguimiento al aprendizaje 
 
  <br/><br/>
 
-### **Módulo 3:**  Nociones de Inferencia Estadística 
+## **Módulo 3:**  Nociones de Inferencia Estadística 
 
 <br/>
 
@@ -185,7 +181,7 @@ Las siguientes son las competencias que priorizan el seguimiento al aprendizaje 
 
 <br/><br/>
 
-### **Módulo 4:** Regresión Lineal
+## **Módulo 4:** Regresión Lineal
 
 <br/>
 

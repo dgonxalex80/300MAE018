@@ -12,12 +12,12 @@
 <meta name="author" content="dgonzalez" />
 
 
-<title> Recursos 1.1</title>
+<title> Conjuntos</title>
 
 <script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -62,6 +62,7 @@ if (window.hljs) {
 
 
 
+<link rel="stylesheet" href="style.css" type="text/css" />
 
 
 
@@ -412,15 +413,129 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore"><span style="color:#235784">
-<strong>Recursos 1.1</strong></span></h1>
-<h3 class="subtitle"><span style="color:#235784"><strong>Módulo 1-
-Unidad 1.1</strong></span></h3>
+<strong>Conjuntos</strong></span></h1>
+<h3 class="subtitle"><span style="color:#235784"><strong>Módulo
+0</strong></span></h3>
 <h4 class="author">dgonzalez</h4>
 
 </div>
 
 
-
+<p><br/><br/></p>
+<div id="introducción" class="section level1">
+<h1><strong>Introducción</strong></h1>
+<p>A continuación se relacionan las principales características de los
+conjuntos y sus principales relaciones. Estos conceptos serán importante
+en el momento de abordar los conceptos básicos de probabilidad que serán
+expuestos en el Modulo 2.</p>
+<p>En pesaremos con su definición</p>
+<p><br/><br/></p>
+</div>
+<div id="conjunto" class="section level1 content-box-blue">
+<h1><strong>Conjunto</strong></h1>
+<p>Un conjunto es una colección de objetos que se denota con una letra
+mayúscula (comúnmente las primeras letras del alfabeto A,B,C..) .</p>
+</div>
+<p><br/><br/></p>
+<p>Se pueden escribir por:</p>
+<ul>
+<li><p><strong>por extensión</strong> : <span
+class="math inline">\(A=\{0,1,2,3,4,5,6,7,8,9\}\)</span>, escribiendo
+todos los elementos que lo conforman.</p></li>
+<li><p><strong>por su nombre</strong> : los dígitos</p></li>
+<li><p><strong>por compresión</strong> : <span
+class="math inline">\(A=\{ x\in\mathbb{Z}, 0\le x \le 9 \}\)</span>,
+utilizando nomenclatura matemática.</p></li>
+</ul>
+<p>Al comparar o combinar conjuntos debemos hacer uso de sus propiedades
+y operaciones, dentro de las cuales se encuentran <span
+class="math inline">\(A \cup B\)</span>, <span class="math inline">\(A
+\cap B\)</span>,</p>
+<p><br/><br/></p>
+<div id="unión-del-conjunto" class="section level1">
+<h1><strong>Unión del conjunto</strong></h1>
+<p>Unión del <span class="math inline">\(A\)</span> con el conjunto
+<span class="math inline">\(B\)</span>. <span class="math inline">\(A
+\cup B\)</span>, <span class="math inline">\(\overline{A}\)</span>
+,<span class="math inline">\(A - B\)</span>, entre otras. La zona
+sombreada en la siguiente figura representa estas operación</p>
+<p><img src="img/union.png" style="width:50.0%" /></p>
+<table>
+<colgroup>
+<col width="9%" />
+<col width="90%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="center"><img src="img/ej1.png" /></td>
+<td align="left">Supongamos los siguientes conjuntos : <span
+class="math inline">\(A = \{a,e,i,o,u \}\)</span> y <span
+class="math inline">\(B = \{1,2,3,4,5,6,7,8,9,0\}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\(A \cup B = \{a,e,i,o,u,
+1,2,3,4,5,6,7,8,9,0 \}\)</span></p>
+<p><br/><br/></p>
+</div>
+<div id="intersección" class="section level1">
+<h1><strong>Intersección</strong></h1>
+<p>La intersección entre el conjunto <span
+class="math inline">\(A\)</span> y el <span
+class="math inline">\(B\)</span> se denota por : <span
+class="math inline">\(A \cap B\)</span> y se representa por la siguiente
+zona sombreada</p>
+<p><img src="img/interseccion.png" style="width:50.0%" /></p>
+<table>
+<colgroup>
+<col width="9%" />
+<col width="90%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="center"><img src="img/ej2.png" /></td>
+<td align="left">Supongamos los siguientes conjuntos : <span
+class="math inline">\(A = \{1,2,3,4,5,6 \}\)</span> y <span
+class="math inline">\(B = \{2,4,6,8,10,12,14,16,18,20 \}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\(A \cap B = \{ 2,4,6 \}\)</span></p>
+<p><br/><br/></p>
+</div>
+<div id="complemento" class="section level1">
+<h1><strong>Complemento</strong></h1>
+<p>El complemento del conjunto <span class="math inline">\(A\)</span> se
+escribe como: <span class="math inline">\(\overline{A}\)</span> y se
+representa por la siguiente zona sombreada</p>
+<p><img src="img/complemento.png" style="width:50.0%" /></p>
+<p><br/><br/></p>
+</div>
+<div id="resta" class="section level1">
+<h1><strong>Resta</strong></h1>
+<p>La resta del conjunto <span class="math inline">\(B\)</span> menos el
+conjunto <span class="math inline">\(A\)</span> : <span
+class="math inline">\(B-A\)</span> , está representada por la zona
+sombreada en la siguiente figura</p>
+<p><img src="img/resta.png" style="width:50.0%" /></p>
+<table>
+<colgroup>
+<col width="9%" />
+<col width="90%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="center"><img src="img/ej3.png" /></td>
+<td align="left">Supongamos los siguientes conjuntos : <span
+class="math inline">\(A = \{1,2,3,4,5,6 \}\)</span> y <span
+class="math inline">\(B = \{2,4,6,8,10,12,14,16,18,20 \}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\(B-A =\{ 8,10,12,14,16,18,20
+\}\)</span></p>
+<p><br/><br/></p>
+</div>
 
 
 

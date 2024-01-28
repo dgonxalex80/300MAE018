@@ -10,8 +10,20 @@ navbar:
       menu:
         - text: "Módulo 0"
           href: modulo0.html
-        - text: "Recurso 0.1"
-          href: recurso010.html  
+        - text: "Sumatoria"
+          href: sumatoria.html
+        - text: "Productoria"
+          href: productoria.html
+        - text: "Conjuntos"
+          href: conjuntos.html
+        - text: "Funcición exponencial"
+          href: exponencial.html
+        - text: "Función logaritmica"
+          href: logaritmica.html
+        - text: "Derivación"
+          href: derivacion.html
+        - text: "Integración"
+          href: integracion.html
     - text: "Módulo 1"
       menu:
         - text: "Módulo 1"
@@ -21,8 +33,8 @@ navbar:
           href: guia101.html        
         - text: "Metodología Estadística"
           href: recurso101.html  
-        - text: "Recursos 1.2"
-          href: recurso000.html  
+        - text: "Bases de datos"
+          href: recurso102.html  
         - text: "---------"     
         - text: "Caso de estudio 1"
           href: caso1.html      

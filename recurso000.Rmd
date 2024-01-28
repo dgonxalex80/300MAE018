@@ -44,5 +44,3 @@ c5= "#5B84C4"
 
 ```
 
-
-![](img/enconstruccion.jpg)
