@@ -20,14 +20,11 @@ library(summarytools)
 library(knitr)
 library(readxl)
 library(tidyverse)
-# Colombia<- readRDS("data/Colombia.RDS")
 #install.packages('remotes')  # solo una vez
 library(remotes) # solo una vez
-# install_github("dgonxalex80/paqueteDEG", force = TRUE) # solo una vez
-#library(paqueteDEG)
 data(Colombia23)
 library(readxl)
-# pye20222 <- read_excel("data/pye20222.xlsx", sheet = "Sheet4", col_types = c("text", "numeric", "text", "numeric", "text", "numeric", "numeric","numeric", "numeric"))
+
 # colores
 c0= "#F7AA00"
 c1= "#235784"
@@ -42,8 +39,8 @@ library(psych)
 library(summarytools)
 
 # install.packages("devtools")
-#devtools::install_github("dgonxalex80/paqueteDEG")
-#library(paqueteDEG)
+#devtools::install_github("dgonxalex80/paquete018")
+#library(paquete018)
 
 
 
@@ -55,44 +52,6 @@ library(summarytools)
 Con el fin de tener una idea inicial del propósito de este módulo, se presenta información relacionada con los estudiantes que toman el curso utilizando para ello gráficos e indicadores estadísticos, los cuales podremos interpretar al finalizar el módulo.
 
 <br/><br/>
-
-<!-- # **Grupos 2022-2** -->
-
-
-<!-- ```{r, echo=FALSE} -->
-<!-- t1011=table(pye20222$carrera,pye20222$grup) -->
-<!-- barplot(t1011,col = brewer.pal(6,"Set1"), ylim = c(0,30), -->
-<!--         legend = rownames(t1011)) -->
-<!-- ``` -->
-
-
-
-<!-- ```{r, echo=FALSE, warning=FALSE} -->
-<!-- p=ggplot(pye20222, aes(x=prom_acad))+ -->
-<!--   geom_density() -->
-<!-- p  -->
-<!-- ``` -->
-
-
-
-<!-- ```{r, echo=FALSE} -->
-<!-- p1012<-ggplot(pye20222, aes(x=grup, y=prom_acad)) + -->
-<!--   geom_boxplot(fill = "palegreen", color = "blue4",  -->
-<!--                size=0.5, outlier.color = "blue4", outlier.size = 2)+ -->
-<!--   geom_jitter(color="black", size=0.4, alpha=0.9) -->
-<!-- p1012   -->
-<!-- ``` -->
-
-
-
-<!-- ```{r, echo=FALSE} -->
-<!-- ggplot(pye20222, aes(x = prom_acad, fill = grup)) + -->
-<!--         geom_density(alpha = .5) -->
-<!-- ``` -->
-
-
-
-<!-- <br/><br/> -->
 
 
 #  <span style="color:#235784"> **Metodología Estadística**</span>

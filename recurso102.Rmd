@@ -17,8 +17,8 @@ library(psych)
 library(summarytools)
 
 # install.packages("devtools")
-#devtools::install_github("dgonxalex80/paqueteDEG")
-#library(paqueteDEG)
+#devtools::install_github("dgonxalex80/paquete018")
+#library(paquete018)
 
 # colores
 c0= "#F7AA00"
@@ -29,16 +29,6 @@ c3= "#EEF6F7"
 c4= "#11224D"
 c5= "#5B84C4"
 
-# install.packages('gtools')
-# install.packages("TeachingSampling")
-
-#load library
-#library(gtools)
-#library(TeachingSampling)
-#library(readr)
-#base_muestreo <- read_delim("data/base_muestreo.csv", 
-#    delim = ";", escape_double = FALSE, col_types = cols(ID = col_integer()), 
-#    trim_ws = TRUE)
 
 
 

@@ -35,11 +35,13 @@ navbar:
           href: recurso101.html  
         - text: "Bases de datos"
           href: recurso102.html  
+        - text: "Indicadores estadísticos"
+          href: recurso103.html            
         - text: "---------"     
         - text: "Caso de estudio 1"
           href: caso1.html      
         - text: "Monitoria 1"
-          href: recurso000.html
+          href: monitoria1.html
     - text: "Módulo 2"
       menu:
         - text: "Módulo 2"
