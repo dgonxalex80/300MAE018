@@ -17,7 +17,7 @@
 <script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -31,7 +31,6 @@
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/navigation-1.1/codefolding.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
@@ -62,6 +61,7 @@ if (window.hljs) {
 
 
 
+<link rel="stylesheet" href="style.css" type="text/css" />
 
 
 
@@ -220,10 +220,79 @@ $(document).ready(function () {
 </style>
 
 <!-- code folding -->
-<style type="text/css">
-.code-folding-btn { margin-bottom: 4px; }
-</style>
 
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+#TOC {
+  display: none !important;
+}
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
 
 
 
@@ -233,6 +302,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -404,14 +483,6 @@ $(document).ready(function () {
 
 <div id="header">
 
-<div class="btn-group pull-right float-right">
-<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
-<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
-<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
-<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
-</ul>
-</div>
-
 
 
 <h1 class="title toc-ignore"><span style="color:#235784">
@@ -533,7 +604,7 @@ de la media.</td>
 </tr>
 <tr class="odd">
 <td align="left">3.</td>
-<td align="left">Dscribe la dispersión de los datos en torno a la media
+<td align="left">Describe la dispersión de los datos en torno a la media
 en términos relativos.</td>
 </tr>
 <tr class="even">
@@ -591,6 +662,15 @@ que se encuentra en la posición central.</td>
 <td align="left">Se obtiene al restar el primer cuartil del tercer
 cuartil en una distribución de datos.</td>
 </tr>
+<tr class="odd">
+<td align="left">so de un lote de producción.</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">6.</td>
+<td align="left">Temperatura de cocción de la meladura en un proceso de
+producción de azúcar.</td>
+</tr>
 </tbody>
 </table>
 <p><br/><br/><br/></p>
@@ -638,7 +718,7 @@ distribuciones de frecuencias.</td>
 <tr class="even">
 <td align="left">6.</td>
 <td align="left">El polígono de frecuencias, es especialmente apto para
-comparar diferentes disribuciones.</td>
+comparar diferentes distribuciones.</td>
 </tr>
 <tr class="odd">
 <td align="left">7.</td>
@@ -686,9 +766,9 @@ varianza, distinta media y diferente coeficiente de variación.</td>
 información:</p>
 <ul>
 <li><p>Durante 5 meses se construyen 134 kilómetros de carretera en la
-siguiente forma: En el primer més, 3.60% del total del proyecto; en el
+siguiente forma: En el primer mes, 3.60% del total del proyecto; en el
 segundo més un 7.60% del total; en el tercer més, el 15.3% del total; en
-el cuarto més 24.5% del total y en último més, el 49% restante.</p></li>
+el cuarto mes 24.5% del total y en último mes, el 49% restante.</p></li>
 <li><p>El grupo de Probabilidad y Estadística a cargo de un profesor
 está conformado por : 9 estudiantes de Ingeniería Electrónica, 6 de
 Ingeniería de Sistemas, 25 de Ingeniería Civil, 19 de Negocios
@@ -701,13 +781,18 @@ los que estudian Ingeniería Mecánica 2 son hombre.</p></li>
 <li><p>Una consulta en tiendas en linea para memorias USB 128GB arrojó
 lo siguientes valores:</p></li>
 </ul>
-<pre class="r"><code>        6 | 0 3 4
-        6 | 7 8 8 8
-        7 | 0 0 1 1 2 2 2 3 3 4 4
-        7 | 5 5 5 5 5 6 6 7 7 9
-        8 | 0 3 3 4
-        8 | 5 6 7 8 8 9 9
-        9 | 1</code></pre>
+<pre class="r"><code>x=c(60,63,64,67,68,68,68,70,70,71,71,72,72,72,73,73,74,74,75,75,75,75,75,76,76,77,77,79,80,83,83,84,85,86,87,88,88,89,89,91)
+stem(x)</code></pre>
+<pre><code>
+  The decimal point is 1 digit(s) to the right of the |
+
+  6 | 034
+  6 | 7888
+  7 | 00112223344
+  7 | 5555566779
+  8 | 0334
+  8 | 5678899
+  9 | 1</code></pre>
 <ul>
 <li>La clasificación de los empleados de una empresa por cargo es la
 siguiente: un Administradores, tres Ingenieros, treinta operarios, ocho
@@ -722,7 +807,9 @@ y seis vendedores.</li>
 empresa de libras a kilogramos (<span class="math inline">\(1\)</span>
 kg <span class="math inline">\(\simeq\)</span> 2.2 lb.). Como afecta
 esta conversión la media y la desviación estándar?.</p>
-<p>Nota:</p>
+<p><br/><br/></p>
+<div id="nota" class="section level3 content-box-gray">
+<h3><span style="color:#686868"><strong>NOTA</strong></span></h3>
 <ul>
 <li><p><span class="math inline">\(\bar{x}=\frac{1}{n}\sum
 x_{i}\)</span>,</p></li>
@@ -730,6 +817,7 @@ x_{i}\)</span>,</p></li>
 <li><p><span class="math inline">\(s^2=\frac{1}{(n-1)}\sum
 (x_{i}-\bar{x})^{2}\)</span></p></li>
 </ul>
+</div>
 <p><br/><br/><br/></p>
 </div>
 <div id="p6" class="section level2">
@@ -817,7 +905,7 @@ para la información de Mayo</td>
 </tr>
 <tr class="odd">
 <td align="left">c.</td>
-<td align="left">Las ventas de Mayo son más homogeneas que las de
+<td align="left">Las ventas de Mayo son más homogéneas que las de
 Junio</td>
 </tr>
 <tr class="even">
@@ -980,8 +1068,8 @@ obtenida</td>
 </div>
 <div id="p11" class="section level2">
 <h2><span style="color:#ad6395"> <strong>P11</strong></span></h2>
-<p>El puntaje alcanzado por estudiantes en un test para medir el
-razonamiento deductivo mediante una prueba de personalidad de Millon
+<p>El valor alcanzado por estudiantes en un test para medir el
+razonamiento deductivo mediante una prueba de personalidad de Millón
 (MPIS) se presenta en la siguiente tabla:</p>
 <table>
 <colgroup>
@@ -1062,11 +1150,11 @@ homogéneos?</td>
 <tr class="even">
 <td align="left">b.</td>
 <td align="left">La distribución representada por la tabla se puede
-considerar como simetrica?</td>
+considerar como simétrica?</td>
 </tr>
 <tr class="odd">
 <td align="left">c.</td>
-<td align="left">Qué indiador de centro podría ser más apropiado para
+<td align="left">Qué indicador de centro podría ser más apropiado para
 representar los datos? Justifique su respuesta.</td>
 </tr>
 <tr class="even">
@@ -1075,24 +1163,210 @@ representar los datos? Justifique su respuesta.</td>
 </tr>
 </tbody>
 </table>
-<p><br/><br/><br/></p>
+<p><br/><br/><br/> <br/><br/><br/></p>
 </div>
 <div id="p12" class="section level2">
 <h2><span style="color:#ad6395"> <strong>P12</strong></span></h2>
 <p>Los tiempo en minutos de demora en la entrega de pedidos por parte de
 dos proveedores de insumos para laboratorio que llamaremos <span
 class="math inline">\(P_{A}\)</span> y <span
-class="math inline">\(P_{B}\)</span> sun los siguentes</p>
+class="math inline">\(P_{B}\)</span> son los siguientes :</p>
 <pre class="r"><code>PA=c(13,44,10,11,20,29,30,44,56,63,70,82)
 PB=c(25,14,20,22,30,33,40,45,49,52,55,58)</code></pre>
 <p>Con base en la información, cuál proveedor escogería? Justifique su
 respuesta</p>
 <p>(Tomado de Arroyo(2012))</p>
+<p><br/><br/><br/></p>
+</div>
+<div id="p13" class="section level2">
+<h2><span style="color:#ad6395"> <strong>P13</strong></span></h2>
+<p>Un una fabrica de de jabones para el aseo personal realizó un estudio
+con el objetivo de mejorar una linea de este producto, mediante la
+medición de los pesos (en onzas) de 50 barras.</p>
+<p>Los resultados obtenidos y algunos cálculos sobre los datos se
+presentan a continuación :</p>
+<pre class="r"><code>x = c(20.3, 19.2, 18.8, 18.5, 18.5, 18.3, 18.3, 18.2, 18.1, 17.7, 17.6,
+14.4, 17.4, 17.4, 17.3, 17.3, 17.1, 17.0, 16.6, 16.5, 16.5,  16.5,
+16.4, 16.3, 16.2, 16.2, 16.1, 15.9, 15.9, 15.8, 15.8, 15.7, 15.6,
+15.6, 15.2, 15.1, 14.8, 14.6, 14.3, 14.3, 14.1, 13.8, 13.7, 13.6,  
+13.3, 13.1, 12.8, 12.7, 12.6,  11.6)</code></pre>
+<pre>
+[1] 20.3 19.2 18.8 18.5 18.5 18.3 18.3 18.2 18.1 17.7 17.6 14.4 17.4 17.4 17.3 17.3
+[17] 17.1 17.0 16.6 16.5 16.5 16.5 16.4 16.3 16.2 16.2 16.1 15.9 15.9 15.8 15.8 15.7
+[33] 15.6 15.6 15.2 15.1 14.8 14.6 14.3 14.3 14.1 13.8 13.7 13.6 13.3 13.1 12.8 12.7
+[49] 12.6 11.6
+
+The decimal point is at the |
+
+11 | 6
+12 | 678
+13 | 13678
+14 | 133468
+15 | 126678899
+16 | 122345556
+17 | 01334467
+18 | 1233558
+19 | 2
+20 | 3
+
+Suma x :      798.6 
+Suma x2 :   12941.46 
+Suma x3 :  212596.4 
+Suma x4 : 3537246 
+sd :            1.949468 
+</pre>
+<p>Por política de la empresa, el peso del producto debe estar en un 90%
+de los casos entre mas o menos dos onzas al rededor del peso
+especificado en la etiquete del producto (16.0 onzas). Un segundo
+criterio importante es el de establecer si en los datos obtenidos se
+presentan datos atípicos y si los valores se pueden clasificar como
+homogéneos, teniendo como referencia un indicador del 10%. En caso de no
+cumplimiento de los criterios de calidad será necesario detener la
+producción y llamar a la empresa de mantenimiento para que realice los
+ajustes necesarios.</p>
+<p>Debido a que la muestra obtenida constituye una muestra
+representativa del proceso, el director de la empresa le pide le ayude a
+validar los resultados y le indique que decisión debe tomarse a partir
+de la información obtenida</p>
+<p><br/><br/><br/></p>
+</div>
+<div id="p14" class="section level2">
+<h2><span style="color:#ad6395"> <strong>P14</strong></span></h2>
+<p>Un grupo de estudiantes de la universidad, preocupados por el
+incremento del uso de los vapeadores entre los jóvenes, realizan un
+estudio acerca de los efectos de su uso sobre los patrones de sueño.
+Para estudiar el problema miden el tiempo en minutos que se tarda un
+joven en quedarse dormido. Con el fin de tener un grupo de referencia,
+la observación se realiza en jóvenes que utilizan el vapeador y los que
+lo usan. Los resultados obtenidos fueron los siguientes</p>
+<pre class="r"><code># Vapeadores  
+x = c(69.3, 56.0, 22.1, 47.6, 53.2, 48.1, 52.7, 34.4, 60.2, 43.8, 23.2, 33.8, 45.5, 55.2, 48.2)
+
+# No vapeadores  
+y = c(28.6, 25.1, 26.4, 34.9, 29.3, 28.4, 38.5, 30.2, 30.6, 31.8, 41.6, 21.1, 36.0, 37.9, 13.9)</code></pre>
+<pre>
+Vapeadores 
+x=c(69.3, 56.0, 22.1, 47.6, 53.2, 48.1, 52.7, 34.4, 60.2, 43.8, 23.2, 33.8,
+45.5, 55.2, 48.2)
+
+No vapeadores 
+y =c(28.6, 25.1, 26.4, 34.9, 29.3, 28.4, 38.5, 30.2, 30.6, 31.8, 41.6, 21.1,
+36.0, 37.9, 13.9)
+
+
+Descriptive Statistics  
+
+x        y
+----------------- -------- --------
+Mean    46.22    30.29
+Std.Dev    13.14     7.13
+Min    22.10    13.90
+Q1    34.40    26.40
+Median    48.10    30.20
+Q3    55.20    36.00
+Max    69.30    41.60
+MAD    10.53     6.97
+IQR    15.10     8.05
+CV     0.28     0.24
+Skewness    -0.37    -0.49
+SE.Skewness     0.58     0.58
+Kurtosis    -0.75    -0.27
+N.Valid    15.00    15.00
+Pct.Valid   100.00   100.00
+</pre>
+<p>De a cuerdo con los valoresa obtenidos es posible afirmar que existen
+diferencias en los dos grupos observados con referencia al tiempo que se
+requiere para quedarse dormido?</p>
+<p><br/><br/><br/></p>
+</div>
+<div id="p15" class="section level2">
+<h2><span style="color:#ad6395"> <strong>P15</strong></span></h2>
+<p>Determine el valor de verdad (verdadera - V, falsa - F) para cada una
+de las siguientes afirmaciones. En cada caso justifique su
+respuesta:</p>
+<ol style="list-style-type: decimal">
+<li><code>(  )</code> Al construir una gráfica barras, las frecuencia
+deben representarse en el eje de las ordenadas.</li>
+<li><code>(  )</code> El histograma, es una representación muy efectiva
+de las frecuencias obtenidas en una variable categórica.</li>
+<li><code>(  )</code> El polígono de frecuencias, es especialmente apto
+para comparar datos con diferentes formas.</li>
+<li><code>(  )</code> Una variable cualitativa en escala ordinal puede
+ser representada mediante un histograma.</li>
+<li><code>(  )</code> El diagrama de barras se emplea para representar
+datos continuos.</li>
+<li><code>(  )</code> La relación de las escalas en un diagrama de
+puntos debe ser 1:1 .</li>
+<li><code>(  )</code> Las gráficas de puntos o de dispersión se deben
+representar en el primer cuadrante del plano cartesiano.</li>
+<li><code>(  )</code> Si sumamos una constante a la mitad de los datos,
+la media se altera en la mitad de la constante.<br />
+</li>
+<li><code>(  )</code> El gráfico circular se emplea para representar
+variables cualitativas medidas en escala ordinal.</li>
+</ol>
+<p><br/><br/><br/></p>
+</div>
+<div id="p16" class="section level2">
+<h2><span style="color:#ad6395"> <strong>P16</strong></span></h2>
+<p>Diez estudiantes que realizan practica estudiantil reciben un salario
+mensual durante su trabajo en miles de pesos :</p>
+<pre class="r"><code>x= c(1.1, 1.2, 1.4, 1.7, 1.9, 1.3, 1.6, 1.4, 1.3, 1.6)
+x</code></pre>
+<pre><code> [1] 1.1 1.2 1.4 1.7 1.9 1.3 1.6 1.4 1.3 1.6</code></pre>
+<ul>
+<li>Calcules la media y la mediana.</li>
+<li>¿Cual de los indicadores es más representativo de la información
+como indicador de tendencia central? Justifique su respuesta.</li>
+</ul>
+<p><br/><br/><br/></p>
+</div>
+<div id="p17" class="section level2">
+<h2><span style="color:#ad6395"> <strong>P17</strong></span></h2>
+<p>El peso de 80 artículos es de 130 kgs. Si 60 de ellos pesan en
+promedio 120 kgs. ¿Cual será el peso promedio de los 70 artículos
+restantes?</p>
+<p><br/><br/><br/></p>
+</div>
+<div id="p18" class="section level2">
+<h2><span style="color:#ad6395"> <strong>P18</strong></span></h2>
+<p>Construye un ejemplo específico para el caso de:</p>
+<ul>
+<li>Media armónica</li>
+<li>Media geométrica</li>
+<li>Media ponderada</li>
+<li>Media truncada</li>
+</ul>
+<p><br/><br/><br/></p>
+</div>
+<div id="p19" class="section level2">
+<h2><span style="color:#ad6395"> <strong>P19</strong></span></h2>
+<p>Una persona que viaja en un vehículo de una ciudad A a una ciudad B,
+en el viaje de ida la velocidad media es de 40 km/h y de regreso (B
+-&gt; A) registra una velocidad promedio de 60 km/h. Se pueden calcular
+los valores de la media y mediana para el viaje completo ?</p>
+<p><br/><br/><br/></p>
+</div>
+<div id="p20" class="section level2">
+<h2><span style="color:#ad6395"> <strong>P20</strong></span></h2>
+<p>Describa la relación existente entre la media y la mediana para los
+siguientes casos :</p>
+<ul>
+<li>Forma de los datos acamapnada</li>
+<li>Forma de los datos rectangular</li>
+<li>Forma de los datos asimétrica positiva</li>
+<li>Forma de los datos asimétrica negativa</li>
+</ul>
+<p>Realice un bosquejo de su representación gráfica y de la posición de
+los indicadores de centro. <br/><br/><br/></p>
+<p><br/><br/><br/></p>
 </div>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -1124,12 +1398,36 @@ $(document).ready(function () {
 </script>
 
 <!-- code folding -->
+
 <script>
-$(document).ready(function () {
-  window.initializeCodeFolding("hide" === "show");
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = false;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
 });
 </script>
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

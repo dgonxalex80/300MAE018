@@ -82,8 +82,8 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 
 |Actividad121   | Descripción                    | 
 |:--------------|:-----------------------------  |
-|Trabajo individual| **Actividad 121** - **Caso 1** :  Realice las actividades consignadas en el **Caso1**, adjunte y envíe las respuesta a la plataforma de Brightspace en **formato pdf** |
-|Recursos       |[Video indicadores estadísticos](https://youtu.be/dWVs-M7oCh4)         |
+|Trabajo individual| **Actividad 121** :  Realice las actividades consignadas en el [**Caso1**](https://dgonxalex80.github.io/300MAE018/caso1.html), adjunte y envíe las respuesta a la plataforma de Brightspace en **formato pdf** |
+|Recursos          |[Video indicadores estadísticos](https://youtu.be/dWVs-M7oCh4)         |
 || [Vídeo calculo indicadores con tablas de distribución](https://youtu.be/n2UCDZNncls)|
 | Fecha         | 4 de febrero de 2024          |
 | Hora          | 23:59 hora local                        |

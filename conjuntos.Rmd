@@ -34,7 +34,7 @@ Un conjunto es una colección de objetos que se denota con una letra mayúscula 
 
 </div>
 
-<br/><br/>
+<br/><br/><br/>
 
 Se pueden escribir por:
 
@@ -46,7 +46,7 @@ Se pueden escribir por:
 
 Al  comparar o combinar conjuntos debemos hacer uso de sus propiedades y operaciones, dentro de  las  cuales se encuentran $A \cup B$, $A \cap B$, 
 
-<br/><br/>
+<br/><br/><br/>
 
 # **Unión del conjunto**
 
@@ -54,49 +54,80 @@ Unión del $A$ con el conjunto $B$.\hspace{.4cm} $A \cup B$, $\overline{A}$ ,$A 
 
 ![](img/union.png){width=50%}
 
-|    |                                     |
-|:--:|:------------------------------------|
-| ![](img/ej1.png)|Supongamos los siguientes conjuntos : $A = \{a,e,i,o,u \}$ y $B = \{1,2,3,4,5,6,7,8,9,0\}$ |
+
+ ![](img/ej1.png){width=10%}
+
+Supongamos los siguientes conjuntos  
+
+* $A = \{a,e,i,o,u \}$ y      
+* $B = \{1,2,3,4,5,6,7,8,9,0\}$ 
+
+$$A \cup B = \{a,e,i,o,u, 1,2,3,4,5,6,7,8,9,0 \}$$  
  
- $A \cup B = \{a,e,i,o,u, 1,2,3,4,5,6,7,8,9,0 \}$ 
- 
-<br/><br/>
+<br/><br/><br/>
 
 # **Intersección** 
 
 La intersección entre el conjunto $A$ y el $B$ se denota por : $A \cap B$ y se representa por la siguiente zona sombreada
 
+<centar>
 ![](img/interseccion.png){width=50%}
-
-
-|    |                                     |
-|:--:|:------------------------------------|
-| ![](img/ej2.png) |Supongamos los siguientes conjuntos : $A = \{1,2,3,4,5,6 \}$ y $B = \{2,4,6,8,10,12,14,16,18,20 \}$  |
-
-
-$A \cap B = \{ 2,4,6 \}$ 
+</center>
 
 <br/><br/>
+
+![](img/ej2.png){width=10%}
+
+
+Supongamos los siguientes conjuntos: 
+
+* $A = \{1,2,3,4,5,6 \}$ y            
+* $B = \{2,4,6,8,10,12,14,16,18,20 \}$
+
+ $$A \cap B = \{ 2,4,6 \}$$             
+
+<br/><br/><br/>
 
 # **Complemento**
 
 El complemento del conjunto $A$ se escribe como: $\overline{A}$ y se representa por la siguiente zona sombreada
 
+<center>
 ![](img/complemento.png){width=50%}
+</center>
 
 <br/><br/>
+
+![](img/ej3.png){width=10%}
+
+
+Supongamos los siguientes conjuntos: 
+
+* $U = \{0, 1,2,3,4,5,6. 7, 8, 9\}$  y
+* $A = \{1,2,3,4,5,6 \}$ y            
+
+ $$\overline{A}  = \{0, 7, 8, 9 \}$$  
+<br/><br/><br/>
 
 # **Resta**
  
 La resta del conjunto $B$ menos el conjunto $A$ : $B-A$ , está representada por la zona sombreada en la siguiente figura
- 
+
+<center> 
  ![](img/resta.png){width=50%}
+</center>
 
-|    |                                     |
-|:--:|:------------------------------------|
-|![](img/ej3.png) |Supongamos los siguientes conjuntos : $A = \{1,2,3,4,5,6 \}$ y $B = \{2,4,6,8,10,12,14,16,18,20 \}$ |
+<br/><br/>
 
-$B-A =\{ 8,10,12,14,16,18,20 \}$
+![](img/ej4.png){width=10%}
+
+Supongamos los siguientes conjuntos 
+
+* $A = \{1,2,3,4,5,6 \}$ y 
+* $B = \{2,4,6,8,10,12,14,16,18,20 \}$ 
+
+
+$$B-A =\{ 8,10,12,14,16,18,20 \}$$
 
 <br/><br/>
 

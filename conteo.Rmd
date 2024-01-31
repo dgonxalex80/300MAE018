@@ -21,14 +21,19 @@ Las técnicas de conteo constituyen una serie de estrategias que permiten a trav
 
 Inicialmente empezaremos por definir dos reglas:
 
+<br/><br/>
+
 ## **Principio de la adicción**
 Supongamos que un  procedimiento, designado con $P_1$, se puede hacer de $n_1$ manera diferentes. Supongamos que un  segundo  procedimiento $P_2$ se puede  realizar de $n_2$ maneras diferentes. Ademas suponga que los dos procedimientos no  se  pueden realizar juntos. Entonces  el numero de formas diferentes como se puede  realizar el procedimiento $P_1$ o el procedimiento  $P_2$ es de $n_1 + n_2$ maneras diferentes. 	
 
 <br/><br/>
 
-|    |                                     |
-|:--:|:------------------------------------|
-| ![](img/ej4.png) | Un estudiante tiene dos posibilidades de ir de su casa a la universidad: En transporte público o en transporte particular. Para el caso del transporte público existen 5 alternativas. Para el caso de transporte particular tienen 6 alternativas. En este caso $n_{1}=5$ y $n_{2}=6$. El número de maneras como se puede transportar de la casa a la universidad será $n=n_{1}+n_{2}=11$ formas diferentes de ir a la U. |
+
+![](img/ej1.png){width=10%}
+
+Un estudiante tiene dos posibilidades de ir de su casa a la universidad: En transporte público o en transporte particular. Para el caso del transporte público existen 5 alternativas. Para el caso de transporte particular tienen 6 alternativas. En este caso $n_{1}=5$ y $n_{2}=6$. El número de maneras como se puede transportar de la casa a la universidad será $n=n_{1}+n_{2}=11$ formas diferentes de ir a la U. 
+
+<br/>
 
 ![](img/psuma.png){width=50%}
 <br/><br/>
@@ -39,9 +44,12 @@ Supongamos que un  procedimiento $P1$ , se  puede realizar de $n_1$ maneras dife
 
 <br/><br/>
 
-|    |                                     |
-|:--:|:------------------------------------|
-| ![](img/ej5.png) |En el proceso de fabricación de una silla se diferencian las siguientes etapas: El diseño de la silla ($P_{1}$) y el proceso de pintado ($P_{2}$). El proceso $P_{1}$ se puede realizar de 3 formas diferentes. Para el proceso $P_{2}$ se puede optar por 4 formas diferentes. ¿De cuantas formas diferentes se puede construir una silla? |
+
+![](img/ej2.png){width=10%}
+
+En el proceso de fabricación de una silla se diferencian las siguientes etapas: El diseño de la silla ($P_{1}$) y el proceso de pintado ($P_{2}$). El proceso $P_{1}$ se puede realizar de 3 formas diferentes. Para el proceso $P_{2}$ se puede optar por 4 formas diferentes. ¿De cuantas formas diferentes se puede construir una silla? 
+
+<br/><br/>
 
 El número de posibles formas como puede fabricar una silla será:  $n_{1} \times n_{2} = 3 \times 4 = 14$
 
@@ -105,10 +113,11 @@ El numero de  maneras diferentes como  se  puede extraer  una  muestra de tamañ
  
 <br/><br/>
  
-|    |                                     |
-|:--:|:------------------------------------|
-| ![](img/ej6.png) | Un Ingeniero debe realizar  visitas a 6 aéreas de trabajo diferentes durante el día. A fin de impedir a los funcionarios que sepan cuando realizara su visita, varía el orden de sus visitas. De cuantas maneras puede hacerlo? |
+![](img/ej3.png){width=10%}
 
+Un Ingeniero debe realizar  visitas a 6 aéreas de trabajo diferentes durante el día. A fin de impedir a los funcionarios que sepan cuando realizara su visita, varía el orden de sus visitas. De cuantas maneras puede hacerlo? 
+
+<br/><br/>
 
 $$ _{6}\mathcal{P}_{6} = \dfrac{6!}{(6-6)!}=6! =720$$
 
@@ -123,9 +132,11 @@ El número de  maneras diferentes como  se  puede extraer  una  muestra de tama�
 
 <br/><br/>
 
-|    |                                     |
-|:--:|:------------------------------------|
-| ![](img/ej7.png) | El juego del Baloto está conformado por una urna que contiene 45 bolas numeradas del 1 al 46. ¿De cuantas formas diferentes puede salir el resultado un sorteo? |
+![](img/ej4.png){width=10%}
+
+ El juego del Baloto está conformado por una urna que contiene 45 bolas numeradas del 1 al 46. ¿De cuantas formas diferentes puede salir el resultado un sorteo? 
+ 
+ <br/><br/>
 
 De las 46 bolas se pueden eligen 6 sin importar el orden y sin que ninguna de las bolas se repita. Este experimento cumple con las condiciones de una combinación.  
 

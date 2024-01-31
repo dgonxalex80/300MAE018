@@ -54,7 +54,9 @@ sum(1:100)
 ```
  <br/><br/>
 
-### **Ejemplo 1:**
+<br/><br/>
+
+![](img/ej1.png){width=10%}
 
 Si se tienen las notas de un examen de 12 estudiantes como:
 
@@ -90,19 +92,25 @@ donde $k$, $a$ y $b$ son constantes y $x_i$ y $y_{i}$ corresponden a lod termino
 
 <br/><br/>
 
-### **Ejemplo 2:**
+<br/><br/>
+
+![](img/ej2.png){width=10%}
 
 $\displaystyle\sum_{i=1}^{5} 3 = 15$, ¿ Porqué ?
 
 <br/><br/>
 
-### **Ejemplo 3:**
+<br/><br/>
+
+![](img/ej3.png){width=10%}
 
 $\displaystyle\sum_{i=1}^{10} 10x = 550$, ¿ Porqué ?
 
 <br/><br/>
 
-### **Ejemplo 4:**
+<br/><br/>
+
+![](img/ej4.png){width=10%}
 
  $\displaystyle\sum_{i=1}^{10} (3x_{i}+2y_{i}) =475$, ¿ Porqué ?
  
@@ -121,6 +129,12 @@ b.  $\displaystyle\sum_{t=0}^{2} 2^{t}$
 c.  $\displaystyle\sum_{w=0}^{6} 3w^{2}$
 
 2. Para los siguientes conjuntos de datos:
+
+<pre>
+x = c(3.6, 3.5, 3.6, 3.5, 3.0, 4.0, 3.2, 3.8, 3.5, 3.3, 3.4, 3.8, 3.4, 3.4, 3.1)
+y = c(3.4, 4.3, 4.5, 4.1, 4.5, 4.1, 3.4, 4.0, 4.2, 4.6, 3.5, 3.8, 4.5, 3.5, 4.1)
+</pre>
+
 ```{r}
 x = c(3.6, 3.5, 3.6, 3.5, 3.0, 4.0, 3.2, 3.8, 3.5, 3.3, 3.4, 3.8, 3.4, 3.4, 3.1)
 y = c(3.4, 4.3, 4.5, 4.1, 4.5, 4.1, 3.4, 4.0, 4.2, 4.6, 3.5, 3.8, 4.5, 3.5, 4.1)

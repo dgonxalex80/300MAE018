@@ -1,7 +1,7 @@
 ---
-title: <span style="color:#ad6395"> **Caso de estudio 1**</span>  
+title: <span style="color:#235784"> **Caso de estudio 1**</span>  
 author: "dgonzalez "
-subtitle: <span style="color:#ad6395">**Módulo 1- Unidad 1.2**</span> 
+subtitle: <span style="color:#235784">**Módulo 1- Unidad 1.2**</span> 
 output:
   html_document:
     toc: no
@@ -16,10 +16,13 @@ knitr::opts_chunk$set(comment = NA)
 
 ```
 
+<br/>
 
-## **Enunciado**
+## <span style="color:#235784">**Enunciado**</span>
 
 ![](img/cerveza.png)
+
+<br/>
 
 La siguiente información recoge cinco de las principales características de un grupo de marcas de cerveza que fue recogida con la finalizad de clasificar los productos y además permita realizar un análisis descriptivo de las 69 marcas recogidas
 
@@ -28,15 +31,19 @@ Inicialmente el director de investigación desea su apoyo en una primera etapa d
 La base compartida contiene información sobre 69 marcas de cervezas que son distribuidas en la ciudad. 
 Las variables recogidas corresponden a:  
 
-+ <span style="color:#b0394a">**precio**</span>  de la presentación en caja de seis botellas de 12 onzas, 
+<br/>
 
-+ contendo de <span style="color:#b0394a">**calorias**</span>  congtenidas en una unidad de 12 onzas, 
+* <span style="color:#b0394a">**precio**</span>  de la presentación en caja de seis botellas de 12 onzas, 
 
-+ porcentaje de contenido de <span style="color:#b0394a">**alcohol**</span>  por 12 onzas de contenido, 
+* contendo de <span style="color:#b0394a">**calorias**</span>  congtenidas en una unidad de 12 onzas, 
 
-+ <span style="color:#b0394a">**tipo**</span>  de cerveza (1-lager artesanal, 2-clara artesanal, 3-lager importada, 4-cerveza normal y helada, y 5-cerveza baja en calorías y sin alcohol) y 
+* porcentaje de contenido de <span style="color:#b0394a">**alcohol**</span>  por 12 onzas de contenido, 
 
-+ país de <span style="color:#b0394a">**origen**</span>  (0-nacional, 1- importada).
+* <span style="color:#b0394a">**tipo**</span>  de cerveza (1-lager artesanal, 2-clara artesanal, 3-lager importada, 4-cerveza normal y helada, y 5-cerveza baja en calorías y sin alcohol) y 
+
+* país de <span style="color:#b0394a">**origen**</span>  (0-nacional, 1- importada).
+
+<br/>
 
 Su trabajo consiste en escribir un primer informe basado en una evaluación descriptiva, que contenga las tablas que resumen la información para cada variable de base de datos y  resumen de sus indicadores estadísticos.
 
@@ -44,7 +51,7 @@ Finalmente adjunte un análisis de los resultados obtenidos.
 
 <br/><br/>
 
-## **Cargar datos** 
+## <span style="color:#235784">**Cargar datos**</span> 
 
 ```{r, eval=FALSE}
 install.packages("devtools") # solo una vez
@@ -53,15 +60,32 @@ library(paquete018) # activa paquete018
 data("beer") # carga la base beer
 ```
 
+<pre>
+install.packages("devtools") # solo una vez
+devtools::install_github("dgonxalex80/paquete018") # descarga paqueteDEG
+library(paquete018) # activa paquete018
+data("beer") # carga la base beer
+</pre>
+
 <br/><br/>
 
-## **Batos de datos**
+## <span style="color:#235784">**Batos de datos**</span>
+
+
 ```{r, eval=FALSE}
 library(DT)
-library(paqueteDEG)
+library(paquete018)
 data(beer)
 DT::datatable(head(beer, 69),fillContainer = FALSE, options = list(pageLength = 8))
 ```
+
+
+<pre>
+library(DT)
+library(paquete018)
+data(beer)
+DT::datatable(head(beer, 69),fillContainer = FALSE, options = list(pageLength = 8))
+</pre>
 
 <br/>
 

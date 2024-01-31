@@ -55,7 +55,9 @@ $$\exp\{\displaystyle\sum_{i=1}^{n} x_{i}\}$$
 
 <br/><br/>
 
-### **Ejemplo 1:**
+<br/><br/>
+
+![](img/ej1.png){width=10%}
 
 Encontrar la multiplicación de los 10 primeros números
 

@@ -33,11 +33,11 @@ Al finalizar este módulo el estudiante estará en capacidad de RESUMIR e INTERP
 
 # **Conenido** 
 
-* Conceptos básicos. Pasos de la metodología estadística, diferencia un estudio descriptivo de uno inferencial. 
+* **Conceptos básicos**. Pasos de la metodología estadística, diferencia un estudio descriptivo de uno inferencial. 
 
-* Análisis univariado: Resumen de información estadística a través de tablas, gráficos de frecuencia, indicadores de tendencia central, dispersión y posición.
+* **Análisis univariado**: Resumen de información estadística a través de tablas, gráficos de frecuencia, indicadores de tendencia central, dispersión y posición.
 
-* Análisis bivariado: Análisis de información cruzada, frecuencias marginales, conjuntas y condicionales.  Análisis de la relación lineal entre variables cuantitativas. Gráficos de dispersión. Coeficiente de correlación lineal
+* **Análisis bivariado**: Análisis de información cruzada, frecuencias marginales, conjuntas y condicionales.  Análisis de la relación lineal entre variables cuantitativas. Gráficos de dispersión. Coeficiente de correlación lineal
 
 
 
