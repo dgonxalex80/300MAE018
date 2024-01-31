@@ -93,8 +93,6 @@ Indique el concepto referido en cada uno de los siguientes enunciados:
 |12. |Describe el grado de inclinación de la distribución de datos en torno a la media.|
 |13. |Se obtiene al ordenar los datos y seleccionar el valor que se encuentra en la posición central.|
 |14. |Se obtiene al restar el primer cuartil del tercer cuartil en una distribución de datos.|
-so de un lote de producción. |
-|6. |Temperatura de cocción de la meladura en un proceso de producción de azúcar. |
 
 
 
