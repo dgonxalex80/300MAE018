@@ -69,14 +69,14 @@ data("beer") # carga la base beer
 
 <br/><br/>
 
-## <span style="color:#235784">**Batos de datos**</span>
+## <span style="color:#235784">**Estructura de los datos**</span>
 
 
 ```{r, eval=FALSE}
 library(DT)
 library(paquete018)
 data(beer)
-DT::datatable(head(beer, 69),fillContainer = FALSE, options = list(pageLength = 8))
+str(beer)
 ```
 
 
