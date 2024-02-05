@@ -63,7 +63,7 @@ knitr::include_graphics("img/atencion.png")
 * Modalidad : Presencial
 * Idioma en que se imparte : Español
 * Profesor : Daniel Enrique González Gómez - dgonzalez@javerianacali.edu.co
-* Monitor :
+* Monitor : Andrés Jaramillo
 
 
 <br/><br/>
@@ -88,11 +88,11 @@ En el curso Estadística para la toma de decisiones se propone aportar a los est
 
 | Competencias                    | Indicadores                 |
 |:--------------------------------|:----------------------------|
-|**Comunicativa**: Leer, interpretar y expresar, conceptos básicos de la estadística en situaciones y contextos diversos. | **C**: Transmite con leguaje estadístico las ideas, análisis e interpretaciones situaciones planteadas.|
-|**Resolución de problemas**: Conocer, aplicar y calcular técnicas estadísticas, indicadores y probabilidades en situaciones y contextos diversos| **R1**. Identifica y aplica indicadores, técnicas estadísticas de procesamiento de datos y modelos probabilísticos necesarios para comprender el problema de interés.  |
-||**R2**. Comprende la información estadística disponible en tablas, bases de datos, resultados de procesamientos, publicaciones, indicadores descriptivos y probabilísticos.|
-||**R3**. Resuelve el problema usando indicadores,  técnicas estadísticas de procesamiento de datos y modelos probabilísticos.|
-|**Computacional** ||
+|**Comunicativa**: Leer, interpretar y expresar, conceptos básicos de la estadística en situaciones y contextos diversos. | **Com**: Transmite con leguaje estadístico las ideas, análisis e interpretaciones situaciones planteadas.|
+|**Resolución de problemas**: Conocer, aplicar y calcular técnicas estadísticas, indicadores y probabilidades en situaciones y contextos diversos| **Res1**. Identifica y aplica indicadores, técnicas estadísticas de procesamiento de datos y modelos probabilísticos necesarios para comprender el problema de interés.  |
+||**Res2**. Comprende la información estadística disponible en tablas, bases de datos, resultados de procesamientos, publicaciones, indicadores descriptivos y probabilísticos.|
+||**Res3**. Resuelve el problema usando indicadores,  técnicas estadísticas de procesamiento de datos y modelos probabilísticos.|
+|**Computacional** | **Com**. Aplicar métodos estadísticos a través del lenguaje de programación R y herramientas de visualización para la solución a problemas que faciliten el aprendizaje de conceptos a través de simulaciones en el contexto de estadística y probabilidad para alcanzar de las soluciones propuestas.|
 |||
 
 <br/><br/>
