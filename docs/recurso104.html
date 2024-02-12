@@ -431,7 +431,6 @@ Unidad 1.4</strong></span></h3>
 </div>
 
 
-<p><br/><br/></p>
 <div id="introducción" class="section level2">
 <h2><strong>Introducción</strong></h2>
 <blockquote>
@@ -442,22 +441,9 @@ manifieste visualmente la relación matemática o correlación estadística
 que guardan entre sí.</p>
 </blockquote>
 <p>Wikipedia</p>
-<p><br/><br/></p>
-<p>La representación gráfica desempeña un papel fundamental en el
-análisis estadístico al proporcionar una visualización intuitiva y
-accesible de conjuntos de datos complejos. Las gráficas permiten
-identificar patrones, tendencias y relaciones entre variables de manera
-rápida y efectiva, facilitando la interpretación de la información
-estadística. Además, ofrecen una herramienta poderosa para comunicar
-resultados de manera clara y comprensible tanto a expertos como a
-personas no familiarizadas con la estadística. La visualización gráfica
-no solo simplifica la presentación de datos, sino que también ayuda a
-detectar valores atípicos, entender la distribución de los datos y
-respaldar la toma de decisiones informadas.</p>
 <p>Elegir el gráfico adecuado es muy importante pues existen diferentes
 alternativos y se debe escoger el apropiado para representar los datos.
 El tipo de dato determina el tipo de grafico asi:</p>
-<p><br/><br/></p>
 <table>
 <colgroup>
 <col width="23%" />
@@ -488,113 +474,62 @@ El tipo de dato determina el tipo de grafico asi:</p>
 <td align="left">barras</td>
 </tr>
 <tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
 <td align="left">Cuantitativas</td>
 <td align="left">Intervalo-razón</td>
 <td align="left">diagrama de tallos y hojas</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"></td>
 <td align="left"></td>
 <td align="left">histograma</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"></td>
 <td align="left"></td>
 <td align="left">diagrama de cajas</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"></td>
 <td align="left"></td>
 <td align="left">diagrama de densidad</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"></td>
 <td align="left"></td>
 <td align="left">diagrama de puntos</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"></td>
 <td align="left"></td>
 <td align="left">diagrama de lineas</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"></td>
 <td align="left"></td>
 <td align="left">diagrama de radar</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"></td>
 <td align="left"></td>
 <td align="left">gráfico likert</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"></td>
 <td align="left"></td>
 <td align="left">mapa de calor</td>
 </tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
 </tbody>
 </table>
-<p><br/><br/></p>
-</div>
-<div id="paquetes-de-r-para-gráficos" class="section level2">
-<h2><strong>Paquetes de R para gráficos</strong></h2>
-<p>R posee una serie de paquetes construido para la visualización de
-datos que hacen que tengan una excelente presentación. Empezando por
-funciones del núcleo base, hasta paquetes que elaboran gráficos
-interactivos</p>
-<p><img src="img/RStudio.jpeg" width="90">
-<img src="img/ggplot2.png" width="80">
-<img src="img/highcharter.png" width="80">
-<img src="img/shiny.png" width="80">
-<img src="img/plotly.png" width="80">
-<img src="img/dashboard.png" width="80"></p>
-<p><br/><br/></p>
 <div id="gráficos-variables-cualitativas-con-r-base"
 class="section level3">
 <h3><strong>Gráficos variables cualitativas con R base</strong></h3>
-<p>Las variables cualitativas se pueden representar gráficamente de
-diversas maneras. Aquí te mencionaré algunas opciones comunes
-dependiendo del tipo de variable cualitativa:</p>
-<p>Es esencial elegir la representación gráfica adecuada según la
-naturaleza de los datos y los objetivos específicos del análisis.
-Además, la claridad en las etiquetas, el uso de colores significativos y
-la legibilidad son factores importantes en cualquier representación
-gráfica.</p>
-<p><br/><br/></p>
-</div>
-<div id="gráfico-de-tortas" class="section level3">
-<h3><strong>Gráfico de tortas</strong></h3>
-<p>Los diagramas de torta, también conocidos como gráficos circulares o
-gráficos de sectores, son una forma efectiva de representar proporciones
-y porcentajes en un conjunto de datos categóricos. Este tipo de gráfico
-utiliza un círculo dividido en sectores, donde cada sector representa
-una categoría específica y el tamaño angular del sector es proporcional
-a la frecuencia o porcentaje que esa categoría representa con respecto
-al total.</p>
-<p>La principal ventaja de los diagramas de torta es su capacidad para
-visualizar fácilmente la contribución relativa de cada categoría al
-conjunto total. Esto facilita la comparación de las proporciones entre
-diferentes categorías y proporciona una representación visual intuitiva
-de la distribución de los datos.</p>
-<p>Al interpretar un diagrama de torta, es esencial que la suma de los
-ángulos de todos los sectores sea igual a 360 grados, ya que representa
-la totalidad del conjunto de datos. Además, es recomendable limitar el
-número de categorías para evitar la congestión visual y garantizar la
-legibilidad del gráfico.</p>
-<p>Es importante destacar que, aunque los diagramas de torta son útiles
-para representar proporciones, a veces otros tipos de gráficos, como los
-diagramas de barras o los gráficos de líneas, pueden ser más apropiados
-para ciertos conjuntos de datos, especialmente cuando se busca resaltar
-diferencias más sutiles entre categorías o mostrar datos numéricos con
-mayor precisión.</p>
-<p><br/><br/></p>
-<pre class="r"><code>paleta4=c(&quot;#0d3b66&quot;, &quot;#faf0ca&quot;, &quot;#f4d35e&quot;, &quot;#ee964d&quot;)
-a=rep(&quot;Cultutal&quot;, 360145)
+<p>Gráfico de tortas</p>
+<pre class="r"><code>a=rep(&quot;Cultutal&quot;, 360145)
 b=rep(&quot;Pastoral&quot;, 61496)
 c=rep(&quot;Bienestar&quot;,49912)
 d=rep(&quot;Deportivo&quot;,11777)
@@ -607,84 +542,27 @@ labs=paste(labs, &quot;%&quot;, sep = &quot; &quot;)
 pie(t, labels=labs, main=&quot; Participación eventos Medio Universitario&quot;,
     col = paleta4)</code></pre>
 <p><img src="recurso104_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-<p><br/><br/></p>
 </div>
-</div>
-<div id="diagrama-de-barras" class="section level2">
-<h2><strong>Diagrama de barras</strong></h2>
-<p>Los diagramas de barras son una representación gráfica efectiva para
-variables cualitativas o categóricas en escala ordinal. Estos gráficos
-muestran la frecuencia o proporción de diferentes categorías, utilizando
-barras rectangulares que se extienden a lo largo de un eje.
-<strong>Pasos para crear un diagrama de barras:</strong></p>
-<p>En su construcción es necesario :</p>
-<ul>
-<li><p><strong>Identificar las categorías:</strong> Define las
-categorías de la variable cualitativa que deseas representar en el eje
-horizontal (eje x).</p></li>
-<li><p><strong>Determinar las frecuencia o proporción:</strong> Para
-cada categoría, determina la frecuencia (número de observaciones) o la
-proporción que representa con respecto al total. Este proceso se logra
-construyendo una tabla de frecuencias de la variable.</p></li>
-<li><p><strong>Eje Vertical (eje y):</strong> En el eje vertical,
-representa la frecuencia o proporción de cada categoría utilizando
-barras. La altura de cada barra indica la magnitud de la frecuencia o
-proporción. En ocaciones es posible tambien hacerlo de forma horizontal
-de tal forma que las barras quedan de forma horizontal.</p></li>
-<li><p><strong>Espacio entre Barras:</strong> se deja un espacio
-uniforme entre las barras para evitar la confusión visual y garantizar
-una presentación clara. Esto obedece a que las categorías deben estar
-representadas por puntos separados y no de forma continua.</p></li>
-<li><p><strong>Etiquetar y colocar el título:</strong> Etiqueta cada eje
-adecuadamente, proporciona información clara sobre las unidades y agrega
-un título que resuma la naturaleza del diagrama.</p></li>
-<li><p><strong>Dar Comparación Visual:</strong> Observa la longitud de
-las barras para comparar la magnitud de las frecuencias o proporciones
-entre las diferentes categorías. Es decir dar una buena escala a las
-dimensiones de la gráfica</p></li>
-<li><p><strong>Dar orden a las categorías:</strong> En el caso de
-variables ordinales, las barras deben seguir el orden lógico de las
-categorías. <code>Regular &lt; Bueno &lt; Excelente</code>. Es posible
-que algunos programas de orden a las categorías
-alfabeticamente.</p></li>
-<li><p><strong>Selección del color y el diseño:</strong> Puedes utilizar
-colores para resaltar categorías específicas o para mejorar la estética
-del gráfico. Se recomienda utilizar una paleta de colores
-predefinida.</p></li>
-</ul>
-<p>Los diagramas de barras son versátiles y se pueden adaptar a
-diferentes tipos de datos cualitativos. Ya sea un gráfico de barras
-agrupadas, apiladas o en forma de histograma, proporcionan una
-representación visual clara y accesible de la distribución de las
-categorías en tus datos.</p>
-<p><br/><br/></p>
+<div id="diagrama-de-barras" class="section level3">
+<h3><strong>Diagrama de barras</strong></h3>
 <pre class="r"><code>ev=c(4,  8, 12, 43, 32)
 names(ev)=c(&quot;Muy regular&quot;, &quot;Regular&quot;, &quot;Bueno&quot;, &quot;Muy bueno&quot;,&quot;Excelente&quot;)
 barplot(ev, col=c(&quot;#ff5b00&quot;,&quot;#dcf600&quot;,&quot;#7dbd00&quot;,&quot;#659cef&quot;,&quot;#2956b2&quot;), main = &quot;Evaluación proceso de inducción&quot;)</code></pre>
 <p><img src="recurso104_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>
 <div id="diagrama-de-barras-dos-variables" class="section level3">
 <h3><strong>Diagrama de barras dos variables</strong></h3>
 <pre class="r"><code>counts &lt;- table(mtcars$vs, mtcars$gear); rownames(counts)=c(&quot;Montor en linea&quot;, &quot;Motor en V&quot;)
 barplot(counts, main=&quot;Numero de cambios adelante por Tipo de motor&quot;,  xlab=&quot;Numero de cambios adelante &quot;,col=c(&quot;#447270&quot;,&quot;#f6e271&quot;),
   legend = rownames(counts))</code></pre>
 <p><img src="recurso104_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
-<p><br/><br/></p>
 </div>
 <div id="gráficas-variables-cuantitativas-con-r-base"
 class="section level3">
 <h3><strong>Gráficas variables cuantitativas con R base</strong></h3>
-<p>Para el caso de las variables numéricas se presentan varias opciones
-que por lo general resaltan las caracteristicas de los datos - centro,
-dispersión y forma. Adicionalmente destacan su mínimo y su máximo.</p>
-<p><br/><br/></p>
 </div>
-<div id="diagrama-de-tallos-y-hojas" class="section level3">
-<h3><strong>Diagrama de tallos y hojas</strong></h3>
-<p>Este diagrama permite ordenar los datos de menor a mayor y tiene como
-principio que todos los números que conforman se pueden partir en dos
-partes. La primera parte llanada tallo es comú a muchos números y la
-segunda parte llamada hoja varia entre 0 y 9. Estas dos partes estan
-separadas por una linea.</p>
+<div id="diagrama-de-árbol" class="section level3">
+<h3><strong>Diagrama de árbol</strong></h3>
 <pre class="r"><code>nf=c(4.1, 2.7, 3.1, 3.2, 3.0, 3.2, 2.0, 2.4, 1.6, 3.2, 3.1, 2.6, 2.0, 2.4, 2.8, 3.3, 4.0, 3.4, 3.0, 3.1, 2.7, 2.7, 3.0, 3.8, 3.2, 2.2, 3.5, 3.5, 3.8, 3.5, 3.9, 4.2, 4.3, 3.9, 3.2, 3.5, 3.5, 3.7, 4.1, 3.7, 3.5, 3.6, 3.2, 3.1, 3.4, 3.0, 3.0, 3.0, 2.7, 1.7, 3.6, 2.1, 2.4, 3.0, 3.1, 2.5, 2.5, 3.6, 2.2, 2.4, 3.1, 3.3, 2.7, 3.7, 3.0, 2.7, 3.0, 3.2, 3.1, 2.4, 3.0, 2.7, 2.5, 3.0, 3.0, 3.0, 3.2, 3.1, 3.8, 4.1, 3.7, 3.5, 3.0, 3.7, 3.7, 4.1, 3.7, 3.9, 3.7, 2.0)
 stem(nf)</code></pre>
 <pre><code>
@@ -699,26 +577,9 @@ stem(nf)</code></pre>
 <p>Este diagrama ordena los datos de manera que se puede determinar
 tanto en mínimo (1.6) como el máximo (4.3) , además de visualizar donde
 están la mayor concentración de ellos.</p>
-<p><br/><br/></p>
 </div>
 <div id="histograma" class="section level3">
 <h3><strong>Histograma</strong></h3>
-<p>Los histogramas son gráficas esenciales para representar la
-distribución de variables numéricas. Este tipo de gráfico organiza los
-datos en intervalos, denominados “bins”, en el eje horizontal, mientras
-que en el eje vertical se representa la frecuencia o densidad de
-ocurrencia de observaciones dentro de cada intervalo. Cada rectangulo en
-el histograma refleja la cantidad de datos que caen dentro de un rango
-específico de valores, brindando una visualización clara de la forma y
-la dispersión de la distribución.</p>
-<p>La construcción de un histograma implica seleccionar un número
-adecuado de bins para dividir el rango de datos y calcular la frecuencia
-de observaciones en cada bin. Este gráfico es especialmente útil para
-identificar patrones, sesgos, modas y características clave de la
-distribución de datos. Además, los histogramas permiten visualizar la
-simetría, la dispersión y la centralidad de la variable numérica,
-facilitando así la interpretación y el análisis exploratorio de
-datos.</p>
 <pre class="r"><code>h1=hist(nf, main = &quot;Nota final matemáticas fundamentales&quot;, xlab = &quot;nota&quot;, ylab=&quot;frecuencias absolutas&quot;, labels=TRUE, col=&quot;#6b9493&quot;, ylim = c(0,30))
 abline(v=3,col=&quot;#f6b915&quot;, lwd=4)</code></pre>
 <p><img src="recurso104_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
@@ -726,17 +587,6 @@ abline(v=3,col=&quot;#f6b915&quot;, lwd=4)</code></pre>
 </div>
 <div id="diagrama-de-densidad" class="section level3">
 <h3><strong>Diagrama de densidad</strong></h3>
-<p>Un diagrama de densidad es una representación gráfica que muestra la
-distribución de una variable numérica de manera continua. Este tipo de
-gráfico es una forma suavizada de un histograma y proporciona
-información detallada sobre la forma de la distribución de datos,
-resaltando áreas de concentración y variabilidad.</p>
-<p>El diagrama de densidad es una representación visual que permite
-explorar la distribución de una variable numérica de manera más suave y
-continua que un histograma. Se construye trazando una curva suavizada a
-lo largo del rango de valores de la variable. Esta curva representa la
-estimación de la densidad de probabilidad de los datos, indicando las
-áreas donde la concentración de observaciones es mayor o menor.</p>
 <pre class="r"><code>nf=c(4.1, 2.7, 3.1, 3.2, 3.0, 3.2, 2.0, 2.4, 1.6, 3.2, 3.1, 2.6, 2.0, 2.4, 2.8, 3.3, 4.0, 3.4, 3.0, 3.1, 2.7, 2.7, 3.0, 3.8, 3.2, 2.2, 3.5, 3.5, 3.8, 3.5, 3.9, 4.2, 4.3, 3.9, 3.2, 3.5, 3.5, 3.7, 4.1, 3.7, 3.5, 3.6, 3.2, 3.1, 3.4, 3.0, 3.0, 3.0, 2.7, 1.7, 3.6, 2.1, 2.4, 3.0, 3.1, 2.5, 2.5, 3.6, 2.2, 2.4, 3.1, 3.3, 2.7, 3.7, 3.0, 2.7, 3.0, 3.2, 3.1, 2.4, 3.0, 2.7, 2.5, 3.0, 3.0, 3.0, 3.2, 3.1, 3.8, 4.1, 3.7, 3.5, 3.0, 3.7, 3.7, 4.1, 3.7, 3.9, 3.7, 2.0)
 plot(density(nf), main=&quot;Distribucion de las notas de matematias fundamentales&quot;, col=c0, lwd=4)</code></pre>
 <p><img src="recurso104_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
@@ -744,38 +594,14 @@ plot(density(nf), main=&quot;Distribucion de las notas de matematias fundamental
 </div>
 <div id="diagrama-de-cajas" class="section level3">
 <h3><strong>Diagrama de cajas</strong></h3>
-<p>Un diagrama de caja, también conocido como boxplot, es una
-herramienta gráfica que proporciona una representación visual de la
-distribución estadística de un conjunto de datos numéricos. Este gráfico
-es particularmente útil para identificar medidas centrales, dispersión,
-y posibles valores atípicos en un conjunto de datos. Aquí hay una
-explicación sobre los diagramas de caja:</p>
-<p>Un diagrama de caja consta de un rectángulo (la “caja”) que
-representa el rango intercuartílico (<code>IQR</code>), que es la
-diferencia entre el tercer cuartil (<code>Q3</code>) y el primer cuartil
-(<code>Q1</code>). Dentro de la caja, una línea vertical (la “mediana”)
-indica la posición de la mediana del conjunto de datos. Dos líneas (los
-“bigotes”) se extienden desde la caja hasta los valores extremos dentro
-de un rango específico, generalmente calculado como 1.5 veces el IQR.
-Puntos fuera de este rango se consideran valores atípicos y se
-representan individualmente.</p>
-<p>El diagrama de caja es valioso para identificar la dispersión y la
-simetría de los datos, así como para destacar posibles valores atípicos.
-También facilita la comparación visual de varias distribuciones. Los
-diagramas de caja son particularmente útiles cuando se trabaja con
-conjuntos de datos grandes o cuando se desea realizar una evaluación
-rápida de la variabilidad y la forma de la distribución.</p>
 <pre class="r"><code>nf=c(4.1, 2.7, 3.1, 3.2, 3.0, 3.2, 2.0, 2.4, 1.6, 3.2, 3.1, 2.6, 2.0, 2.4, 2.8, 3.3, 4.0, 3.4, 3.0, 3.1, 2.7, 2.7, 3.0, 3.8, 3.2, 2.2, 3.5, 3.5, 3.8, 3.5, 3.9, 4.2, 4.3, 3.9, 3.2, 3.5, 3.5, 3.7, 4.1, 3.7, 3.5, 3.6, 3.2, 3.1, 3.4, 3.0, 3.0, 3.0, 2.7, 1.7, 3.6, 2.1, 2.4, 3.0, 3.1, 2.5, 2.5, 3.6, 2.2, 2.4, 3.1, 3.3, 2.7, 3.7, 3.0, 2.7, 3.0, 3.2, 3.1, 2.4, 3.0, 2.7, 2.5, 3.0, 3.0, 3.0, 3.2, 3.1, 3.8, 4.1, 3.7, 3.5, 3.0, 3.7, 3.7, 4.1, 3.7, 3.9, 3.7, 2.0)
 boxplot(nf, main=&quot;Nota final matemáticas fundamentales&quot;,col=&quot;#6abce2&quot;, las=1)
 abline(h=3, col=&quot;red&quot;)</code></pre>
 <p><img src="recurso104_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <p><br/><br/></p>
 </div>
-<div id="diagrama-de-cajas-por-grupos" class="section level3">
-<h3><strong>Diagrama de cajas por grupos</strong></h3>
-<p>Este tipo de gráficos permite la comparación de más de dos grupos en
-un mismo gráfico, permitiendo comparar su centro, dispersión y
-forma.</p>
+<div id="diagrama-de-cajas-1" class="section level3">
+<h3><strong>Diagrama de cajas</strong></h3>
 <pre class="r"><code>nf=c(4.1, 2.7, 3.1, 3.2, 3.0, 3.2, 2.0, 2.4, 1.6, 3.2, 3.1, 2.6, 2.0, 2.4, 2.8, 3.3, 4.0, 3.4, 3.0, 3.1, 2.7, 2.7, 3.0, 3.8, 3.2, 2.2, 3.5, 3.5, 3.8, 3.5, 3.9, 4.2, 4.3, 3.9, 3.2, 3.5, 3.5, 3.7, 4.1, 3.7, 3.5, 3.6, 3.2, 3.1, 3.4, 3.0, 3.0, 3.0, 2.7, 1.7, 3.6, 2.1, 2.4, 3.0, 3.1, 2.5, 2.5, 3.6, 2.2, 2.4, 3.1, 3.3, 2.7, 3.7, 3.0, 2.7, 3.0, 3.2, 3.1, 2.4, 3.0, 2.7, 2.5, 3.0, 3.0, 3.0, 3.2, 3.1, 3.8, 4.1, 3.7, 3.5, 3.0, 3.7, 3.7, 4.1, 3.7, 3.9, 3.7, 2.0)
 cc=c(20, 10, 20, 20, 20, 20, 20, 20, 20, 30, 20, 20, 20, 10, 30, 20, 20, 30, 20, 30, 30, 20, 10, 30, 20, 20, 30, 30, 10, 20, 10, 20, 20, 20, 10, 20, 10, 20, 20, 30, 30, 30, 10, 30, 20, 20, 20, 20, 20, 20, 10, 20, 30, 30, 10, 10, 10, 20, 10, 20, 10, 30, 20, 10, 20, 30, 10, 30, 30, 30, 20, 30, 30, 30, 30, 30, 30, 20, 10, 30, 10, 20, 20, 10, 20, 20, 20, 20, 10, 20)
 labs=c(&quot;Ing. de Sistemas&quot;,&quot;Ing. Industrial&quot;,&quot;Ing. Mecánica&quot;)
@@ -788,75 +614,14 @@ abline(h=4, col=&quot;#447270&quot;, lwd=4)</code></pre>
 </div>
 <div id="diagrama-de-dispersión" class="section level3">
 <h3><strong>Diagrama de dispersión</strong></h3>
-<p>Un diagrama de dispersión es una representación gráfica que muestra
-la relación entre dos variables numéricas. Este tipo de gráfico es útil
-para visualizar patrones, tendencias y la fuerza de la relación entre
-dos conjuntos de datos. A continuación, se proporciona una explicación
-sobre los diagramas de dispersión:</p>
-<p>El diagrama de dispersión representa puntos de datos en un plano
-cartesiano, donde cada punto refleja los valores de ambas variables. El
-eje horizontal generalmente representa una variable, mientras que el eje
-vertical representa la otra. Cada punto en el gráfico representa una
-observación y su posición en el plano está determinada por sus valores
-en ambas variables.</p>
-<p>La interpretación de un diagrama de dispersión permite identificar
-patrones generales, relaciones lineales o no lineales, concentraciones
-de datos y la presencia de valores atípicos. Además, la dirección de la
-relación (positiva, negativa o nula) puede evaluarse visualmente. Si los
-puntos se agrupan en una tendencia ascendente, indica una relación
-positiva; si la tendencia es descendente, la relación es negativa; y si
-no hay tendencia clara, la relación puede considerarse nula.</p>
-<p>Los diagramas de dispersión son valiosos para explorar y entender las
-relaciones entre variables, lo que puede ser crucial en el análisis de
-datos y la toma de decisiones. También son fundamentales para el
-análisis de regresión, donde se busca modelar y predecir la relación
-entre variables. En resumen, los diagramas de dispersión son
-herramientas visuales esenciales que proporcionan una visión clara y
-rápida de la relación entre dos variables numéricas.</p>
 <pre class="r"><code>ed=round(rnorm(90,18,1),1)
 plot(ed,nf, main=&quot;Edad vs Nota final matemáticas fundamentales&quot;, ylim = c(0,5), xlab = &quot;Edad&quot;, ylab = &quot;Nota final&quot;,col=&quot;#447270&quot;,pch=19)
 grid()</code></pre>
 <p><img src="recurso104_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <p><br/><br/></p>
 </div>
-<div id="gráfica-de-lineas" class="section level3">
-<h3><strong>Gráfica de lineas</strong></h3>
-<p>Los gráficos de líneas son herramientas efectivas para visualizar
-series de tiempo, ya que permiten representar de manera clara y continua
-la evolución de una variable a lo largo del tiempo. Aquí hay una
-explicación sobre cómo se utilizan los gráficos de líneas para
-representar series de tiempo:</p>
-<p>Un gráfico de líneas para series de tiempo se construye colocando el
-tiempo en el eje horizontal (<code>eje x</code>) y la variable que se
-está observando en el eje vertical (<code>eje y</code>). Cada punto en
-el gráfico representa una observación en un momento específico, y las
-líneas conectan estos puntos de manera secuencial, creando una
-representación visual de cómo cambia la variable a lo largo del
-tiempo.</p>
-<p>Este tipo de gráfico es especialmente útil para identificar patrones,
-tendencias y ciclos en los datos a lo largo de períodos temporales.
-Puede utilizarse para visualizar el crecimiento o la disminución de una
-variable a lo largo del tiempo, así como para identificar puntos
-destacados o anomalías.</p>
-<p>Algunas características clave de los gráficos de líneas para series
-de tiempo incluyen:</p>
-<ul>
-<li><p><strong>Tendencias Temporales:</strong> La dirección general del
-gráfico puede indicar una tendencia ascendente, descendente o
-estable.</p></li>
-<li><p><strong>Ciclos y Estacionalidad:</strong> Se pueden identificar
-patrones cíclicos o estacionales en los datos.</p></li>
-<li><p><strong>Cambios Significativos:</strong> Anomalías o puntos de
-cambio en la serie de tiempo pueden ser evidentes.</p></li>
-<li><p><strong>Comparación de Múltiples Series:</strong> Se pueden
-comparar varias series de tiempo en un solo gráfico para observar
-relaciones o diferencias.</p></li>
-</ul>
-<p>Estos gráficos son fundamentales en áreas como la economía, finanzas,
-climatología y otras disciplinas donde el tiempo es una dimensión
-crítica en el análisis de datos. La representación visual de las series
-temporales facilita la comprensión de patrones a lo largo del tiempo y
-ayuda en la toma de decisiones informadas.</p>
+<div id="gráfica-de-series-de-tiempo" class="section level3">
+<h3><strong>Gráfica de series de tiempo</strong></h3>
 <pre class="r"><code>plot(AirPassengers, main=&quot;Numero de pasajeros por mes&quot;, col=&quot;#203c3b&quot;, lwd = 4)</code></pre>
 <p><img src="recurso104_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 <p><br/><br/></p>
@@ -880,97 +645,57 @@ par(mfrow=c(1, 1))</code></pre>
 <p><br/><br/></p>
 </div>
 </div>
+<div id="paquetes-de-r-para-gráficos" class="section level2">
+<h2><strong>Paquetes de R para gráficos</strong></h2>
+<p><strong>R</strong> posee una serie de paquetes construido para la
+visualización de datos que hacen que tengan una excelente presentación.
+Empezando por funciones del núcleo base, hasta paquetes que elaboran
+gráficos interactivos</p>
+<p><img src="img/RStudio.jpeg" width="90">
+<img src="img/ggplot2.png" width="80">
+<img src="img/highcharter.png" width="80">
+<img src="img/shiny.png" width="80">
+<img src="img/plotly.png" width="80">
+<img src="img/dashboard.png" width="80"></p>
+<p><br/><br/></p>
+</div>
 <div id="gráficos-con-ggplot2" class="section level2">
 <h2><strong>Gráficos con ggplot2</strong></h2>
-<p><code>ggplot2</code> es una librería en R utilizada para la creación
-de gráficos de alta calidad y versátiles. Desarrollada por Hadley
-Wickham, <code>ggplot2</code> se basa en el concepto de “Grammar of
-Graphics”, lo que facilita la creación de gráficos complejos mediante la
-combinación de capas.</p>
-<p>Aquí hay un ejemplo básico utilizando <code>ggplot2</code> para crear
-un gráfico de líneas para una serie de tiempo:</p>
-<pre class="r"><code># Instalar y cargar la librería ggplot2
-# install.packages(&quot;ggplot2&quot;)
-library(ggplot2)
-
-# Crear un conjunto de datos de ejemplo
-set.seed(123)
-datos &lt;- data.frame(
-  tiempo = seq(as.Date(&quot;2022-01-01&quot;), by = &quot;1 day&quot;, length.out = 365),
-  variable = cumsum(rnorm(365))
-)
-
-# Crear un gráfico de líneas utilizando ggplot2
-ggplot(data = datos, aes(x = tiempo, y = variable)) +
-  geom_line() +
-  labs(title = &quot;Gráfico de Líneas para una Serie de Tiempo&quot;,
-       x = &quot;Tiempo&quot;,
-       y = &quot;Variable&quot;)</code></pre>
-<p><img src="recurso104_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
-<p>En este ejemplo:</p>
-<ol style="list-style-type: decimal">
-<li><p><strong>Datos de ejemplo:</strong> Se crea un conjunto de datos
-con una variable que simula una serie de tiempo a lo largo de un
-año.</p></li>
-<li><p><strong>Función <code>ggplot</code>:</strong> Inicia la
-construcción del gráfico, especificando los datos y las variables
-estéticas (<code>aes</code>).</p></li>
-<li><p><strong><code>geom_line()</code>:</strong> Agrega una capa al
-gráfico para representar líneas, lo que crea el gráfico de
-líneas.</p></li>
-<li><p><strong><code>labs()</code>:</strong> Agrega etiquetas al título
-y ejes del gráfico.</p></li>
-</ol>
-<p>Este es solo un ejemplo básico; <code>ggplot2</code> ofrece muchas
-opciones para personalizar y ampliar gráficos, como agregar capas
-adicionales, cambiar colores, temas y más. Es una herramienta poderosa
-para la visualización de datos en R.</p>
+<p><img src="img/ge_themes.png" /></p>
+<ul>
+<li><p><strong>Data</strong>: capa de los datos</p></li>
+<li><p><strong>Aesthetics</strong>: capa estética
+(<strong>aes</strong>), definimos las variables a utilizar en el
+gráfico</p></li>
+<li><p><strong>Geometries</strong>: capa de geometrías, se define el
+tipo de gráfica a realizar</p></li>
+<li><p><strong>Facets</strong>: capa de facetas, permite detallar la
+gráfica por categorías</p></li>
+<li><p><strong>Statistics</strong>: capa de estadística, permite agregar
+modelos</p></li>
+<li><p><strong>Coordinates</strong>: capa de coordenadas, permite
+ajustar las escalas de los ejes</p></li>
+<li><p><strong>Theme</strong>: capas de características del gráfico que
+no dependen de los datos</p></li>
+</ul>
 <p><br/><br/></p>
-<p>En <code>ggplot2</code>, la creación de gráficos se basa en el
-concepto de añadir capas (layers) de información al gráfico. Cada capa
-agrega un componente específico al gráfico y te permite construir
-visualizaciones complejas y detalladas. Aquí hay una explicación de las
-capas comunes en un gráfico construido con <code>ggplot2</code>:</p>
-<ul>
-<li><strong>Datos (<code>ggplot()</code>):</strong> La función
-<code>ggplot()</code> inicializa el gráfico y define los datos que se
-utilizarán. Se especifican las variables estéticas (a través del
-argumento <code>aes</code>) que serán mapeadas a ejes x, y, colores,
-formas, etc.</li>
-</ul>
+<p><a
+href="https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf">Visualizacion
+de datos con ggplot2</a></p>
 <p></br></br></p>
-<ul>
-<li><strong>Capa inicial</strong></li>
-</ul>
 <pre class="r"><code>library(readr)
 library(ggplot2)
 clasificacion=read.csv(&quot;data/spi_global_rankings_intl.csv&quot;)
-
-p &lt;-ggplot(clasificacion, aes(x=off , y=def))
-p</code></pre>
+ggplot(clasificacion, aes(x=off , y=def))</code></pre>
+<p><img src="recurso104_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p></br></br></p>
+<pre class="r"><code>ggplot(clasificacion, aes(x=off , y=def))+
+  geom_point()</code></pre>
 <p><img src="recurso104_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 <p></br></br></p>
-<ul>
-<li><strong>Capa de Geometría (<code>geom_</code>):</strong> La capa de
-geometría determina la forma principal del gráfico. Puedes utilizar
-funciones como <code>geom_point()</code>, <code>geom_line()</code>,
-<code>geom_bar()</code>, etc., para especificar cómo se representarán
-los datos.</li>
-</ul>
-<pre class="r"><code>p &lt;- p + geom_point()
-p</code></pre>
+<pre class="r"><code>ggplot(clasificacion, aes(x=off , y=def))+
+  geom_point()</code></pre>
 <p><img src="recurso104_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
-<p></br></br></p>
-<ul>
-<li><strong>Capa de Anotaciones (<code>geom_text()</code>,
-<code>geom_label()</code>, etc.):</strong> Puedes añadir capas
-adicionales para etiquetas o textos específicos en el gráfico. Estas
-capas permiten resaltar puntos clave o añadir información
-adicional.</li>
-</ul>
-<pre class="r"><code>p &lt;- p  + geom_text(aes(label = &quot;*&quot;), x = 2, y = 4)
-p</code></pre>
-<p><img src="recurso104_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
 <p></br></br></p>
 <table>
 <colgroup>
@@ -1000,76 +725,19 @@ p</code></pre>
 </tr>
 </tbody>
 </table>
-<ul>
-<li><strong>Capa de Escala (<code>scale_</code>):</strong> Las capas de
-escala controlan cómo se mapean los datos a atributos visuales, como
-colores o tamaños. Puedes utilizar funciones como
-<code>scale_x_continuous()</code>, <code>scale_color_gradient()</code>,
-etc.</li>
-</ul>
 <p></br></br></p>
-<pre class="r"><code>library(ggplot2)
-
-# Suponiendo que &quot;clasificacion&quot; es tu conjunto de datos
-# Puedes ajustar estos valores según tus necesidades
-
-p &lt;- p+ scale_x_continuous(name = &quot;Puntuación Ofensiva&quot;, 
-                           breaks = seq(0, 4, by = 10), limits = c(0, 4)) +           
-        scale_y_continuous(name = &quot;Puntuación Defensiva&quot;, 
-                           breaks = seq(0, 7, by = 10), limits = c(0, 7))            
-p  </code></pre>
+<pre class="r"><code>ggplot(clasificacion, aes(x=off , y=def))+
+  geom_point()+
+  facet_wrap(~ confed)</code></pre>
+<p><img src="recurso104_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p></br></br></p>
+<pre class="r"><code>ggplot(clasificacion, aes(x=off , y=def))+  geom_point()+
+  facet_wrap(~ confed)+ stat_smooth(method = &quot;loess&quot; , formula =y ~ x)</code></pre>
 <p><img src="recurso104_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
-<p></br></br></p>
-<ul>
-<li><strong>Capa de Facetas (<code>facet_</code>):</strong> Las capas de
-facetas permiten dividir el gráfico en subgráficos basados en una
-variable categórica. Esto es útil para comparar visualmente la
-distribución de datos en diferentes grupos.</li>
-</ul>
-<pre class="r"><code>p &lt;- p +facet_wrap(~ confed)
-p</code></pre>
-<p><img src="recurso104_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
-<p></br></br></p>
-<ul>
-<li><strong>Capa de Tema (<code>theme_</code>):</strong> Controla la
-apariencia general del gráfico, como títulos, etiquetas de ejes, colores
-de fondo, etc.</li>
-</ul>
-<pre class="r"><code>p + theme_minimal()</code></pre>
-<p><img src="recurso104_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
-<p>Estas son solo algunas de las capas más comunes. La flexibilidad de
-<code>ggplot2</code> permite añadir capas adicionales o personalizar
-cada capa para crear gráficos altamente informativos y estéticamente
-agradables. La construcción del gráfico se realiza acumulando estas
-capas una encima de la otra mediante el operador <code>+</code>.</p>
-<p></br></br></p>
-<div id="resumen-ggplot2" class="section level3">
-<h3><strong>Resumen ggplot2</strong></h3>
-<p><img src="img/ge_themes.png" /></p>
-<ul>
-<li><p><strong>Data</strong>: capa de los datos</p></li>
-<li><p><strong>Aesthetics</strong>: capa estética
-(<strong>aes</strong>), definimos las variables a utilizar en el
-gráfico</p></li>
-<li><p><strong>Geometries</strong>: capa de geometrías, se define el
-tipo de gráfica a realizar</p></li>
-<li><p><strong>Facets</strong>: capa de facetas, permite detallar la
-gráfica por categorías</p></li>
-<li><p><strong>Statistics</strong>: capa de estadística, permite agregar
-modelos</p></li>
-<li><p><strong>Coordinates</strong>: capa de coordenadas, permite
-ajustar las escalas de los ejes</p></li>
-<li><p><strong>Theme</strong>: capas de características del gráfico que
-no dependen de los datos</p></li>
-</ul>
-<p></br></br></p>
-</div>
-<div id="ejemplos" class="section level3">
-<h3><strong>EJEMPLOS</strong></h3>
 <p></br></br></p>
 <pre class="r"><code>ggplot(clasificacion, aes(x=off , y=def))+  geom_point()+  facet_wrap(~ confed)+ stat_smooth(method = &quot;loess&quot; , formula =y ~ x)+
     coord_cartesian(ylim = c(0, 10))</code></pre>
-<p><img src="recurso104_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+<p><img src="recurso104_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
 <p></br></br></p>
 <pre class="r"><code>library(ggplot2)
 data=data.frame(carrera=c(&quot;biologia&quot;,&quot;biomedica&quot;,&quot;civil&quot;,&quot;electronica&quot;,&quot;mecanica&quot;,  &quot;sistemas&quot;),frecuencia=c(8, 9,10,2, 3,7))
@@ -1078,35 +746,34 @@ ggplot(data, aes(x=carrera, y=frecuencia)) +
   geom_bar(stat=&quot;identity&quot;, fill=&quot;#203c3d&quot;)+
   geom_text(aes(label=frecuencia), vjust=2.5, color=&quot;white&quot;, size=7)+
   theme_minimal()</code></pre>
-<p><img src="recurso104_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
+<p><img src="recurso104_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
 <p></br></br></p>
 <pre class="r"><code>library(ggplot2)
 ggplot(mtcars, aes(x=mpg, y=wt, colour = cyl)) + 
   geom_point()</code></pre>
-<p><img src="recurso104_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
+<p><img src="recurso104_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
 <p></br></br></p>
 <pre class="r"><code>ggplot(iris, aes(Sepal.Length)) +
        geom_histogram(bins = 7,fill=&quot;#447270&quot;, color=&quot;#e9ecef&quot;, alpha=0.9)+
        theme_minimal() +
        labs(x = &quot;cm&quot;, y = &quot;frecuencia absoluta&quot;) +
        ggtitle(&quot;Longitud del sepalo&quot;)</code></pre>
-<p><img src="recurso104_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+<p><img src="recurso104_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
 <p></br></br></p>
 <pre class="r"><code>ggplot(iris, aes(x=Sepal.Length, y=Species)) +
   geom_boxplot(fill=c(&quot;#faf0ca&quot;,&quot;#f4d35e&quot;,&quot;#ee964d&quot;),  # color de relleno
                color=&quot;#0d3b66&quot;,    # color de lineas
                alpha=0.5)+
   geom_point(color=&quot;#f95738&quot;,alpha=0.9)     # color puntos</code></pre>
-<p><img src="recurso104_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
+<p><img src="recurso104_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
 <p></br></br></p>
-</div>
 </div>
 <div id="gráficos-con-gganimate" class="section level2">
 <h2><strong>Gráficos con gganimate</strong></h2>
 <pre class="r"><code>library(gapminder) # paquete contiene data Gapminder
 library(gganimate) # paquete para animacion grafica
 
-p &lt;-ggplot(gapminder, aes(gdpPercap, lifeExp, size = pop, colour = country)) +
+ggplot(gapminder, aes(gdpPercap, lifeExp, size = pop, colour = country)) +
   geom_point(alpha = 0.7, show.legend = FALSE) +
   scale_colour_manual(values = country_colors) +
   scale_size(range = c(2, 12)) +
@@ -1115,14 +782,13 @@ p &lt;-ggplot(gapminder, aes(gdpPercap, lifeExp, size = pop, colour = country)) 
   # especificación del la transición animada - gganimate
   labs(title = &#39;AñoYear: {frame_time}&#39;, x = &#39;GDP per capita&#39;, y = &#39;life expectancy&#39;) +
   transition_time(year) +
-  ease_aes(&#39;linear&#39;)
-
-
-# Guardar la animación como un archivo GIF
-anim_save(&quot;img/animacion.gif&quot;, animate(p), renderer = gifski_renderer())</code></pre>
+  ease_aes(&#39;linear&#39;)</code></pre>
 <p><a href="https://gganimate.com/"
 class="uri">https://gganimate.com/</a></p>
-<p><img src="img/animacion.gif" width="60%" style="display: block; margin: auto;" /></p>
+<p><a href="https://rafalab.github.io/dslibro/ggplot2.html">Anàlisis de
+datos con R Cap,7 ggplot2</a><br/> <a
+href="https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf">ggplot2
+resumen</a></p>
 </div>
 <div id="graficos-con-highcharter" class="section level2">
 <h2><strong>Graficos con highcharter</strong></h2>
