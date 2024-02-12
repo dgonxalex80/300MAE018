@@ -229,7 +229,7 @@ De acuerdo con la información anterior, responda falso o verdadero a las siguie
 |c. | Las ventas de Diciembre  son más homogéneas que las de Enero |
 |d. | La mediana de las ventas en el mes de Enero es de 11.15  |
 |e. | La varianza para el mes de Enero es de 5.21  |
-|f. | Aproximadamente el 68\% de las ventas de Enero están en el intervalo (8.7 ; 13.3)  |
+|f. | Aproximadamente el 68\% de las ventas de Enero están en el intervalo [8.7 ; 13.3]. Nota: el intervalo incluye los valores 8.7 y 13.3.  |
 |g. | Si el estado cobra un impuesto sobre las ventas del 16\%, el promedio del impuesto en Enero es de 1.75  |
 |h. | En la variable nivel tecnológico, el promedio es: $\dfrac{12.5+30+17.5}{3}$ |
 |i. | El cuartil 1 $Q_{1}$ para las ventas de Enero  es 8.0 |
