@@ -236,7 +236,7 @@ De acuerdo con la información anterior, responda falso o verdadero a las siguie
 |j. | El tipo de estudio corresponde a la Estadística Inferencial ya que se realizó muesteo |
 |k. | La variable nivel tecnológico de la empresa se clasifica como nominal |
 |l. | 30 empresas tienen un nivel tecnológico medio |
-|m. | Las ventas de Mayo muestran sesgo negativo |
+|m. | Las ventas de Diciembre muestran sesgo negativo |
 
 Tomado de Arroyo(2012)
 
