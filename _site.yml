@@ -16,6 +16,8 @@ navbar:
           href: productoria.html
         - text: "Conjuntos"
           href: conjuntos.html
+        - text: "Técnicas de conteo"
+          href: conteo.html         
         - text: "Funcición exponencial"
           href: exponencial.html
         - text: "Función logaritmica"
@@ -51,7 +53,14 @@ navbar:
       menu:
         - text: "Módulo 2"
           href: modulo2.html
+        - text: "Probabilidad"
+          href: recurso201.html  
+        - text: "Taller 211"
+          href: taller211.html   
         - text: "---------"            
+        - text: "Monitoria 2"
+          href: monitoria2.html         
+          
     - text: "Módulo 3"
       menu:
         - text: "Módulo 3"
