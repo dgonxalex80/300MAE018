@@ -70,58 +70,59 @@ Antes de empezar con el tema reflexionemos sobre los siguientes interrogantes:
 ##### Cierto - Incierto - Imposible
 
 
-```{r, echo=FALSE, warning=FALSE, message=FALSE,  fig.height=8, fig.width=8}
-library("tm")
-library("SnowballC")
-library("wordcloud2")
-library("RColorBrewer")
-set.seed(1234)
-# nube1 <- read.csv("data/nube1.csv")
-
-palabras=c("probabilidad",
-           "azar",
-           "aleatorio",
-           "deterministico",
-           "incertidumbre",
-           "probable",
-           "imposible",
-           "cierto",
-           "incierto",
-           "clásico",
-           "subjetivo",
-           "frecuentista",
-           "evento",
-           "experimento",
-           "conjunto",
-           "unión",
-           "interseción",
-           "conjunto",
-           "marginal",
-           "Pascal",
-           "Fermat",
-           "De Meré",
-           "Gauss",
-           "Laplace",
-           "Kolmogorov",
-           "riesgo",
-           "decisión") # 27
-replicas=c(11,8,8,8,8,8,8,8,8,4,
-           4,4,4,4,4,4,4,4,4,6,
-           6,6,5,5,5,8,8)
-
-nube1=rep(palabras, replicas)
-
-t=data.frame(table(nube1))
-
-dword=t[,1]
-dfreq=t[,2]
-#set.seed(1234)
-# wordcloud(words = dword, freq = dfreq, min.freq = 1,
-#            max.words=200, random.order=FALSE, rot.per=0.35,
-#            colors=brewer.pal(8, "Dark2"))
-
-  library(wordcloud2)
-  wordcloud2(data = t, size = 0.2, shape = "circle")
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.align='center'}
+knitr::include_graphics("img/nube.png")
+# library("tm")
+# library("SnowballC")
+# library("wordcloud2")
+# library("RColorBrewer")
+# set.seed(1234)
+# # nube1 <- read.csv("data/nube1.csv")
+# 
+# palabras=c("probabilidad",
+#            "azar",
+#            "aleatorio",
+#            "deterministico",
+#            "incertidumbre",
+#            "probable",
+#            "imposible",
+#            "cierto",
+#            "incierto",
+#            "clásico",
+#            "subjetivo",
+#            "frecuentista",
+#            "evento",
+#            "experimento",
+#            "conjunto",
+#            "unión",
+#            "interseción",
+#            "conjunto",
+#            "marginal",
+#            "Pascal",
+#            "Fermat",
+#            "De Meré",
+#            "Gauss",
+#            "Laplace",
+#            "Kolmogorov",
+#            "riesgo",
+#            "decisión") # 27
+# replicas=c(11,8,8,8,8,8,8,8,8,4,
+#            4,4,4,4,4,4,4,4,4,6,
+#            6,6,5,5,5,8,8)
+# 
+# nube1=rep(palabras, replicas)
+# 
+# t=data.frame(table(nube1))
+# 
+# dword=t[,1]
+# dfreq=t[,2]
+# #set.seed(1234)
+# # wordcloud(words = dword, freq = dfreq, min.freq = 1,
+# #            max.words=200, random.order=FALSE, rot.per=0.35,
+# #            colors=brewer.pal(8, "Dark2"))
+# 
+#   library(wordcloud2)
+#   wordcloud2(data = t, size = 0.2, shape = "circle")
 
 ```
 
@@ -167,7 +168,7 @@ Iniciaremos con algunos conceptos básicos que nos permiten la contribución de 
 <br/><br/>
 
 
-```{r, echo=FALSE, out.width="60%", fig.align = "center"}
+```{r, echo=FALSE, out.width="40%", fig.align = "center"}
 knitr::include_graphics("img/dados.gif")
 ```
 
@@ -333,7 +334,7 @@ $$\lim_{n \to{+}\infty} P(A)=\Bigg[ \dfrac{\text{número de veces que ocurre A}}
 
 ### **EJEMPLO**
 
-```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+```{r, echo=FALSE, out.width="60%", fig.align = "center"}
 knitr::include_graphics("img/penalti.gif")
 ```
 
@@ -351,13 +352,14 @@ Para calcular la probabilidad de que un jugador ejecute y convierta gol, debemos
 
 Otro ejemplo puede estar relacionado con la probabilidad de muerte por Covid en Colombia. Es de aclarar que esta probabilidad no se mantiene constante a través del tiempo pues los efectos causados por la vacunación y su evolución hacen que esta probabilidad cambie. Por fines prácticos tomaremos una muestra del total de colombianos infectados desde  como denominador y como numerador el numero total de muertos
 
-```{r, eval=FALSE}
+```{r}
 Colombia=readRDS("data/Colombia23.RDS")
+Colombia$ubicacion=str_to_lower(Colombia$ubicacion)
 tabla=summarytools::freq(Colombia$ubicacion, cumul = FALSE)
 tabla
 ```
 
-Con base en esta tabla podríamos pensar que la probabilidad de que una persona muera a causa del Covid-19 es del `0.0289`. Valor que se obtiene al dividir el número de personas fallecidas y el número total de personas que se han contraído covid. Claro bajo el supuesto de que todos las personas tenemos la misma probabilidad de fallecer. Hecho que se discutirá mas adelante.
+Con base en esta tabla podríamos pensar que la probabilidad de que una persona muera a causa del Covid-19 es del `0.072`. Valor que se obtiene al dividir el número de personas fallecidas y el número total de personas que se han contraído covid. Claro bajo el supuesto de que todos las personas tenemos la misma probabilidad de fallecer. Hecho que se discutirá mas adelante.
 
 <br/><br/><br/>
 
@@ -705,12 +707,10 @@ knitr::include_graphics("img/diagrama6_22.png")
 
 |                                                            |                            |
 |:-----------------------------------------------------------|:---------------------------|
-|$P(E|+5) = \dfrac{P(E \cap +5)}{P(+5)} = \dfrac{0.06}{0.58} = 0.1034$ | **TERCERO**      |
-|                                                                      |                  |    
 |$P(TC | +5)  =  \dfrac{P(TC \cap +5)}{P(+5)} = \dfrac{0.28}{0.58} = 0.4827$ | **PRIMERO**|
-|                                                                            |            |                                
 |$P(TD | +5)  =  \dfrac{P(TD \cap +5)}{P(+5)} = \dfrac{0.24}{0.58} = 0.4138$ | **SEGUNDO**|
-
+|$P(E|+5) = \dfrac{P(E \cap +5)}{P(+5)} = \dfrac{0.06}{0.58} = 0.1034$       | **TERCERO**|
+|                                                                            |            |                 
 <br/><br/><br/>
 
 

@@ -34,11 +34,6 @@
 <script src="site_libs/navigation-1.1/codefolding.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-<link href="site_libs/wordcloud2-0.0.1/wordcloud.css" rel="stylesheet" />
-<script src="site_libs/wordcloud2-0.0.1/wordcloud2-all.js"></script>
-<script src="site_libs/wordcloud2-0.0.1/hover.js"></script>
-<script src="site_libs/wordcloud2-binding-0.2.1/wordcloud2.js"></script>
 <link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
@@ -348,6 +343,9 @@ $(document).ready(function () {
       <a href="modulo2.html">Módulo 2</a>
     </li>
     <li>
+      <a href="guia201.html">Guía 2.1</a>
+    </li>
+    <li>
       <a href="recurso201.html">Probabilidad</a>
     </li>
     <li>
@@ -482,8 +480,7 @@ interrogantes:</p>
 </div>
 <div id="cierto---incierto---imposible" class="section level5">
 <h5>Cierto - Incierto - Imposible</h5>
-<div class="wordcloud2 html-widget html-fill-item" id="htmlwidget-3872677e6e4d7dd847cc" style="width:768px;height:768px;"></div>
-<script type="application/json" data-for="htmlwidget-3872677e6e4d7dd847cc">{"x":{"word":["aleatorio","azar","cierto","clásico","conjunto","De Meré","decisión","deterministico","evento","experimento","Fermat","frecuentista","Gauss","imposible","incertidumbre","incierto","interseción","Kolmogorov","Laplace","marginal","Pascal","probabilidad","probable","riesgo","subjetivo","unión"],"freq":[8,8,8,4,8,6,8,8,4,4,6,4,5,8,8,8,4,5,5,4,6,11,8,8,4,4],"fontFamily":"Segoe UI","fontWeight":"bold","color":"random-dark","minSize":0,"weightFactor":3.272727272727273,"backgroundColor":"white","gridSize":0,"minRotation":-0.7853981633974483,"maxRotation":0.7853981633974483,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
+<p><img src="img/nube.png" width="960" style="display: block; margin: auto;" /></p>
 <p>Muchos relacionamos el concepto de probabilidad con los dados, pues
 forma parte de su origen y de su desarrollo inicial a través de
 preguntas y situaciones imaginarias y de alguna forma modelables desde
@@ -532,7 +529,7 @@ href="http://materias.df.uba.ar/estadisticaa2019v/files/2019/02/El_caballero_de_
 problema de los dados del caballero de Meré: soluciones publicadas en el
 siglo XVII</a></p>
 <p><br/><br/></p>
-<p><img src="img/dados.gif" width="60%" style="display: block; margin: auto;" /></p>
+<p><img src="img/dados.gif" width="40%" style="display: block; margin: auto;" /></p>
 <br/>
 <center>
 Tomada : película El dorado
@@ -756,7 +753,7 @@ class="math inline">\(n\)</span>.</p>
 <p><br/><br/></p>
 <div id="ejemplo" class="section level3">
 <h3><strong>EJEMPLO</strong></h3>
-<p><img src="img/penalti.gif" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="img/penalti.gif" width="60%" style="display: block; margin: auto;" /></p>
 <p><br/><br/></p>
 <p>Si observamos el cobro de un penalti en un partido de fútbol, el
 cobrador tiene un gran número de posibilidades (lugares) para colocar el
@@ -782,10 +779,22 @@ vacunación y su evolución hacen que esta probabilidad cambie. Por fines
 prácticos tomaremos una muestra del total de colombianos infectados
 desde como denominador y como numerador el numero total de muertos</p>
 <pre class="r"><code>Colombia=readRDS(&quot;data/Colombia23.RDS&quot;)
+Colombia$ubicacion=str_to_lower(Colombia$ubicacion)
 tabla=summarytools::freq(Colombia$ubicacion, cumul = FALSE)
 tabla</code></pre>
+<pre><code>Frequencies  
+
+                     Freq   % Valid   % Total
+------------------ ------ --------- ---------
+              casa   9162     95.08     95.08
+         fallecido     69      0.72      0.72
+          hospital    331      3.44      3.44
+      hospital uci     33      0.34      0.34
+               n/a     41      0.43      0.43
+              &lt;NA&gt;      0                0.00
+             Total   9636    100.00    100.00</code></pre>
 <p>Con base en esta tabla podríamos pensar que la probabilidad de que
-una persona muera a causa del Covid-19 es del <code>0.0289</code>. Valor
+una persona muera a causa del Covid-19 es del <code>0.072</code>. Valor
 que se obtiene al dividir el número de personas fallecidas y el número
 total de personas que se han contraído covid. Claro bajo el supuesto de
 que todos las personas tenemos la misma probabilidad de fallecer. Hecho
@@ -1147,6 +1156,16 @@ mil pesos</li>
 </colgroup>
 <tbody>
 <tr class="odd">
+<td align="left"><span class="math inline">\(P(TC | +5) = \dfrac{P(TC
+\cap +5)}{P(+5)} = \dfrac{0.28}{0.58} = 0.4827\)</span></td>
+<td align="left"><strong>PRIMERO</strong></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(P(TD | +5) = \dfrac{P(TD
+\cap +5)}{P(+5)} = \dfrac{0.24}{0.58} = 0.4138\)</span></td>
+<td align="left"><strong>SEGUNDO</strong></td>
+</tr>
+<tr class="odd">
 <td align="left"><span class="math inline">\(P(E|+5) = \dfrac{P(E \cap
 +5)}{P(+5)} = \dfrac{0.06}{0.58} = 0.1034\)</span></td>
 <td align="left"><strong>TERCERO</strong></td>
@@ -1154,20 +1173,6 @@ mil pesos</li>
 <tr class="even">
 <td align="left"></td>
 <td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(P(TC | +5) = \dfrac{P(TC
-\cap +5)}{P(+5)} = \dfrac{0.28}{0.58} = 0.4827\)</span></td>
-<td align="left"><strong>PRIMERO</strong></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(P(TD | +5) = \dfrac{P(TD
-\cap +5)}{P(+5)} = \dfrac{0.24}{0.58} = 0.4138\)</span></td>
-<td align="left"><strong>SEGUNDO</strong></td>
 </tr>
 </tbody>
 </table>
