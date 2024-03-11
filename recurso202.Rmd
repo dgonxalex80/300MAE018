@@ -101,7 +101,10 @@ Un experimento aleatorio $E$, consiste en lanzar una moneda balanceada al aire t
 $$S =\{(s,s,s),(s,s,c),(s,c,s),(s,c,c),(c,s,s),(c,s,c),(c,c,s),(c,c,c)\} $$
 
 
-![](img/Figura301.png){width=60%}<br/>
+```{r, echo=FALSE, out.width="80%", fig.align = "center"}
+knitr::include_graphics("img/Figura301.png")
+```
+
 
 
 <br/>
@@ -163,19 +166,19 @@ knitr::include_graphics("img/ej2.png")
 
 Las siguientes variables se clasifican como **variables aleatorias discretas** :
 
-* X : Número de llamadas que entran a un conmutador diariamente
+* X : **Número de** llamadas que entran a un conmutador diariamente
 
-* Y: Número de personas contagiadas por Covid19 durante un día
+* Y: **Número de** personas contagiadas por Covid19 durante un día
 
-* Z: Número de quejas reportadas a una sucursal bancaria en un día
+* Z: **Número de** quejas reportadas a una sucursal bancaria en un día
 
-* W: Número de accidentes producidos en una ciudad
+* W: **Número de** accidentes producidos en una ciudad
 
-* S: Número de huevos producidos diariamente en una avícola
+* S: **Número de** huevos producidos diariamente en una avícola
 
-* T: Número de hijos en una familia
+* T: **Número de** hijos en una familia
 
-* M: Número de mensajes enviados en un grupo de Whatsapp
+* M: **Número de** mensajes enviados en un grupo de Whatsapp
 
 <br/><br/>
 
@@ -268,7 +271,7 @@ $$f_{_{X}}(x) = \left \{
 
 <br/>
 
-En este caso se utiliza la función combinatoria  y el operador de sumatoria vista en la **Guía 0.2**
+En este caso se utiliza la función combinatoria  y el operador de **sumatoria** vista en el  **Módulo 0**
 
 Representada de manera gráfica: 
 
@@ -332,19 +335,19 @@ knitr::include_graphics("img/ej5.png")
 
 En el caso de las **variables aleatorias continuas** por lo general proceden de una medición como por ejemplo:
 
-+ T: Tiempo que tarda un estudiante en responder un examen
++ T: Tiempo que tarda un estudiante en responder un examen en minutos
 
-+ P: Peso de un bebe recien nacido
++ P: Peso de un bebe recien nacido en kilogramos
 
-+ E: Edad de una persona
++ E: Edad de una persona en años
 
-+ V: Tiempo que tarda un vehículo en requerir una reparación de su motor
++ V: Tiempo que tarda un vehículo en requerir una reparación de su motor en meses
 
-+ D: Diámetro de un agujero realizado en una lamina de acero
++ D: Diámetro de un agujero realizado en una lamina de acero en milímetros
 
-+ X: Cantidad de azúcar contenida en un refresco
++ X: Cantidad de azúcar contenida en un refresco gramos
 
-+ C: Proporción de cemento en concreto
++ C: Proporción de cemento en concreto en porcentaje
 
 
 <br/><br/>

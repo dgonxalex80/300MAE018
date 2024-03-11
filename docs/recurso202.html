@@ -552,7 +552,7 @@ de <span class="math inline">\(E\)</span>, estará dado por: |</p>
 <p><span class="math display">\[S
 =\{(s,s,s),(s,s,c),(s,c,s),(s,c,c),(c,s,s),(c,s,c),(c,c,s),(c,c,c)\}
 \]</span></p>
-<p><img src="img/Figura301.png" style="width:60.0%" /><br/></p>
+<p><img src="img/Figura301.png" width="80%" style="display: block; margin: auto;" /></p>
 <p><br/></p>
 <p>Donde :</p>
 <ul>
@@ -621,17 +621,19 @@ por <strong>número de….</strong></p>
 <p>Las siguientes variables se clasifican como <strong>variables
 aleatorias discretas</strong> :</p>
 <ul>
-<li><p>X : Número de llamadas que entran a un conmutador
-diariamente</p></li>
-<li><p>Y: Número de personas contagiadas por Covid19 durante un
-día</p></li>
-<li><p>Z: Número de quejas reportadas a una sucursal bancaria en un
-día</p></li>
-<li><p>W: Número de accidentes producidos en una ciudad</p></li>
-<li><p>S: Número de huevos producidos diariamente en una
-avícola</p></li>
-<li><p>T: Número de hijos en una familia</p></li>
-<li><p>M: Número de mensajes enviados en un grupo de Whatsapp</p></li>
+<li><p>X : <strong>Número de</strong> llamadas que entran a un
+conmutador diariamente</p></li>
+<li><p>Y: <strong>Número de</strong> personas contagiadas por Covid19
+durante un día</p></li>
+<li><p>Z: <strong>Número de</strong> quejas reportadas a una sucursal
+bancaria en un día</p></li>
+<li><p>W: <strong>Número de</strong> accidentes producidos en una
+ciudad</p></li>
+<li><p>S: <strong>Número de</strong> huevos producidos diariamente en
+una avícola</p></li>
+<li><p>T: <strong>Número de</strong> hijos en una familia</p></li>
+<li><p>M: <strong>Número de</strong> mensajes enviados en un grupo de
+Whatsapp</p></li>
 </ul>
 <p><br/><br/></p>
 <p>Como complemento de <span class="math inline">\(f(x)\)</span> y
@@ -701,12 +703,12 @@ class="math inline">\(\dfrac{1}{6}\)</span></td>
 en cualquier otro caso}\end{matrix}\right.\)</span></p>
 <p><br/><br/></p>
 <p>Tambien podemos representar esta función de manera gráfica</p>
-<p><img src="recurso202_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><img src="recurso202_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 <p><br/></p>
 <p>Para la construcción de la función de distribución acumulada se
 acumulan los valores correspondientes a las probabilidades puntuales de
 manera creciente</p>
-<p><img src="recurso202_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><img src="recurso202_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <pre><code>  x       fx     Fx
 1 1 0.166667 0.1667
 2 2 0.166667 0.3333
@@ -734,7 +736,7 @@ class="math inline">\(f\)</span>, dada por:</p>
                 \]</span></p>
 <p><br/></p>
 <p>En este caso se utiliza la función combinatoria y el operador de
-sumatoria vista en la <strong>Guía 0.2</strong></p>
+<strong>sumatoria</strong> vista en el <strong>Módulo 0</strong></p>
 <p>Representada de manera gráfica:</p>
 <p><br/></p>
 <pre class="r"><code>x=0:20
@@ -743,11 +745,11 @@ Fx=cumsum(fx)
 
 tabla=data.frame(x, fx, Fx)
 DT::datatable(head(tabla, 21),fillContainer = FALSE, options = list(pageLength = 12))</code></pre>
-<div class="datatables html-widget html-fill-item" id="htmlwidget-c2e3fede5c798441fdae" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-c2e3fede5c798441fdae">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21"],[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],[3.486784400999997e-11,1.627166053799999e-09,3.606884752589998e-08,5.049638653625996e-07,5.007558331512446e-06,3.738976887529293e-05,0.0002181069851058754,0.001017832597160752,0.003859281930901184,0.01200665489613702,0.03081708090008501,0.06536956554563488,0.114396739704861,0.1642619852172363,0.1916389827534423,0.1788630505698795,0.1304209743738705,0.07160367220526223,0.02784587252426864,0.006839337111223877,0.0007979226629761189],[3.486784400999997e-11,1.662033897809999e-09,3.773088142370997e-08,5.426947467863096e-07,5.550253078298756e-06,4.294002195359168e-05,0.0002610470070594671,0.001278879604220219,0.005138161535121403,0.01714481643125842,0.04796189733134343,0.1133314628769783,0.2277282025818393,0.3919901877990756,0.583629170552518,0.7624922211223976,0.892913195496268,0.9645168677015302,0.9923627402257988,0.9992020773370228,0.9999999999999989]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>x<\/th>\n      <th>fx<\/th>\n      <th>Fx<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":12,"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"x","targets":1},{"name":"fx","targets":2},{"name":"Fx","targets":3}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[10,12,25,50,100]},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":[],"jsHooks":[]}</script>
-<p><img src="recurso202_files/figure-html/unnamed-chunk-9-1.png" width="672" />
+<div class="datatables html-widget html-fill-item" id="htmlwidget-197be4286e9235e83aa8" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-197be4286e9235e83aa8">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21"],[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],[3.486784400999997e-11,1.627166053799999e-09,3.606884752589998e-08,5.049638653625996e-07,5.007558331512446e-06,3.738976887529293e-05,0.0002181069851058754,0.001017832597160752,0.003859281930901184,0.01200665489613702,0.03081708090008501,0.06536956554563488,0.114396739704861,0.1642619852172363,0.1916389827534423,0.1788630505698795,0.1304209743738705,0.07160367220526223,0.02784587252426864,0.006839337111223877,0.0007979226629761189],[3.486784400999997e-11,1.662033897809999e-09,3.773088142370997e-08,5.426947467863096e-07,5.550253078298756e-06,4.294002195359168e-05,0.0002610470070594671,0.001278879604220219,0.005138161535121403,0.01714481643125842,0.04796189733134343,0.1133314628769783,0.2277282025818393,0.3919901877990756,0.583629170552518,0.7624922211223976,0.892913195496268,0.9645168677015302,0.9923627402257988,0.9992020773370228,0.9999999999999989]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>x<\/th>\n      <th>fx<\/th>\n      <th>Fx<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":12,"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"x","targets":1},{"name":"fx","targets":2},{"name":"Fx","targets":3}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[10,12,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<p><img src="recurso202_files/figure-html/unnamed-chunk-10-1.png" width="672" />
 <br/></p>
-<p><img src="recurso202_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><img src="recurso202_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 <p><br/></p>
 <pre><code>P(X=0)  =  0 </code></pre>
 <pre><code>P(X=15) =  0.178863 </code></pre>
@@ -769,15 +771,16 @@ función de densidad de probabilidad</p>
 <p>En el caso de las <strong>variables aleatorias continuas</strong> por
 lo general proceden de una medición como por ejemplo:</p>
 <ul>
-<li><p>T: Tiempo que tarda un estudiante en responder un examen</p></li>
-<li><p>P: Peso de un bebe recien nacido</p></li>
-<li><p>E: Edad de una persona</p></li>
+<li><p>T: Tiempo que tarda un estudiante en responder un examen en
+minutos</p></li>
+<li><p>P: Peso de un bebe recien nacido en kilogramos</p></li>
+<li><p>E: Edad de una persona en años</p></li>
 <li><p>V: Tiempo que tarda un vehículo en requerir una reparación de su
-motor</p></li>
-<li><p>D: Diámetro de un agujero realizado en una lamina de
-acero</p></li>
-<li><p>X: Cantidad de azúcar contenida en un refresco</p></li>
-<li><p>C: Proporción de cemento en concreto</p></li>
+motor en meses</p></li>
+<li><p>D: Diámetro de un agujero realizado en una lamina de acero en
+milímetros</p></li>
+<li><p>X: Cantidad de azúcar contenida en un refresco gramos</p></li>
+<li><p>C: Proporción de cemento en concreto en porcentaje</p></li>
 </ul>
 <p><br/><br/></p>
 <div id="función-de-densidad-de-probabilidad" class="section level3"
@@ -829,7 +832,7 @@ puede ser una función de densidad de probabilidad se debe verificar</p>
 \dfrac{1}{4} e^{-x/4} \:dx =1\)</span></p>
 <pre><code>1 with absolute error &lt; 2.7e-05</code></pre>
 <p><br/></p>
-<p><img src="recurso202_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p><img src="recurso202_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
 <p><br/><br/><br/></p>
 </div>
 <div id="valor-esperado" class="section level1">
