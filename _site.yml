@@ -60,9 +60,18 @@ navbar:
         - text: "Taller 211"
           href: taller211.html   
         - text: "---------"            
-        - text: "Monitoria 2"
-          href: monitoria2.html         
-          
+        - text: "Monitoria 2.1"
+          href: monitoria2.html  
+        - text: "---------"              
+        - text: "Guía 2.2"
+          href: guia202.html  
+        - text: "Variable aleatória"
+          href: recurso202.html  
+        - text: "Taller 221"
+          href: taller211.html   
+        - text: "---------"            
+        - text: "Monitoria 3"
+          href: monitoria3.html           
     - text: "Módulo 3"
       menu:
         - text: "Módulo 3"

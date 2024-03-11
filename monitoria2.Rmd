@@ -1,7 +1,7 @@
 ---
-title: <span style="color:#235784"> **Recursos 1.1**</span>  
+title: <span style="color:#235784"> **Monitoria 3**</span>  
 author: "dgonzalez "
-subtitle: <span style="color:#235784">**Módulo 1- Unidad 1.1**</span> 
+subtitle: <span style="color:#235784">**Módulo 2- Unidad 2.2**</span> 
 output:
    html_document:
       toc: no
@@ -41,29 +41,361 @@ c5= "#5B84C4"
 
 <br/><br/>
 
-## <span style="color:#ad6395"> **P1**</span>  
+**1** Clasifique las siguientes variables aleatorias como discretas o continuas:
 
-### **Empresa de ventas al por menor**: 
++ $X$ : el número de accidentes automovilísticos que ocurren al año en una ciudad determinada
++ $Y$ : el tiempo para  jugar 18 hoyos de golf
++ $M$ : la cantidad de leche que una vaca determinada produce anualmente
++ $N$ : el número de huevos que una gallina pone mensualmente
++ $P$ : el número de permisos para construcción que los funcionarios de una  ciudad emiten cada mes
++ $Q$ : el peso del grano producido por acre
 
-El siguiente conjunto de datos incluye información sobre 100 establecimientos sobre sus ventas mensuales, costos, utilidad, número de empleados y su estrato socio-económico del barrio donde se encuentran localizados. Realiza un **análisis descriptivo** de la información suministada, utilizando indicadores de centro, dispersión y forma y graficos que complementen el análisis, que permitan identificar tendencias en las ventas, costos y beneficios , si existe relación entre sus indicadores y su localización, de tal forma que permitan establecer un estado inicial de las empresas para este año. 
+
+<br/><br/>
 
 
-**Información**
+**2**  El tiempo que pasa, en horas, para que un radar detecte entre conductores sucesivos a los que exceden los límites de velocidad es una variable aleatoria continua con una  función de distribución acumulada:
+
+$$F_{_{X}}(x) = \left \{ 
+				\begin{matrix} 
+				 0  & \mbox{ , }	x \leq 0\\ 
+				 1-exp\{-8x \}  & x \geq 0 
+				\end{matrix}\right.  
+				$$
+				
+Calcule la probabilidad de que el tiempo que  pase para que el radar detecte entre conductores sucesivos a  los que exceden los límites de velocidad sea menor a 12 minutos
+
+  + usando la función de distribución de probabilidad acumulada de $X$
+  + utilizando la función de densidad de probabilidad de $X$
+  + Represente las funciones $f(x)$ y $F(x)$ gráficamente
+  
+<br/><br/>
+
+ **3** Una variable aleatoria continua $X$, que puede tomar valores entre $x=2$ y $x=5$, tiene una función de densidad data por $f(x)=2(1+x)/27$.  
+ 
+ Calcule: 
+ 
+ + $P(X < 4)$
+ + $P(3 \leq X < 4)$
+ + Represente la función $f(x)$ gráficamente
+ 
+ <br/><br/>
+ 
+ **4** Suponga que cierto tipo de pequeñas empresas de procesamiento de datos están tan especializadas que algunas tienen dificultades para obtener utilidades durante su primer año de operación. La función de densidad de probabilidad está dada por:
+ 
+ $$f_{_{Y}}(y) = \left \{ 
+				\begin{matrix} 
+				ky^4 (1-y)^3 & \mbox{ , }	0 \leq y \leq 1\\ 
+				0  & \mbox{en otro caso }
+				\end{matrix}\right.  
+				$$
+ 
+ 
+ + ¿Cuál es el valor de $k$ que hace de la anterior una función de densidad de probabilidad válida?
+ + Calcule la probabilidad de que al menos 50% de las empresas tengan utilidades durante el primer año
+ + Calcule la probabilidad de que al menos el 80% de las empresas tengan utilidad durante el primer año
+  + Represente la función $f(x)$ gráficamente
+ 
+ <br/><br/>
+ 
+ **5** Calcule la distribución de probabilidad par el número de discos compactos de jazz, de una colección que consta de  5 de jazz, 2 de música clásica y 3 de rock, al seleccionar de esta colección 4 de manera aleatoria. Explique sus resultados utilizando una fórmula.
+ 
+<br/><br/>
+
+**6** De una caja que contiene 4 monedad de 10 centavos y 2 monedas de 5 centavos se seleccionan 3 monedas de manera aleatoria  y sin reemplazo. calcule la distribución de probabilidad para el total $T$ de las 3 monedas .  Exprese la distribución de probabilidad de forma gráfica 
+
+<br/><br/>
+
+**7** Con base en las pruebas extensas, el fabricante de una lavadora determinó que el tiempo $Y$ (en años) para que el electrodoméstico requiera una reparación mayor se obtiene mediante la siguiente función de densidad de probabilidad :
+
+ 
+  $$f_{_{Y}}(y) = \left \{ 
+				\begin{matrix} 
+				\dfrac{1}{4} exp\{-y/4\} & \mbox{ , }	y \geq 0\\ 
+				0  & \mbox{en otro caso }
+				\end{matrix}\right.  
+				$$
+ 
++ Los críticos considerarían que la lavadora es una ganga si no hay una probabilidad de que requiera una reparación mayor antes del sexto año. ¿Se puede considerar la lavadora como una ganga?
++ ¿Cuál es la probabilidad de que a lavadora requiera una reparación mayor durante el primer año?
++ Represente la función $f(x)$ gráficamente
+  
+
+<br/><br/>
+
+**8** Sea el número de llamadas telefónicas que recibe un conmutador durante un intervalo de 5 minutos una variable aleatoria $X$ con la siguiente función de distribución de probabilidad:
+
+$$f(x)= \dfrac{exp\{-2\}\hspace{.2cm} 2^x}{x!}\hspace{.3cm} \mbox{ , para }\hspace{.3cm} x = 01,2,3,4,5.... $$
+
++ Determine la probabilidad de que $X$ sea igual a $0, 1, 2, 3, 4, 5$ y $6$
++ Grafique la función de distribución de probabilidad para estos valores de $X$
++ Determine la función de distribución acumulada para estos valores de $X$.
++ Represente la función $f(x)$ gráficamente
+
+<br/><br/>
+
+**9** El congestionamiento de pasajeros es un problema de servicio en los aeropuertos, en los cuales se instalan trenes para reducir la congestión.  cuando se usa el tren el tiempo $X$, en minutos, que toma viajar desde la terminal principal hasta una  explanada específica tiene la siguiente función de densidad:
+
+
+ $$f_{_{X}}(x) = \left \{ 
+				\begin{matrix} 
+				\dfrac{1}{10} & \mbox{ , }	0 \leq y \leq 10\\ 
+				0  & \mbox{en otro caso }
+				\end{matrix}\right.  
+				$$
+
++ Determine que la función de  densidad de probabilidad anterior es válida
++ Calcule la probabilidad de que el tiempo que le toma a un pasajero viajar desde la terminal principal hasta la explanada no exceda los 7 minutos
++ Represente la función $f(x)$ gráficamente
+
+<br/>
+
+Problemas tomado de walpole (2006)
+
+<br/><br/>
+
+
+**10.** Suponga que $f(x)=exp\{-x\}$, para $0 \leq x \leq 1$, $0$ para cualquier otro caso.
+
+Determine :
+
++ $P(1 < X)$
++ $P(1 < X < 2.5$
++ $P(X = 3$
++ $P(X < 4)$
++ Los valores de $Me$, $Q_{1}$ y $Q_{3}$
+
+<br/><br/>
+
+**11.** Para una variable aleatoria con función de densidad : $f(x)= x/8$ para $3 < X < 5$. 
+
+Determine :
+
++ $P(X < 4)$
++ $P(X > 3.5)$
++ $P(4 < X < 5)$
++ $P((X < 3.5) \cup (X > 4.5))$
++ el valor de $Me$
+
+<br/><br/>
+
+**12.** Suponga que $X$ tiene una función de distribución acumulada :
+
+$$F_{_{X}}(x) = \left \{ 
+				\begin{matrix} 
+				 0    & \mbox{ , } x \leq 0\\ 
+				 2x   & \mbox{, } x < 0 < x 5  \\
+				 1    & \mbox{ , } 5 \leq 5
+				\end{matrix}\right.  
+				$$
+
+Determine:
+
++ $P(X < 4)$
++ $P(X = 1.5)$
++ $P(X > 3)$
++ $P(0.5 < X < 2.7$
+
+<br/><br/>
+
+**13.** Para la variable aleatoria que tiene la siguiente función de distribución de probabilidad :
+
+| $x$  | $-2$ | $-1$   | $0$    |  $1$   | $2$    |
+|:----:|:----:|:------:|:------:|:------:|:------:|
+|$f(x)$|$1/8$ |$2/8$   |$2/8$   |$2/8$   | $1/8$  |
+
+Determine:
+
++ $P(X \leq 2)$
++ $P(X > 3)$
++ $P(-1 \leq X \leq 1)$
++ $P(X < 3.5 ; X > 4.5)$
++ El valor de $Me$
+
+<br/><br/>
+
+**14.** Para una variable con función de distribución de probabilidad : 
+
+ $$f_{_{X}}(x) = \left \{ 
+				\begin{matrix} 
+				\dfrac{2x + 1}{25} & \mbox{ , }	x=0, 1, 2, 3, 4\\ 
+				0  & \mbox{en otro caso }
+				\end{matrix}\right.  
+				$$
+
+Determine:
+
++ $P(X =1)$
++ $P(X \leq 1)$
++ $P(2 \leq X < 4)$
+
+<br/><br/>
+
+**15.** Para una variable aleatoria con función de distribución de probabilidad: $f(x)= (3/4)(1/4)^{x}$, para $x=0, 1, 2, 3,...$
+
++ $P(X = 2)$
++ $P(X \leq 2)$
++ $P(2 \leq X$
+
+<br/><br/>
+
+**16.** Sponga que $X$ tiene una función de probabilidad acumulada: 
+
+$$F_{_{X}}(x) = \left \{ 
+				\begin{matrix} 
+				 0    & \mbox{ , } x \leq 0\\ 
+				 0.2 x   & \mbox{, } 0 < x < 5  \\
+				 1    & \mbox{ , } x \geq 5
+				\end{matrix}\right.  
+				$$
+
+Determine: 
+
++ $P(X < 2.8)$
 
 ```{r}
-ventas <-c(41.3, 55.1, 83.4, 61.6, 46.1, 67.4, 59.5, 77.4, 71.7, 61.6, 70.2,  64.1, 61.6, 56.6, 76.8, 65.4, 74.4, 66.4, 62.4, 66.1, 59.6, 45.6,  61.5, 59.7, 49.3, 95.2, 56.0, 75.0, 64.7, 59.3, 51.6, 44.1, 58.2, 52.5, 53.5, 56.0, 59.2, 53.7, 51.3, 59.6, 51.0, 48.7, 49.4, 94.9, 77.0, 56.2, 63.0, 62.6, 56.9, 48.5, 68.0, 50.3, 59.0, 67.6, 46.0, 57.9, 64.9, 61.0, 64.0, 66.2, 51.6, 67.0, 57.6, 68.2, 61.3, 53.7,  71.7, 59.6, 73.9, 66.1, 67.0, 55.8, 64.2, 60.3, 51.2, 68.2, 67.0,60.7, 50.5, 54.5, 54.3, 51.6, 77.1, 53.9, 62.0, 70.5, 61.1, 39.2,  61.3, 56.0, 68.9, 59.7, 53.7, 62.0, 58.4, 69.2, 67.4, 63.8, 55.1, 64.1)
+Fx=function(x){0.2*x }
+Fx(2.8)
+```
 
-costos =c(35.8, 31.2, 28.7, 39.7, 39.0, 34.8, 25.5, 30.9, 30.0, 37.0, 33.3, 40.9, 38.9, 34.0, 41.5, 30.5, 39.1, 36.0, 29.1, 34.2, 34.3, 45.7, 46.2, 34.1, 39.7, 42.6, 36.8, 39.3, 27.2, 40.7, 41.5, 28.4, 38.3, 31.9, 31.0, 33.9, 39.9, 35.4, 39.8, 44.3, 32.7, 33.3, 34.3, 33.3, 36.9, 42.5, 40.2, 28.3, 30.4, 44.6, 40.7, 26.6, 27.2, 34.7, 39.5, 36.8, 34.5, 42.4, 35.4, 25.6, 43.5, 28.1, 33.0, 29.7, 44.0, 49.3, 39.9, 30.7, 37.2, 36.8, 40.5, 37.4, 25.9, 43.0, 30.2, 34.6, 36.1, 39.9, 28.5, 37.7, 32.7, 40.4, 29.6, 34.0, 34.5, 34.4, 35.8, 28.2, 32.9, 38.6, 47.9, 29.2, 28.0, 31.7, 46.0, 37.8, 38.3, 30.7, 40.7, 39.6)
++ $P(X > 1.5)$
++ $P(X < -2)$
++ Determine $f_{_{X}}(x)$
 
-utilidad = c(22.6, 17.5, 19.5, 19.3, 23.0, 26.4, 23.4, 31.3, 30.9, 22.2, 26.1, 34.4, 29.0, 13.7, 21.4, 29.8, 22.3, 22.0, 20.4, 34.0, 19.9, 20.3, 27.0, 14.9, 36.9, 35.2, 29.0, 13.2, 30.6, 23.8, 31.2, 24.0, 33.3, 26.9,  5.9, 27.8, 31.9, 12.3, 14.8, 36.3, 24.4, 24.7, 28.6, 31.7, 26.9, 17.9, 20.8, 18.2, 33.9, 30.3, 29.3, 10.1, 34.6, 25.6, 27.7, 18.0, 31.6, 12.5, 29.2, 23.0, 24.4, 30.5, 15.3, 23.8, 34.7, 23.5, 24.4, 34.3, 23.6, 11.4, 10.0, 21.5, 31.3, 36.1, 29.7, 23.5, 26.8, 22.8, 29.9, 30.6, 20.3, 23.5, 30.6, 19.5, 32.5, 34.4, 18.9, 30.7, 27.9, 20.5, 25.7, 17.2, 36.0, 19.0, 18.4, 23.4, 30.8, 18.2, 16.8, 33.1)
 
-empleados = c(14, 18, 17, 14, 16, 22, 17, 11,  9,  2, 15, 24, 18, 26, 21, 16,  9, 24, 10, 16, 17, 10, 11, 16, 22, 16, 15, 11, 13, 25,  6, 20, 17,  7, 14, 22, 21, 15, 16,  6, 10, 16, 13, 25, 14, 23, 15, 16,  9, 26, 21, 15, 24, 14,  9,  3, 18, 15, 15, 12, 16, 18, 24, 16, 23, 17, 15, 20, 16, 13, 11, 13, 13,  9, 26, 11,  8, 17, 15, 16, 13, 23, 16, 20, 17, 15, 25, 14, 20, 20, 10, 14, 13, 20, 20, 17, 15, 15, 16, 13)
- 
-estrato =c(5, 3, 3, 3, 5, 4, 2, 4, 5, 2, 2, 3, 3, 4, 6, 6, 6, 3, 5, 5, 2, 5, 4, 5, 2, 2, 2, 5, 4, 4, 3, 4, 4, 4, 3, 6, 2, 4, 6, 5, 4, 5, 3, 3, 2, 3, 2, 2, 5, 2, 2, 6, 3, 6, 6, 4, 5, 6, 5, 3, 3, 2, 3, 3, 2, 4, 5, 5, 2, 5, 2, 2, 2, 6, 2, 5, 3, 6, 2, 4, 3, 2, 6, 2, 5, 5, 4, 3, 3, 4, 3, 6, 4, 5, 6, 5, 5, 6, 4, 4)
+<br/><br/>
 
-datosENE =data.frame(id=1:100,ventas,costos,utilidad,empleados, estrato)
-head(datosENE)
+**17.** El tiempo de reparación (en minutos) de una máquina fotocopiadora tiene una función de densidad:
 
+
+ $$f_{_{X}}(x) = \left \{ 
+				\begin{matrix} 
+				\dfrac{1}{22} exp\{-x/22\} & \mbox{ , }	x > 0\\ 
+				0  & \mbox{en otro caso }
+				\end{matrix}\right.  
+				$$
+
+Cuando el profesor de Probabilidad y Estadística se preparaba para imprimir el cuestionario del segundo examen parcial, fue enterado por la secretaria del departamento que la máquina fotocopiadora se había averiado y que el técnico había acabado de llegar en ese instante y empezado a repararla. El profesor debe contar con por lo menos 10 minutos extras - tiempo de fotocopiado de 35 exámenes, organizar sus respectivas hojas de respuestas, sumado tiempo de su desplazamiento hasta el salón de clase, arreglo de las mesas y entrega de los cuestionarios a los estudiantes. Al mirar el reloj, el profesor observa que faltan 20 minutos para la hora en que debe empezar el examen y decide esperar a que el técnico repare la fotocopiadora. ¿Es acertada o no la decisión que tomó el profesor? Justifique su respuesta.   
+
+
+<br/><br/>
+
+**18.** Suponga que $f(x)=exp\{-x\}$, para $0 \leq x \leq 1$, $0$ para cualquier otro caso.
+
+Determine :
+
++ $E[X]$
++ $V[X]$
+
+<br/><br/>
+
+**19.** Para una variable aleatoria con función de densidad : $f(x)= x/8$ para $3 < X < 5$. 
+
+Determine :
+
++ $\mu_{_{X}}$
++ $\sigma_{_{X}}$
+
+
+**20.** Suponga que $X$ tiene una función de distribución acumulada:
+
+$$F_{_{X}}(x) = \left \{ 
+				\begin{matrix} 
+				 0    & \mbox{ , } x \leq 0\\ 
+				 \dfrac{1}{5}x   & \mbox{, } x < 0 < x 5  \\
+				 1    & \mbox{ , } 5 \leq 5
+				\end{matrix}\right.  
+				$$
+
+Determine : 
+
++ $E[X]$
++ $V[X]$
++ Se podría obtener el coeficiente de variación?. En caso afirmativo, ¿que valor tendría?
+
+<br/><br/>
+
+**21.** Para la variable aleatoria que tiene la siguiente función de distribución de probabilidad :
+
+| $x$  | $-2$ | $-1$   | $0$    |  $1$   | $2$    |
+|:----:|:----:|:------:|:------:|:------:|:------:|
+|$f(x)$|$1/8$ |$2/8$   |$2/8$   |$2/8$   | $1/8$  |
+
+Determine : 
+
++ $E[X]$
++ $V[X]$
+
+<br/><br/>
+
+**22.** Para una variable con función de distribución de probabilidad : 
+
+ $$f_{_{X}}(x) = \left \{ 
+				\begin{matrix} 
+				\dfrac{2x + 1}{25} & \mbox{ , }	x=0, 1, 2, 3, 4\\ 
+				0  & \mbox{en otro caso }
+				\end{matrix}\right.  
+				$$
+
+Determine : 
+
++ $E[X]$
++ $V[X]$
++ Coeficiente de variación
+
+<br/><br/>
+
+**23.** Para una variable aleatoria con función de distribución de probabilidad: $f(x)= (3/4)(1/4)^{x}$, para $x=0, 1, 2, 3,... $
+
+Determine : 
+
++ $E[X]$
++ $V[X]$
+
+Problemas tomados de Mongomery(2003)
+
+<br/><br/>
+
+**24.** Una de las preocupaciones que tienen los padres hoy en dia está relacionada con el tiempo que pasan sus hijos usando celular. Un estudio determinó que el número de llamadas que un joven realiza durante un dia es una variable aleatoria ($X$) con función de distribución :
+
+ $$f_{_{X}}(x) = \left \{ 
+				\begin{matrix} 
+				\dfrac{8^{x}\hspace{.2cm} exp\{-8\}}{x!} & \mbox{ , para } \hspace{.3cm}	x = 0,1,2,3,4,5,.....\\ 
+				0  & \mbox{en otro caso }
+				\end{matrix}\right.  
+				$$
+
+El estudio afirma también que los jóvenes en promedio reciben al rededor de 12 llamadas por día, valor que es considerado muy alto, debido a que a esa edad por lo regular no se tienen actividades económicas que lo ameriten. También mencionan que debido a que se ha logrado identificar la función de distribución de probabilidad es fácil establecer que se trata de una variable con un comportamiento homogéneo. ¿Está de acuerdo con la información suministrada en el artículo? . Justifique su respuesta. 
+
+
+<br/><br/>
+
+
+```{r, echo=FALSE}
+library(downloadthis)
+download_link(
+  link = "https://github.com/dgonxalex80/probabilidad20212.io/blob/main/talleres/Solucion_Taller_303.pdf",
+  button_label = "Descarga: solución pdf ",
+  button_type = "primary",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
+
+
+<br/><br/>
+
+```{r, echo=FALSE}
+library(downloadthis)
+download_link(
+  link = "https://github.com/dgonxalex80/probabilidad20212.io/blob/main/talleres/Solucion_Taller_304.pdf",
+  button_label = "Descarga: solución pdf ",
+  button_type = "primary",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
 ```
 
 

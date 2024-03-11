@@ -12,9 +12,9 @@
 <meta name="author" content="dgonzalez" />
 
 
-<title> Recursos 1.1</title>
+<title> Monitoria 3</title>
 
-<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -353,7 +353,21 @@ $(document).ready(function () {
     </li>
     <li class="divider"></li>
     <li>
-      <a href="monitoria2.html">Monitoria 2</a>
+      <a href="monitoria2.html">Monitoria 2.1</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="guia202.html">Guía 2.2</a>
+    </li>
+    <li>
+      <a href="recurso202.html">Variable aleatória</a>
+    </li>
+    <li>
+      <a href="taller211.html">Taller 221</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="monitoria3.html">Monitoria 3</a>
     </li>
   </ul>
 </li>
@@ -438,9 +452,9 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore"><span style="color:#235784">
-<strong>Recursos 1.1</strong></span></h1>
-<h3 class="subtitle"><span style="color:#235784"><strong>Módulo 1-
-Unidad 1.1</strong></span></h3>
+<strong>Monitoria 3</strong></span></h1>
+<h3 class="subtitle"><span style="color:#235784"><strong>Módulo 2-
+Unidad 2.2</strong></span></h3>
 <h4 class="author">dgonzalez</h4>
 
 </div>
@@ -449,41 +463,423 @@ Unidad 1.1</strong></span></h3>
 <div id="problemas" class="section level1">
 <h1><span style="color:#ad6395"> <strong>Problemas</strong></span></h1>
 <p><br/><br/></p>
-<div id="p1" class="section level2">
-<h2><span style="color:#ad6395"> <strong>P1</strong></span></h2>
-<div id="empresa-de-ventas-al-por-menor" class="section level3">
-<h3><strong>Empresa de ventas al por menor</strong>:</h3>
-<p>El siguiente conjunto de datos incluye información sobre 100
-establecimientos sobre sus ventas mensuales, costos, utilidad, número de
-empleados y su estrato socio-económico del barrio donde se encuentran
-localizados. Realiza un <strong>análisis descriptivo</strong> de la
-información suministada, utilizando indicadores de centro, dispersión y
-forma y graficos que complementen el análisis, que permitan identificar
-tendencias en las ventas, costos y beneficios , si existe relación entre
-sus indicadores y su localización, de tal forma que permitan establecer
-un estado inicial de las empresas para este año.</p>
-<p><strong>Información</strong></p>
-<pre class="r"><code>ventas &lt;-c(41.3, 55.1, 83.4, 61.6, 46.1, 67.4, 59.5, 77.4, 71.7, 61.6, 70.2,  64.1, 61.6, 56.6, 76.8, 65.4, 74.4, 66.4, 62.4, 66.1, 59.6, 45.6,  61.5, 59.7, 49.3, 95.2, 56.0, 75.0, 64.7, 59.3, 51.6, 44.1, 58.2, 52.5, 53.5, 56.0, 59.2, 53.7, 51.3, 59.6, 51.0, 48.7, 49.4, 94.9, 77.0, 56.2, 63.0, 62.6, 56.9, 48.5, 68.0, 50.3, 59.0, 67.6, 46.0, 57.9, 64.9, 61.0, 64.0, 66.2, 51.6, 67.0, 57.6, 68.2, 61.3, 53.7,  71.7, 59.6, 73.9, 66.1, 67.0, 55.8, 64.2, 60.3, 51.2, 68.2, 67.0,60.7, 50.5, 54.5, 54.3, 51.6, 77.1, 53.9, 62.0, 70.5, 61.1, 39.2,  61.3, 56.0, 68.9, 59.7, 53.7, 62.0, 58.4, 69.2, 67.4, 63.8, 55.1, 64.1)
-
-costos =c(35.8, 31.2, 28.7, 39.7, 39.0, 34.8, 25.5, 30.9, 30.0, 37.0, 33.3, 40.9, 38.9, 34.0, 41.5, 30.5, 39.1, 36.0, 29.1, 34.2, 34.3, 45.7, 46.2, 34.1, 39.7, 42.6, 36.8, 39.3, 27.2, 40.7, 41.5, 28.4, 38.3, 31.9, 31.0, 33.9, 39.9, 35.4, 39.8, 44.3, 32.7, 33.3, 34.3, 33.3, 36.9, 42.5, 40.2, 28.3, 30.4, 44.6, 40.7, 26.6, 27.2, 34.7, 39.5, 36.8, 34.5, 42.4, 35.4, 25.6, 43.5, 28.1, 33.0, 29.7, 44.0, 49.3, 39.9, 30.7, 37.2, 36.8, 40.5, 37.4, 25.9, 43.0, 30.2, 34.6, 36.1, 39.9, 28.5, 37.7, 32.7, 40.4, 29.6, 34.0, 34.5, 34.4, 35.8, 28.2, 32.9, 38.6, 47.9, 29.2, 28.0, 31.7, 46.0, 37.8, 38.3, 30.7, 40.7, 39.6)
-
-utilidad = c(22.6, 17.5, 19.5, 19.3, 23.0, 26.4, 23.4, 31.3, 30.9, 22.2, 26.1, 34.4, 29.0, 13.7, 21.4, 29.8, 22.3, 22.0, 20.4, 34.0, 19.9, 20.3, 27.0, 14.9, 36.9, 35.2, 29.0, 13.2, 30.6, 23.8, 31.2, 24.0, 33.3, 26.9,  5.9, 27.8, 31.9, 12.3, 14.8, 36.3, 24.4, 24.7, 28.6, 31.7, 26.9, 17.9, 20.8, 18.2, 33.9, 30.3, 29.3, 10.1, 34.6, 25.6, 27.7, 18.0, 31.6, 12.5, 29.2, 23.0, 24.4, 30.5, 15.3, 23.8, 34.7, 23.5, 24.4, 34.3, 23.6, 11.4, 10.0, 21.5, 31.3, 36.1, 29.7, 23.5, 26.8, 22.8, 29.9, 30.6, 20.3, 23.5, 30.6, 19.5, 32.5, 34.4, 18.9, 30.7, 27.9, 20.5, 25.7, 17.2, 36.0, 19.0, 18.4, 23.4, 30.8, 18.2, 16.8, 33.1)
-
-empleados = c(14, 18, 17, 14, 16, 22, 17, 11,  9,  2, 15, 24, 18, 26, 21, 16,  9, 24, 10, 16, 17, 10, 11, 16, 22, 16, 15, 11, 13, 25,  6, 20, 17,  7, 14, 22, 21, 15, 16,  6, 10, 16, 13, 25, 14, 23, 15, 16,  9, 26, 21, 15, 24, 14,  9,  3, 18, 15, 15, 12, 16, 18, 24, 16, 23, 17, 15, 20, 16, 13, 11, 13, 13,  9, 26, 11,  8, 17, 15, 16, 13, 23, 16, 20, 17, 15, 25, 14, 20, 20, 10, 14, 13, 20, 20, 17, 15, 15, 16, 13)
- 
-estrato =c(5, 3, 3, 3, 5, 4, 2, 4, 5, 2, 2, 3, 3, 4, 6, 6, 6, 3, 5, 5, 2, 5, 4, 5, 2, 2, 2, 5, 4, 4, 3, 4, 4, 4, 3, 6, 2, 4, 6, 5, 4, 5, 3, 3, 2, 3, 2, 2, 5, 2, 2, 6, 3, 6, 6, 4, 5, 6, 5, 3, 3, 2, 3, 3, 2, 4, 5, 5, 2, 5, 2, 2, 2, 6, 2, 5, 3, 6, 2, 4, 3, 2, 6, 2, 5, 5, 4, 3, 3, 4, 3, 6, 4, 5, 6, 5, 5, 6, 4, 4)
-
-datosENE =data.frame(id=1:100,ventas,costos,utilidad,empleados, estrato)
-head(datosENE)</code></pre>
-<pre><code>  id ventas costos utilidad empleados estrato
-1  1   41.3   35.8     22.6        14       5
-2  2   55.1   31.2     17.5        18       3
-3  3   83.4   28.7     19.5        17       3
-4  4   61.6   39.7     19.3        14       3
-5  5   46.1   39.0     23.0        16       5
-6  6   67.4   34.8     26.4        22       4</code></pre>
-</div>
-</div>
+<p><strong>1</strong> Clasifique las siguientes variables aleatorias
+como discretas o continuas:</p>
+<ul>
+<li><span class="math inline">\(X\)</span> : el número de accidentes
+automovilísticos que ocurren al año en una ciudad determinada</li>
+<li><span class="math inline">\(Y\)</span> : el tiempo para jugar 18
+hoyos de golf</li>
+<li><span class="math inline">\(M\)</span> : la cantidad de leche que
+una vaca determinada produce anualmente</li>
+<li><span class="math inline">\(N\)</span> : el número de huevos que una
+gallina pone mensualmente</li>
+<li><span class="math inline">\(P\)</span> : el número de permisos para
+construcción que los funcionarios de una ciudad emiten cada mes</li>
+<li><span class="math inline">\(Q\)</span> : el peso del grano producido
+por acre</li>
+</ul>
+<p><br/><br/></p>
+<p><strong>2</strong> El tiempo que pasa, en horas, para que un radar
+detecte entre conductores sucesivos a los que exceden los límites de
+velocidad es una variable aleatoria continua con una función de
+distribución acumulada:</p>
+<p><span class="math display">\[F_{_{X}}(x) = \left \{
+                \begin{matrix}
+                 0  &amp; \mbox{ , }    x \leq 0\\
+                 1-exp\{-8x \}  &amp; x \geq 0
+                \end{matrix}\right.  
+                \]</span></p>
+<p>Calcule la probabilidad de que el tiempo que pase para que el radar
+detecte entre conductores sucesivos a los que exceden los límites de
+velocidad sea menor a 12 minutos</p>
+<ul>
+<li>usando la función de distribución de probabilidad acumulada de <span
+class="math inline">\(X\)</span></li>
+<li>utilizando la función de densidad de probabilidad de <span
+class="math inline">\(X\)</span></li>
+<li>Represente las funciones <span class="math inline">\(f(x)\)</span> y
+<span class="math inline">\(F(x)\)</span> gráficamente</li>
+</ul>
+<p><br/><br/></p>
+<p><strong>3</strong> Una variable aleatoria continua <span
+class="math inline">\(X\)</span>, que puede tomar valores entre <span
+class="math inline">\(x=2\)</span> y <span
+class="math inline">\(x=5\)</span>, tiene una función de densidad data
+por <span class="math inline">\(f(x)=2(1+x)/27\)</span>.</p>
+<p>Calcule:</p>
+<ul>
+<li><span class="math inline">\(P(X &lt; 4)\)</span></li>
+<li><span class="math inline">\(P(3 \leq X &lt; 4)\)</span></li>
+<li>Represente la función <span class="math inline">\(f(x)\)</span>
+gráficamente</li>
+</ul>
+<p><br/><br/></p>
+<p><strong>4</strong> Suponga que cierto tipo de pequeñas empresas de
+procesamiento de datos están tan especializadas que algunas tienen
+dificultades para obtener utilidades durante su primer año de operación.
+La función de densidad de probabilidad está dada por:</p>
+<p><span class="math display">\[f_{_{Y}}(y) = \left \{
+                \begin{matrix}
+                ky^4 (1-y)^3 &amp; \mbox{ , }   0 \leq y \leq 1\\
+                0  &amp; \mbox{en otro caso }
+                \end{matrix}\right.  
+                \]</span></p>
+<ul>
+<li>¿Cuál es el valor de <span class="math inline">\(k\)</span> que hace
+de la anterior una función de densidad de probabilidad válida?</li>
+<li>Calcule la probabilidad de que al menos 50% de las empresas tengan
+utilidades durante el primer año</li>
+<li>Calcule la probabilidad de que al menos el 80% de las empresas
+tengan utilidad durante el primer año</li>
+<li>Represente la función <span class="math inline">\(f(x)\)</span>
+gráficamente</li>
+</ul>
+<p><br/><br/></p>
+<p><strong>5</strong> Calcule la distribución de probabilidad par el
+número de discos compactos de jazz, de una colección que consta de 5 de
+jazz, 2 de música clásica y 3 de rock, al seleccionar de esta colección
+4 de manera aleatoria. Explique sus resultados utilizando una
+fórmula.</p>
+<p><br/><br/></p>
+<p><strong>6</strong> De una caja que contiene 4 monedad de 10 centavos
+y 2 monedas de 5 centavos se seleccionan 3 monedas de manera aleatoria y
+sin reemplazo. calcule la distribución de probabilidad para el total
+<span class="math inline">\(T\)</span> de las 3 monedas . Exprese la
+distribución de probabilidad de forma gráfica</p>
+<p><br/><br/></p>
+<p><strong>7</strong> Con base en las pruebas extensas, el fabricante de
+una lavadora determinó que el tiempo <span
+class="math inline">\(Y\)</span> (en años) para que el electrodoméstico
+requiera una reparación mayor se obtiene mediante la siguiente función
+de densidad de probabilidad :</p>
+<p><span class="math display">\[f_{_{Y}}(y) = \left \{
+                \begin{matrix}
+                \dfrac{1}{4} exp\{-y/4\} &amp; \mbox{ , }   y \geq 0\\
+                0  &amp; \mbox{en otro caso }
+                \end{matrix}\right.  
+                \]</span></p>
+<ul>
+<li>Los críticos considerarían que la lavadora es una ganga si no hay
+una probabilidad de que requiera una reparación mayor antes del sexto
+año. ¿Se puede considerar la lavadora como una ganga?</li>
+<li>¿Cuál es la probabilidad de que a lavadora requiera una reparación
+mayor durante el primer año?</li>
+<li>Represente la función <span class="math inline">\(f(x)\)</span>
+gráficamente</li>
+</ul>
+<p><br/><br/></p>
+<p><strong>8</strong> Sea el número de llamadas telefónicas que recibe
+un conmutador durante un intervalo de 5 minutos una variable aleatoria
+<span class="math inline">\(X\)</span> con la siguiente función de
+distribución de probabilidad:</p>
+<p><span class="math display">\[f(x)= \dfrac{exp\{-2\}\hspace{.2cm}
+2^x}{x!}\hspace{.3cm} \mbox{ , para }\hspace{.3cm} x = 01,2,3,4,5....
+\]</span></p>
+<ul>
+<li>Determine la probabilidad de que <span
+class="math inline">\(X\)</span> sea igual a <span
+class="math inline">\(0, 1, 2, 3, 4, 5\)</span> y <span
+class="math inline">\(6\)</span></li>
+<li>Grafique la función de distribución de probabilidad para estos
+valores de <span class="math inline">\(X\)</span></li>
+<li>Determine la función de distribución acumulada para estos valores de
+<span class="math inline">\(X\)</span>.</li>
+<li>Represente la función <span class="math inline">\(f(x)\)</span>
+gráficamente</li>
+</ul>
+<p><br/><br/></p>
+<p><strong>9</strong> El congestionamiento de pasajeros es un problema
+de servicio en los aeropuertos, en los cuales se instalan trenes para
+reducir la congestión. cuando se usa el tren el tiempo <span
+class="math inline">\(X\)</span>, en minutos, que toma viajar desde la
+terminal principal hasta una explanada específica tiene la siguiente
+función de densidad:</p>
+<p><span class="math display">\[f_{_{X}}(x) = \left \{
+                \begin{matrix}
+                \dfrac{1}{10} &amp; \mbox{ , }  0 \leq y \leq 10\\
+                0  &amp; \mbox{en otro caso }
+                \end{matrix}\right.  
+                \]</span></p>
+<ul>
+<li>Determine que la función de densidad de probabilidad anterior es
+válida</li>
+<li>Calcule la probabilidad de que el tiempo que le toma a un pasajero
+viajar desde la terminal principal hasta la explanada no exceda los 7
+minutos</li>
+<li>Represente la función <span class="math inline">\(f(x)\)</span>
+gráficamente</li>
+</ul>
+<p><br/></p>
+<p>Problemas tomado de walpole (2006)</p>
+<p><br/><br/></p>
+<p><strong>10.</strong> Suponga que <span
+class="math inline">\(f(x)=exp\{-x\}\)</span>, para <span
+class="math inline">\(0 \leq x \leq 1\)</span>, <span
+class="math inline">\(0\)</span> para cualquier otro caso.</p>
+<p>Determine :</p>
+<ul>
+<li><span class="math inline">\(P(1 &lt; X)\)</span></li>
+<li><span class="math inline">\(P(1 &lt; X &lt; 2.5\)</span></li>
+<li><span class="math inline">\(P(X = 3\)</span></li>
+<li><span class="math inline">\(P(X &lt; 4)\)</span></li>
+<li>Los valores de <span class="math inline">\(Me\)</span>, <span
+class="math inline">\(Q_{1}\)</span> y <span
+class="math inline">\(Q_{3}\)</span></li>
+</ul>
+<p><br/><br/></p>
+<p><strong>11.</strong> Para una variable aleatoria con función de
+densidad : <span class="math inline">\(f(x)= x/8\)</span> para <span
+class="math inline">\(3 &lt; X &lt; 5\)</span>.</p>
+<p>Determine :</p>
+<ul>
+<li><span class="math inline">\(P(X &lt; 4)\)</span></li>
+<li><span class="math inline">\(P(X &gt; 3.5)\)</span></li>
+<li><span class="math inline">\(P(4 &lt; X &lt; 5)\)</span></li>
+<li><span class="math inline">\(P((X &lt; 3.5) \cup (X &gt;
+4.5))\)</span></li>
+<li>el valor de <span class="math inline">\(Me\)</span></li>
+</ul>
+<p><br/><br/></p>
+<p><strong>12.</strong> Suponga que <span
+class="math inline">\(X\)</span> tiene una función de distribución
+acumulada :</p>
+<p><span class="math display">\[F_{_{X}}(x) = \left \{
+                \begin{matrix}
+                 0    &amp; \mbox{ , } x \leq 0\\
+                 2x   &amp; \mbox{, } x &lt; 0 &lt; x 5  \\
+                 1    &amp; \mbox{ , } 5 \leq 5
+                \end{matrix}\right.  
+                \]</span></p>
+<p>Determine:</p>
+<ul>
+<li><span class="math inline">\(P(X &lt; 4)\)</span></li>
+<li><span class="math inline">\(P(X = 1.5)\)</span></li>
+<li><span class="math inline">\(P(X &gt; 3)\)</span></li>
+<li><span class="math inline">\(P(0.5 &lt; X &lt; 2.7\)</span></li>
+</ul>
+<p><br/><br/></p>
+<p><strong>13.</strong> Para la variable aleatoria que tiene la
+siguiente función de distribución de probabilidad :</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math inline">\(x\)</span></th>
+<th align="center"><span class="math inline">\(-2\)</span></th>
+<th align="center"><span class="math inline">\(-1\)</span></th>
+<th align="center"><span class="math inline">\(0\)</span></th>
+<th align="center"><span class="math inline">\(1\)</span></th>
+<th align="center"><span class="math inline">\(2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(f(x)\)</span></td>
+<td align="center"><span class="math inline">\(1/8\)</span></td>
+<td align="center"><span class="math inline">\(2/8\)</span></td>
+<td align="center"><span class="math inline">\(2/8\)</span></td>
+<td align="center"><span class="math inline">\(2/8\)</span></td>
+<td align="center"><span class="math inline">\(1/8\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Determine:</p>
+<ul>
+<li><span class="math inline">\(P(X \leq 2)\)</span></li>
+<li><span class="math inline">\(P(X &gt; 3)\)</span></li>
+<li><span class="math inline">\(P(-1 \leq X \leq 1)\)</span></li>
+<li><span class="math inline">\(P(X &lt; 3.5 ; X &gt; 4.5)\)</span></li>
+<li>El valor de <span class="math inline">\(Me\)</span></li>
+</ul>
+<p><br/><br/></p>
+<p><strong>14.</strong> Para una variable con función de distribución de
+probabilidad :</p>
+<p><span class="math display">\[f_{_{X}}(x) = \left \{
+                \begin{matrix}
+                \dfrac{2x + 1}{25} &amp; \mbox{ , } x=0, 1, 2, 3, 4\\
+                0  &amp; \mbox{en otro caso }
+                \end{matrix}\right.  
+                \]</span></p>
+<p>Determine:</p>
+<ul>
+<li><span class="math inline">\(P(X =1)\)</span></li>
+<li><span class="math inline">\(P(X \leq 1)\)</span></li>
+<li><span class="math inline">\(P(2 \leq X &lt; 4)\)</span></li>
+</ul>
+<p><br/><br/></p>
+<p><strong>15.</strong> Para una variable aleatoria con función de
+distribución de probabilidad: <span class="math inline">\(f(x)=
+(3/4)(1/4)^{x}\)</span>, para <span class="math inline">\(x=0, 1, 2,
+3,...\)</span></p>
+<ul>
+<li><span class="math inline">\(P(X = 2)\)</span></li>
+<li><span class="math inline">\(P(X \leq 2)\)</span></li>
+<li><span class="math inline">\(P(2 \leq X\)</span></li>
+</ul>
+<p><br/><br/></p>
+<p><strong>16.</strong> Sponga que <span
+class="math inline">\(X\)</span> tiene una función de probabilidad
+acumulada:</p>
+<p><span class="math display">\[F_{_{X}}(x) = \left \{
+                \begin{matrix}
+                 0    &amp; \mbox{ , } x \leq 0\\
+                 0.2 x   &amp; \mbox{, } 0 &lt; x &lt; 5  \\
+                 1    &amp; \mbox{ , } x \geq 5
+                \end{matrix}\right.  
+                \]</span></p>
+<p>Determine:</p>
+<ul>
+<li><span class="math inline">\(P(X &lt; 2.8)\)</span></li>
+</ul>
+<pre class="r"><code>Fx=function(x){0.2*x }
+Fx(2.8)</code></pre>
+<pre><code>[1] 0.56</code></pre>
+<ul>
+<li><span class="math inline">\(P(X &gt; 1.5)\)</span></li>
+<li><span class="math inline">\(P(X &lt; -2)\)</span></li>
+<li>Determine <span class="math inline">\(f_{_{X}}(x)\)</span></li>
+</ul>
+<p><br/><br/></p>
+<p><strong>17.</strong> El tiempo de reparación (en minutos) de una
+máquina fotocopiadora tiene una función de densidad:</p>
+<p><span class="math display">\[f_{_{X}}(x) = \left \{
+                \begin{matrix}
+                \dfrac{1}{22} exp\{-x/22\} &amp; \mbox{ , } x &gt; 0\\
+                0  &amp; \mbox{en otro caso }
+                \end{matrix}\right.  
+                \]</span></p>
+<p>Cuando el profesor de Probabilidad y Estadística se preparaba para
+imprimir el cuestionario del segundo examen parcial, fue enterado por la
+secretaria del departamento que la máquina fotocopiadora se había
+averiado y que el técnico había acabado de llegar en ese instante y
+empezado a repararla. El profesor debe contar con por lo menos 10
+minutos extras - tiempo de fotocopiado de 35 exámenes, organizar sus
+respectivas hojas de respuestas, sumado tiempo de su desplazamiento
+hasta el salón de clase, arreglo de las mesas y entrega de los
+cuestionarios a los estudiantes. Al mirar el reloj, el profesor observa
+que faltan 20 minutos para la hora en que debe empezar el examen y
+decide esperar a que el técnico repare la fotocopiadora. ¿Es acertada o
+no la decisión que tomó el profesor? Justifique su respuesta.</p>
+<p><br/><br/></p>
+<p><strong>18.</strong> Suponga que <span
+class="math inline">\(f(x)=exp\{-x\}\)</span>, para <span
+class="math inline">\(0 \leq x \leq 1\)</span>, <span
+class="math inline">\(0\)</span> para cualquier otro caso.</p>
+<p>Determine :</p>
+<ul>
+<li><span class="math inline">\(E[X]\)</span></li>
+<li><span class="math inline">\(V[X]\)</span></li>
+</ul>
+<p><br/><br/></p>
+<p><strong>19.</strong> Para una variable aleatoria con función de
+densidad : <span class="math inline">\(f(x)= x/8\)</span> para <span
+class="math inline">\(3 &lt; X &lt; 5\)</span>.</p>
+<p>Determine :</p>
+<ul>
+<li><span class="math inline">\(\mu_{_{X}}\)</span></li>
+<li><span class="math inline">\(\sigma_{_{X}}\)</span></li>
+</ul>
+<p><strong>20.</strong> Suponga que <span
+class="math inline">\(X\)</span> tiene una función de distribución
+acumulada:</p>
+<p><span class="math display">\[F_{_{X}}(x) = \left \{
+                \begin{matrix}
+                 0    &amp; \mbox{ , } x \leq 0\\
+                 \dfrac{1}{5}x   &amp; \mbox{, } x &lt; 0 &lt; x 5  \\
+                 1    &amp; \mbox{ , } 5 \leq 5
+                \end{matrix}\right.  
+                \]</span></p>
+<p>Determine :</p>
+<ul>
+<li><span class="math inline">\(E[X]\)</span></li>
+<li><span class="math inline">\(V[X]\)</span></li>
+<li>Se podría obtener el coeficiente de variación?. En caso afirmativo,
+¿que valor tendría?</li>
+</ul>
+<p><br/><br/></p>
+<p><strong>21.</strong> Para la variable aleatoria que tiene la
+siguiente función de distribución de probabilidad :</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math inline">\(x\)</span></th>
+<th align="center"><span class="math inline">\(-2\)</span></th>
+<th align="center"><span class="math inline">\(-1\)</span></th>
+<th align="center"><span class="math inline">\(0\)</span></th>
+<th align="center"><span class="math inline">\(1\)</span></th>
+<th align="center"><span class="math inline">\(2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(f(x)\)</span></td>
+<td align="center"><span class="math inline">\(1/8\)</span></td>
+<td align="center"><span class="math inline">\(2/8\)</span></td>
+<td align="center"><span class="math inline">\(2/8\)</span></td>
+<td align="center"><span class="math inline">\(2/8\)</span></td>
+<td align="center"><span class="math inline">\(1/8\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Determine :</p>
+<ul>
+<li><span class="math inline">\(E[X]\)</span></li>
+<li><span class="math inline">\(V[X]\)</span></li>
+</ul>
+<p><br/><br/></p>
+<p><strong>22.</strong> Para una variable con función de distribución de
+probabilidad :</p>
+<p><span class="math display">\[f_{_{X}}(x) = \left \{
+                \begin{matrix}
+                \dfrac{2x + 1}{25} &amp; \mbox{ , } x=0, 1, 2, 3, 4\\
+                0  &amp; \mbox{en otro caso }
+                \end{matrix}\right.  
+                \]</span></p>
+<p>Determine :</p>
+<ul>
+<li><span class="math inline">\(E[X]\)</span></li>
+<li><span class="math inline">\(V[X]\)</span></li>
+<li>Coeficiente de variación</li>
+</ul>
+<p><br/><br/></p>
+<p><strong>23.</strong> Para una variable aleatoria con función de
+distribución de probabilidad: <span class="math inline">\(f(x)=
+(3/4)(1/4)^{x}\)</span>, para $x=0, 1, 2, 3,… $</p>
+<p>Determine :</p>
+<ul>
+<li><span class="math inline">\(E[X]\)</span></li>
+<li><span class="math inline">\(V[X]\)</span></li>
+</ul>
+<p>Problemas tomados de Mongomery(2003)</p>
+<p><br/><br/></p>
+<p><strong>24.</strong> Una de las preocupaciones que tienen los padres
+hoy en dia está relacionada con el tiempo que pasan sus hijos usando
+celular. Un estudio determinó que el número de llamadas que un joven
+realiza durante un dia es una variable aleatoria (<span
+class="math inline">\(X\)</span>) con función de distribución :</p>
+<p><span class="math display">\[f_{_{X}}(x) = \left \{
+                \begin{matrix}
+                \dfrac{8^{x}\hspace{.2cm} exp\{-8\}}{x!} &amp; \mbox{ ,
+para } \hspace{.3cm}    x = 0,1,2,3,4,5,.....\\
+                0  &amp; \mbox{en otro caso }
+                \end{matrix}\right.  
+                \]</span></p>
+<p>El estudio afirma también que los jóvenes en promedio reciben al
+rededor de 12 llamadas por día, valor que es considerado muy alto,
+debido a que a esa edad por lo regular no se tienen actividades
+económicas que lo ameriten. También mencionan que debido a que se ha
+logrado identificar la función de distribución de probabilidad es fácil
+establecer que se trata de una variable con un comportamiento homogéneo.
+¿Está de acuerdo con la información suministrada en el artículo? .
+Justifique su respuesta.</p>
+<p><br/><br/></p>
+<a href="https://github.com/dgonxalex80/probabilidad20212.io/blob/main/talleres/Solucion_Taller_303.pdf">
+<button class="btn btn-primary"><i class="fa fa-save"></i> Descarga: solución pdf </button>
+</a>
+<p><br/><br/></p>
+<a href="https://github.com/dgonxalex80/probabilidad20212.io/blob/main/talleres/Solucion_Taller_304.pdf">
+<button class="btn btn-primary"><i class="fa fa-save"></i> Descarga: solución pdf </button>
+</a>
 </div>
 
 
