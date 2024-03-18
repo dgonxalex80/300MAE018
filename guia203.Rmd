@@ -1,0 +1,122 @@
+---
+title: <span style="color:#FFFFFF"> **Guia 2.2**</span>  
+subtitle: <span style="color:#FFFFFF">**Módulo 2- Unidad 2.2**</span> 
+output:
+  html_document:
+    toc: no
+    toc_depth: 2
+    toc_float: yes
+    code_folding: hide
+    css: style.css
+---    
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, comment = NA)
+library(psych)
+library(summarytools)
+
+# install.packages("devtools")
+#devtools::install_github("dgonxalex80/paqueteDEG")
+#library(paqueteDEG)
+
+# colores
+c0= "#F7AA00"
+c1= "#235784"
+c2= "#40A8C4"
+c3= "#EEF6F7"
+
+c4= "#11224D"
+c5= "#5B84C4"
+
+# install.packages('gtools')
+# install.packages("TeachingSampling")
+
+#load library
+#library(gtools)
+#library(TeachingSampling)
+#library(readr)
+#base_muestreo <- read_delim("data/base_muestreo.csv", 
+#    delim = ";", escape_double = FALSE, col_types = cols(ID = col_integer()), 
+#    trim_ws = TRUE)
+
+
+
+```
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("img/banner_guia.png")
+```
+
+
+<br/><br/>
+
+## **Introducción**
+
+En las unidad anterior hemos recorrido los principales conceptos relacionados caracterización de las variables aleatorias tanto discretas como continuas.  Características como:  $f(x)$, $F(x)$, $E[X]$, $V[X]$, en el caso univariado. 
+
+En esta unidad se presentan los principales modelos estadísticos tanto para variables discretas como continuas y sus aplicaciones. En el caso de los modelos discretas se deberá identificar el modelo a través de  las características del experimento que la genera la variable. Para el caso continuo los ejemplos indicaran el modelo correspondiente que genera la variable.
+
+
+<br/><br/>
+
+## **Objetivos de la unidad**
+
+Al finalizar la unidad los estudiantes estarán  en  capacidad de  IDENTIFICAR, CALCULAR y APLICAR los diferentes modelos de probabilidad para la solución de problemas en contexto  y su representación a través de la simulación.
+
+<br/><br/>
+
+## **Duración**
+
+La presente  unidad será desarrollada durante la comprendida entre 18 al 24 de marzo.        
+Ademas del material suministrado  contaran con el acompañamiento del profesor en dos sesiones y de un monitor. Los entegables  de esta unidad podrán enviarse a través de la plataforma Brightspace hasta el  6 de abril.
+
+Para alcanzar los objetivos planteados se propone realizar las siguientes actividades
+
+<br/><br/>
+
+## **Cronograma de trabajo**
+
+
+|Actividad        | Descripción                            | 
+|:----------------|:---------------------------------------|
+|**Video **       | Construir un video  del modelo asignado por el profesor y subirlo a youtube. En cada caso el video debe contener: Origen del modelo, caracteristicas principales ($f(x)$, $F(x)$, $E[X]$, $V[X]$), funciones en R, gráficos de las funciones, un ejemplo en contexto con su respectiva solución en R, áreas de conocimiento en los que se emplea el modelo y referencias bibliograficas |
+|Fechas           | 6 de abril                             |            
+|Hora             | 23:59                                  |
+
+
+<br/><br/>
+
+|                |                                                                         | 
+|:---------------|:------------------------------------------------------------------------|
+|**Taller 231**  | Desarrollar el taller y publiclar su solucion en **RPub**. Su enlace copiado en la plataforma **Bs**                                    |
+|               | Trabajo individual                       |
+|Fechas           | 6 de abril                             |            
+|Hora             | 23:59                                  |
+
+<br/><br/>
+
+## **Criterios de evaluación**
+
+<br/><br/>
+
+
+* Reconoce los modelos especiales asociados a contextos  y problemas reales
+
+* Utiliza las herramientas estadística apropiadas en el calculo de probabilidades en la solución de problemas en contexto
+
+* Utiliza herramientas computacionales que le permita  la solución de problemas en contexto a través de la simulación
+	
+<br/><br/>
+
+## **Entregables** 
+
+<br/><br/>
+
+|Actividad      | Descripción                      | 
+|:--------------|:---------------------------------|
+| video         | enlace de video                  |
+| Taller 231    | enlace de Rmd publicado en **RPub** con el desarrollo del problema asignado |
+
+
+<br/><br/><br/><br/>
+
