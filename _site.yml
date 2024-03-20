@@ -75,18 +75,13 @@ navbar:
         - text: "---------"              
         - text: "Guía 2.3"
           href: guia203.html  
-        - text: "Variable aleatória"
+        - text: "Modelos especiales"
           href: recurso203.html  
         - text: "Taller 231"
           href: taller231.html   
         - text: "---------"            
         - text: "Monitoria 4"
-          href: monitoria3.html            
-          
-          
-          
-          
-          
+          href: monitoria4.html            
     - text: "Módulo 3"
       menu:
         - text: "Módulo 3"
