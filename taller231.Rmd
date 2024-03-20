@@ -40,7 +40,7 @@ knitr::include_graphics("img/problema1.png")
 Para una variable con distribución bonomial $X \sim binom(x, n=10, p=0.40$, Determinar utilizando la función de distribución de probabilidad asociada a $X$ las siguientes probabilidades: .
 
 * (a.) $P(X = 5)$
-* (b.) $P(X \leq 2) $
+* (b.) $P(X \leq 2)$
 * (c.) $P(3 \leq X \leq 5 )$
 * (d.) $P(X \geq 8)$
 * (e.) Coonstruya una gráfica para $f(x)$
