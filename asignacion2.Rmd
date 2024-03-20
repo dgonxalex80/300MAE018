@@ -1,0 +1,38 @@
+---
+title: <span style="color:#235784"> **Actividad video**</span>  
+author: "dgonzalez "
+subtitle: <span style="color:#235784">**Módulo 2**</span> 
+output:
+html_document:
+toc: no
+toc_depth: 2
+toc_float: yes
+code_folding: hide
+css: style.css
+---   
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<br/><br/>
+
+# Asignación de modelos para la construcción de video
+|id | nombre                           | modelo        |
+|:--|:---------------------------------|:--------------|
+|1  | Bedoya Serna,Laura Marcela       | binomial      |
+|2  | Castañeda Mayor,Santiago Andres  | Poisson       |
+|3  | Coral Munares,Ashley Alejandra   | uniforme      |
+|4  | Esguerra Valencia,Daniel Andres  | normal        |
+|5  | Giraldo Segura,Laura             | exponencial   |
+|6  | Gomez Galeano,Darwin Daniel      | binomial      |
+|7  | Gutierrez Medina,Jose Miguel     | Poisson       |
+|8  | Henao Navia,Leydi Diana          | uniforme      |
+|9  | Mejia Jimenez,Marcello           | normal        |
+|10 | Montoya Ledesma,Samuel           | exponencial   |
+|11 | Palau Dosman,Isabel Cristina     | binomial      |
+|12 | Penenori Sistiva,Gabriela        | Poisson       |
+|13 | Rodriguez  Guerrero,Raul Esteban | uniforme      |
+|14 | Solarte Ballen,Nicolas Ernesto   | normal        |
+|15 | Trujillo Giraldo,Juan Andres     | exponencial   |
+|16 | Verhelst Chaverra,Rudolph        | normal        |

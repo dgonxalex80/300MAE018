@@ -12,7 +12,7 @@
 <meta name="author" content="dgonzalez" />
 
 
-<title> Conjuntos</title>
+<title> Actividad video</title>
 
 <script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -31,7 +31,6 @@
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/navigation-1.1/codefolding.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
@@ -221,10 +220,79 @@ $(document).ready(function () {
 </style>
 
 <!-- code folding -->
-<style type="text/css">
-.code-folding-btn { margin-bottom: 4px; }
-</style>
 
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+#TOC {
+  display: none !important;
+}
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
 
 
 
@@ -234,6 +302,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -458,141 +536,118 @@ $(document).ready(function () {
 
 <div id="header">
 
-<div class="btn-group pull-right float-right">
-<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
-<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
-<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
-<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
-</ul>
-</div>
-
 
 
 <h1 class="title toc-ignore"><span style="color:#235784">
-<strong>Conjuntos</strong></span></h1>
+<strong>Actividad video</strong></span></h1>
 <h3 class="subtitle"><span style="color:#235784"><strong>Módulo
-0</strong></span></h3>
+2</strong></span></h3>
 <h4 class="author">dgonzalez</h4>
 
 </div>
 
 
 <p><br/><br/></p>
-<div id="introducción" class="section level1">
-<h1><strong>Introducción</strong></h1>
-<p>A continuación se relacionan las principales características de los
-conjuntos y sus principales relaciones. Estos conceptos serán importante
-en el momento de abordar los conceptos básicos de probabilidad que serán
-expuestos en el Modulo 2.</p>
-<p>En pesaremos con su definición</p>
-<p><br/><br/></p>
-</div>
-<div id="conjunto" class="section level1 content-box-blue">
-<h1><strong>Conjunto</strong></h1>
-<p>Un conjunto es una colección de objetos que se denota con una letra
-mayúscula (comúnmente las primeras letras del alfabeto A,B,C..) .</p>
-</div>
-<p><br/><br/><br/></p>
-<p>Se pueden escribir por:</p>
-<ul>
-<li><p><strong>por extensión</strong> : <span
-class="math inline">\(A=\{0,1,2,3,4,5,6,7,8,9\}\)</span>, escribiendo
-todos los elementos que lo conforman.</p></li>
-<li><p><strong>por su nombre</strong> : los dígitos</p></li>
-<li><p><strong>por compresión</strong> : <span
-class="math inline">\(A=\{ x\in\mathbb{Z}, 0\le x \le 9 \}\)</span>,
-utilizando nomenclatura matemática.</p></li>
-</ul>
-<p>Al comparar o combinar conjuntos debemos hacer uso de sus propiedades
-y operaciones, dentro de las cuales se encuentran <span
-class="math inline">\(A \cup B\)</span>, <span class="math inline">\(A
-\cap B\)</span>,</p>
-<p><br/><br/><br/></p>
-<div id="unión-del-conjunto" class="section level1">
-<h1><strong>Unión del conjunto</strong></h1>
-<p>Unión del <span class="math inline">\(A\)</span> con el conjunto
-<span class="math inline">\(B\)</span>. <span class="math inline">\(A
-\cup B\)</span>, <span class="math inline">\(\overline{A}\)</span>
-,<span class="math inline">\(A - B\)</span>, entre otras. La zona
-sombreada en la siguiente figura representa estas operación</p>
-<p><img src="img/union.png" style="width:50.0%" /></p>
-<p><img src="img/ej1.png" style="width:10.0%" /></p>
-<p>Supongamos los siguientes conjuntos</p>
-<ul>
-<li><span class="math inline">\(A = \{a,e,i,o,u \}\)</span> y<br />
-</li>
-<li><span class="math inline">\(B =
-\{1,2,3,4,5,6,7,8,9,0\}\)</span></li>
-</ul>
-<p><span class="math display">\[A \cup B = \{a,e,i,o,u,
-1,2,3,4,5,6,7,8,9,0 \}\]</span></p>
-<p><br/><br/><br/></p>
-</div>
-<div id="intersección" class="section level1">
-<h1><strong>Intersección</strong></h1>
-<p>La intersección entre el conjunto <span
-class="math inline">\(A\)</span> y el <span
-class="math inline">\(B\)</span> se denota por : <span
-class="math inline">\(A \cap B\)</span> y se representa por la siguiente
-zona sombreada</p>
-<centar> <img src="img/interseccion.png" style="width:50.0%" />
-</center>
-<p><br/><br/></p>
-<p><img src="img/ej2.png" style="width:10.0%" /></p>
-<p>Supongamos los siguientes conjuntos:</p>
-<ul>
-<li><span class="math inline">\(A = \{1,2,3,4,5,6 \}\)</span> y<br />
-</li>
-<li><span class="math inline">\(B = \{2,4,6,8,10,12,14,16,18,20
-\}\)</span></li>
-</ul>
-<p><span class="math display">\[A \cap B = \{ 2,4,6 \}\]</span></p>
-<p><br/><br/><br/></p>
-</div>
-<div id="complemento" class="section level1">
-<h1><strong>Complemento</strong></h1>
-<p>El complemento del conjunto <span class="math inline">\(A\)</span> se
-escribe como: <span class="math inline">\(\overline{A}\)</span> y se
-representa por la siguiente zona sombreada</p>
-<center>
-<img src="img/complemento.png" style="width:50.0%" />
-</center>
-<p><br/><br/></p>
-<p><img src="img/ej3.png" style="width:10.0%" /></p>
-<p>Supongamos los siguientes conjuntos:</p>
-<ul>
-<li><span class="math inline">\(U = \{0, 1,2,3,4,5,6. 7, 8, 9\}\)</span>
-y</li>
-<li><span class="math inline">\(A = \{1,2,3,4,5,6 \}\)</span> y</li>
-</ul>
-<p><span class="math display">\[\overline{A}  = \{0, 7, 8, 9
-\}\]</span><br />
-<br/><br/><br/></p>
-</div>
-<div id="resta" class="section level1">
-<h1><strong>Resta</strong></h1>
-<p>La resta del conjunto <span class="math inline">\(B\)</span> menos el
-conjunto <span class="math inline">\(A\)</span> : <span
-class="math inline">\(B-A\)</span> , está representada por la zona
-sombreada en la siguiente figura</p>
-<center>
-<img src="img/resta.png" style="width:50.0%" />
-</center>
-<p><br/><br/></p>
-<p><img src="img/ej4.png" style="width:10.0%" /></p>
-<p>Supongamos los siguientes conjuntos</p>
-<ul>
-<li><span class="math inline">\(A = \{1,2,3,4,5,6 \}\)</span> y</li>
-<li><span class="math inline">\(B = \{2,4,6,8,10,12,14,16,18,20
-\}\)</span></li>
-</ul>
-<p><span class="math display">\[B-A =\{ 8,10,12,14,16,18,20
-\}\]</span></p>
-<p><br/><br/></p>
+<div id="asignación-de-modelos-para-la-construcción-de-video"
+class="section level1">
+<h1>Asignación de modelos para la construcción de video</h1>
+<table>
+<thead>
+<tr class="header">
+<th align="left">id</th>
+<th align="left">nombre</th>
+<th align="left">modelo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">Bedoya Serna,Laura Marcela</td>
+<td align="left">binomial</td>
+</tr>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">Castañeda Mayor,Santiago Andres</td>
+<td align="left">Poisson</td>
+</tr>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">Coral Munares,Ashley Alejandra</td>
+<td align="left">uniforme</td>
+</tr>
+<tr class="even">
+<td align="left">4</td>
+<td align="left">Esguerra Valencia,Daniel Andres</td>
+<td align="left">normal</td>
+</tr>
+<tr class="odd">
+<td align="left">5</td>
+<td align="left">Giraldo Segura,Laura</td>
+<td align="left">exponencial</td>
+</tr>
+<tr class="even">
+<td align="left">6</td>
+<td align="left">Gomez Galeano,Darwin Daniel</td>
+<td align="left">binomial</td>
+</tr>
+<tr class="odd">
+<td align="left">7</td>
+<td align="left">Gutierrez Medina,Jose Miguel</td>
+<td align="left">Poisson</td>
+</tr>
+<tr class="even">
+<td align="left">8</td>
+<td align="left">Henao Navia,Leydi Diana</td>
+<td align="left">uniforme</td>
+</tr>
+<tr class="odd">
+<td align="left">9</td>
+<td align="left">Mejia Jimenez,Marcello</td>
+<td align="left">normal</td>
+</tr>
+<tr class="even">
+<td align="left">10</td>
+<td align="left">Montoya Ledesma,Samuel</td>
+<td align="left">exponencial</td>
+</tr>
+<tr class="odd">
+<td align="left">11</td>
+<td align="left">Palau Dosman,Isabel Cristina</td>
+<td align="left">binomial</td>
+</tr>
+<tr class="even">
+<td align="left">12</td>
+<td align="left">Penenori Sistiva,Gabriela</td>
+<td align="left">Poisson</td>
+</tr>
+<tr class="odd">
+<td align="left">13</td>
+<td align="left">Rodriguez Guerrero,Raul Esteban</td>
+<td align="left">uniforme</td>
+</tr>
+<tr class="even">
+<td align="left">14</td>
+<td align="left">Solarte Ballen,Nicolas Ernesto</td>
+<td align="left">normal</td>
+</tr>
+<tr class="odd">
+<td align="left">15</td>
+<td align="left">Trujillo Giraldo,Juan Andres</td>
+<td align="left">exponencial</td>
+</tr>
+<tr class="even">
+<td align="left">16</td>
+<td align="left">Verhelst Chaverra,Rudolph</td>
+<td align="left">normal</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -624,12 +679,36 @@ $(document).ready(function () {
 </script>
 
 <!-- code folding -->
+
 <script>
-$(document).ready(function () {
-  window.initializeCodeFolding("hide" === "show");
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = false;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
 });
 </script>
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

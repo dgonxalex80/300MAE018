@@ -78,7 +78,9 @@ navbar:
         - text: "Modelos especiales"
           href: recurso203.html  
         - text: "Taller 231"
-          href: taller231.html   
+          href: taller231.html  
+        - text: "asignacion video"
+          href: asignacion2.html           
         - text: "---------"            
         - text: "Monitoria 4"
           href: monitoria4.html            
