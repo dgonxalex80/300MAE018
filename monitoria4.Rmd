@@ -1,0 +1,548 @@
+---
+title: <span style="color:#235784"> **Monitoria 4**</span>  
+author: "dgonzalez "
+subtitle: <span style="color:#235784">**Módulo 2- Unidad 2.3**</span> 
+output:
+   html_document:
+      toc: no
+      toc_depth: 2
+      toc_float: yes
+      code_folding: hide
+      css: style.css
+    
+
+---    
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, comment = NA)
+library(psych)
+library(summarytools)
+
+# install.packages("devtools")
+#devtools::install_github("dgonxalex80/paquete018")
+#library(paquete018)
+
+# colores
+c0= "#F7AA00"
+c1= "#235784"
+c2= "#40A8C4"
+c3= "#EEF6F7"
+
+c4= "#11224D"
+c5= "#5B84C4"
+
+
+
+
+```
+
+
+# <span style="color:#ad6395"> **Problemas**</span> 
+
+
+**1** Con base en las pruebas extensas, el fabricante de una lavadora determinó que el tiempo $Y$ (en años) para que el electrodoméstico requiera una reparación mayor se obtiene mediante la siguiente función de densidad de probabilidad :
+
+ 
+  $$f_{_{Y}}(y) = \left \{ 
+				\begin{matrix} 
+				\dfrac{1}{4} exp\{-y/4\} & \mbox{ , }	y \geq 0\\ 
+				0  & \mbox{en otro caso }
+				\end{matrix}\right.  
+				$$
+ 
++ Los críticos considerarían que la lavadora es una ganga si no hay una probabilidad de que requiera una reparación mayor antes del sexto año. ¿Se puede considerar la lavadora como una ganga?
++ ¿Cuál es la probabilidad de que a lavadora requiera una reparación mayor durante el primer año?
++ Represente la función $f(x)$ gráficamente
+  
+
+<br/><br/>
+
+**2** Sea el número de llamadas telefónicas que recibe un conmutador durante un intervalo de 5 minutos una variable aleatoria $X$ con la siguiente función de distribución de probabilidad:
+
+$$f(x)= \dfrac{exp\{-2\}\hspace{.2cm} 2^x}{x!}\hspace{.3cm} \mbox{ , para }\hspace{.3cm} x = 01,2,3,4,5.... $$
+
++ Determine la probabilidad de que $X$ sea igual a $0, 1, 2, 3, 4, 5$ y $6$
++ Grafique la función de distribución de probabilidad para estos valores de $X$
++ Determine la función de distribución acumulada para estos valores de $X$.
++ Represente la función $f(x)$ gráficamente
+
+<br/><br/>
+
+**3** El congestionamiento de pasajeros es un problema de servicio en los aeropuertos, en los cuales se instalan trenes para reducir la congestión.  cuando se usa el tren el tiempo $X$, en minutos, que toma viajar desde la terminal principal hasta una  explanada específica tiene la siguiente función de densidad:
+
+
+ $$f_{_{X}}(x) = \left \{ 
+				\begin{matrix} 
+				\dfrac{1}{10} & \mbox{ , }	0 \leq y \leq 10\\ 
+				0  & \mbox{en otro caso }
+				\end{matrix}\right.  
+				$$
+
++ Determine que la función de  densidad de probabilidad anterior es válida
++ Calcule la probabilidad de que el tiempo que le toma a un pasajero viajar desde la terminal principal hasta la explanada no exceda los 7 minutos
++ Represente la función $f(x)$ gráficamente
+
+<br/>
+
+Problemas tomado de walpole (2006)
+
+<br/><br/>
+
+**4.** Suponga que $f(x)=exp\{-x\}$, para $0 \leq x \leq 1$, $0$ para cualquier otro caso.
+
+Determine :
+
++ $P(1 < X)$
++ $P(1 < X < 2.5$
++ $P(X = 3$
++ $P(X < 4)$
++ Los valores de $Me$, $Q_{1}$ y $Q_{3}$
+
+<br/><br/>
+
+**5.** Para una variable aleatoria con función de densidad : $f(x)= x/8$ para $3 < X < 5$. 
+
+Determine :
+
++ $P(X < 4)$
++ $P(X > 3.5)$
++ $P(4 < X < 5)$
++ $P((X < 3.5) \cup (X > 4.5))$
++ el valor de $Me$
+
+<br/><br/>
+ 
+
+**6.** El tiempo de reparación (en minutos) de una máquina fotocopiadora tiene una función de densidad:
+
+
+ $$f_{_{X}}(x) = \left \{ 
+				\begin{matrix} 
+				\dfrac{1}{22} exp\{-x/22\} & \mbox{ , }	x > 0\\ 
+				0  & \mbox{en otro caso }
+				\end{matrix}\right.  
+				$$
+
+Cuando el profesor de Probabilidad y Estadística se preparaba para imprimir el cuestionario del segundo examen parcial, fue enterado por la secretaria del departamento que la máquina fotocopiadora se había averiado y que el técnico había acabado de llegar en ese instante y empezado a repararla. El profesor debe contar con por lo menos 10 minutos extras - tiempo de fotocopiado de 35 exámenes, organizar sus respectivas hojas de respuestas, sumado tiempo de su desplazamiento hasta el salón de clase, arreglo de las mesas y entrega de los cuestionarios a los estudiantes. Al mirar el reloj, el profesor observa que faltan 20 minutos para la hora en que debe empezar el examen y decide esperar a que el técnico repare la fotocopiadora. ¿Es acertada o no la decisión que tomó el profesor? Justifique su respuesta.   
+
+
+<br/><br/>
+
+**7.** Suponga que $f(x)=exp\{-x\}$, para $0 \leq x \leq 1$, $0$ para cualquier otro caso.
+
+Determine :
+
++ $E[X]$
++ $V[X]$
+
+<br/><br/>
+
+**8.** Para una variable aleatoria con función de densidad : $f(x)= x/8$ para $3 < X < 5$. 
+
+Determine :
+
++ $\mu_{_{X}}$
++ $\sigma_{_{X}}$
+
+
+
+<br/><br/>
+
+
+
+
+**9.** Una de las preocupaciones que tienen los padres hoy en dia está relacionada con el tiempo que pasan sus hijos usando celular. Un estudio determinó que el número de llamadas que un joven realiza durante un dia es una variable aleatoria ($X$) con función de distribución :
+
+ $$f_{_{X}}(x) = \left \{ 
+				\begin{matrix} 
+				\dfrac{8^{x}\hspace{.2cm} exp\{-8\}}{x!} & \mbox{ , para } \hspace{.3cm}	x = 0,1,2,3,4,5,.....\\ 
+				0  & \mbox{en otro caso }
+				\end{matrix}\right.  
+				$$
+
+El estudio afirma también que los jóvenes en promedio reciben al rededor de 12 llamadas por día, valor que es considerado muy alto, debido a que a esa edad por lo regular no se tienen actividades económicas que lo ameriten. También mencionan que debido a que se ha logrado identificar la función de distribución de probabilidad es fácil establecer que se trata de una variable con un comportamiento homogéneo. ¿Está de acuerdo con la información suministrada en el artículo? . Justifique su respuesta. 
+
+
+
+
+
+**10. Modelo binomial**  Para una variable aleatoria con distribución binomial $X sim binom(x, n=10, p=0.2)$  Determine:  
+
+a. $P(X = 2)$
+
+$$P(X=5) = \displaystyle\binom{10}{5} 0.2^{5} (1-0.2)^{10-5}$$
+
+```{r}
+# dbinom(x,     # valor de x
+#        size,  # tamaño 
+#        prob)  # probabilidad de exito
+
+dbinom(5,10,0.2)
+```
+
+
+<br/><br/>
+
+b. $P(X \leq 2)$
+
+$$P(X\leq 2) = \sum_{x=0}^{2}\displaystyle\binom{10}{x} 0.2^{x} (1-0.2)^{10-x} =f(0)+f(1)+f(2)$$
+
+```{r}
+pbinom(2,10,0.2)
+```
+
+
+<br/><br/>
+
+c. $P(3 \leq  X < 5)$
+
+$$P(3 \leq  X < 5) = F(4) - F(2) = f(3) + f(4)$$
+
+```{r}
+pbinom(4,10,0.2)-pbinom(2,10,0.2)
+```
+
+
+<br/><br/>
+
+d. $P(X \geq 8)$
+
+$$P(X \geq 8) = f(8) + f(9) + f(10) = 1 - F(1)$$
+
+```{r}
+pbinom(7,10,0.2, lower.tail = FALSE)
+```
+
+
+
+<br/><br/>
+
+e. Construya la gráfica de $f(x)$
+
+```{r }
+x=0:10
+fx=dbinom(x,10,0.2)
+plot(x,fx, 
+     main = " Distribución binomial(n=10, p=0.20)",
+     pch=19) 
+grid()
+abline(v = 1:10,  lty = 2, col = "grey")
+```
+
+<br/><br/>
+
+**11. Modelo Poisson** Suponga que $X$ tiene una distribución Poisson con media $lambda=4$ ($X \sim pois(x,lambda=4)$). Determine:	
+
+a. $P(X = 0)$
+
+```{r}
+#  dpois(x,       # valor de x
+#        lambda)  # media o lambda
+dpois(0,4)
+```
+
+	
+b. $P(X = 4)$
+	
+c. $P(X \geq 2)$
+	
+d. $P(X \leq 2)$  
+	
+e. Construya la gráfica de $f(x)$
+
+<br/><br/>
+
+
+**12. Modelo binomial** En un cargamento grande de llantas para automóviles, el 5 tiene imperfecciones. Se eligen de manera aleatoria 4 llantas para ser instalada en un automóvil.  (Sea X el número de llantas con imperfecciones. $X \sim binom(n=4, p=0.05$ )
+
+a. ¿ Cuál es la probabilidad de que ninguna de las llantas tenga imperfecciones?
+	
+b. ¿ Cuál es la probabilidad de que sólo una de las llantas tenga imperfecciones?
+	
+c. ¿ Cuál es la probabilidad de una o más llantas tenga imperfecciones?
+
+<br/><br/>
+
+**13. Modelo Poisson** Los clientes llegan al mostrador de una tienda de acuerdo con una variable aleatoria Poisson con una frecuencia promedio de ocho clientes por hora. 
+
+a. Calcule la probabilidad de que entre las 8 AM y las 9 AM lleguen exactamente cinco clientes.
+	
+b. Calcule la probabilidad de que entre las 2:30 PM y las 3:30 PM no lleguen más de tres clientes.
+	
+c. Calcule la probabilidad de que lleguen exactamente dos clientes dentro de un intervalo de dos horas continuas, por ejemplo entre 10 AM y 12 M.
+	
+d. Calcule el valor esperado del número de personas que llegan a la tienda entre las 2 PM y las 4:30 PM.
+		
+			
+<br/><br/>
+
+**8.** Se está desarrollando una nueva variedad de maíz en una extensión de experimentación agrícola. Se espera que tenga una tasa de germinación del 90. Para verificar esto, se plantan 20 semillas en suelos de idéntica composición y se les dedican los mismos cuidados. Si la cifra 90 es correcta, ¿cuántas semillas se espera que germinen? Si sólo germinan 15 o menos, ¿hay razón para sospechar de la cifra 90?
+
+<br/><br/>
+
+**14.** Un examen de Probabilidad consta de 100 preguntas de selección múltiple, cada una con cuatro opciones de respuesta. Maria responde cada pregunta al azar y sus respuestas son independientes 
+
+a. Si para aprobar el examen Maria debe responder mínimo 60 preguntas correctamente, calcule la probabilidad de que Maria apruebe el examen.
+	
+b. Calcule la probabilidad de que Maria  deba responder 10 preguntas hasta responder la primera pregunta correctamente.
+	
+c. ¿Cuál es el número esperado de preguntas que Maria responderá erróneamente hasta responder 5 preguntas correctamente?
+
+<br/><br/>
+
+**15.** Se sospecha que muchas muestras de agua, todas del mismo tamaño y tomadas del Hillbank River, han sido contaminadas por operarios irresponsables de una planta de tratamiento de aguas. Se contó el número de microorganismos conformes en cada muestra. El número medio de microorganismos por muestra fue de 15. Suponiendo que el número de microorganismos se distribuye según una distribución de Poisson, calcular la probabilidad de que:
+		
+a. La siguiente muestra contenga al menos 17 microorganismos.
+
+b. La siguiente muestra contenga 18 o menos microorganismos.
+
+c. La siguiente muestra contenga exactamente dos microorganismos.
+
+<br/><br/>
+
+
+**16.** Una aéreolinea nacional tiene aviones de 100 asientos para el servicio de transporte nacional. Se estima que la probabilidad de que una persona llegue al vuelo es de 0.90, debido a lo cual  la aereolinea vende 105 tiquetes con el fin de minimizar la partida de aviones con sillas vacias. ¿cuál es la probabilidad de que todas las personas que lleguen para abordar el avión tengan asiento?   
+
+<br/><br/>
+
+**17** El número de grietas en un pavimento se estima en una grieta por cada 100m  en promedio. Se desea estimar la probabilidad de:
+
+a. Haya exactamente 8 grietas en una longitud de 500 m
+
+b. No se presente ninguna grieta en 100 m
+
+c. Se presenten menos de 2 grietas en 500 m 
+
+<br/><br/>
+
+**18**. Un sistema de seguridad para casas está diseñado para tener una confiabilidad del 95 . Suponga que 10 casas equipadas con este dispositivo sufrieron tentativa de robo. Se requiere calcular la probabilidad de que en siete de las nueve, la alarma se activará.
+
+<br/><br/>
+
+
+**19. Modelo uniforme** Para una variable aleatoria $X\sim unif(x,a,b)$  con $a=10$ y $b=20$ determine:
+
+a. Construya un bosquejo de la gráfica de la función de densidad de probabilidad $f_{_{X}}(x)$.
+
+b. $P(X \leq 12)$. 
+
+c. $P(13\leq X <15)$. 
+
+d. $P(X\geq 18)$ . 
+
+e. $E[X]$ y $V[X]$.
+
+<br/><br/>
+
+**2. Modelo normal** Para una variable $Z\sim N(0,1)$, determine el área: 
+
+a.  A la derecha de z = - 0.85. 
+
+```{r}
+pnorm(-0.85, lower.tail = FALSE)
+1-pnorm(-0.85)
+```
+
+
+b.Entre $z = 0.40$ y $z = 1.30$.  
+
+c. Entre $z = -0.30$ y $z = 0.90$. 
+
+d.  Desde $z = -1.50$ hasta $z = -0.45$.
+
+**Nota**: en cada caso realice un  bosquejo del área que representa la probabilidad
+
+<br/><br/>
+
+**20. Modelo normal estandar** Para una variable $Z\sim N(0,1)$, determine el área: 
+
+a.	A la izquierda de $z = 0.56$. 
+
+b. Entre $z = - 2.93$ y $z = -2.06$. 
+
+c. Entre $z = -1.08$ y $z = 0.70$. 
+
+d. Desde $z = 0.96$ hasta $z = 1.62$.
+
+Nota: En cada caso represente gráficamente los valores solicitados
+	
+<br/><br/>
+
+**21. Modelo normal** Para una variable aleatoria continua $X\sim norm(\mu=150, \sigma^{2}=1000)$ determine:
+
+a. Realice un bosquejo de la gráfica de la función de  densidad de probabilidad de $X$
+
+b. $P(X \leq 130)$.
+
+```{r}
+pnorm(130, 150, 10)
+```
+
+
+c. $P(300 \leq X \leq 400)$.
+
+d. $P(X\geq 550)$.  
+
+e. Determine el valor de $k$ que cumpla : $P(-k < X < k)= 0.90$.
+
+f. Determine el valor de $k$ que cumpla : $P(-k < X < k)= 0.95$.
+
+<br/><br/>
+
+**22. Modelo exponencial** Sea $X$ una variable aleatoria con distribución exponencial . ($X\sim exp(\lambda=2)$). Determine:
+
+a. $P(X \leq 1)$.
+
+```{r}
+pexp(1,2)
+```
+
+
+b. $P(X \geq 2)$.
+
+c. $P(1 < X < 2)$. 
+
+d. Realice un bosquejo de la gráfica de $f_{_{X}}(x)$
+
+<br/><br/>
+
+**23.** Doris  y Mauricio quedan en encontrarse entre las 5:00 pm y 6:00 pm en Unicentro. Sea $X$ el tiempo que transcurre entre las 5:00 pm y el momento en que llega Doris y $Y$ el tiempo que transcurre entre las 5:00 pm y el momento en que llega Mauricio. Suponga que X y Y son variables aleatorias independientes uniformemente distribuidas en el intervalo [0; 60]  en minutos. 
+
+a. Cuál es la distribución de probabilidad conjunta de X y Y?
+
+b. ¿Cuál es la probabilidad de que ambos lleguen entre las 5:30 y 5:40?
+
+c. Sea T = X − Y el tiempo que Mauricio espera a Doris. ¿Cuánto debe esperar en promedio Mauricio a Doris?
+
+d. Si Doris y Mauricio acuerdan además, que cada uno esperará al otro un máximo 10 minutos. Cuál es la probabilidad de que Mauricio y Doris se encuentren?
+
+<br/><br/>
+
+**24.** Para una variable aleatoria $Y$ que representa las puntuaciones obtenidas en una prueba y cuya distribución es aproximadamente normal con media de $480$ puntos y desviación estándar de $90$ puntos, determine: 
+
+a. ¿Cuál es la proporción de puntuaciones mayores a 700? 
+
+b. ¿Cuál es el 25o. percentil de las puntuaciones? 
+
+c. Si la puntuación de alguien es de 600, ¿en qué percentil se encuentra? 
+
+d. ¿Qué proporción de las puntuaciones se encuentra entre 420 y 520?
+
+<br/><br/>
+
+**25** Suponga que la estatura de las personas en una población sigue la curva normal con media de 64.3 pulgadas y desviación estándar de 2.6 pulgadas. 
+
+a. ¿Qué proporción de personas en esa región tiene estatura entre 60 y 66 pulgadas? 
+
+b. La estatura de Juan es 0.5 de desviación estándar mayor a la media. ¿Qué proporción de personas miden más que Juan? 
+
+c. ¿Cuánto mide una persona cuya estatura se encuentra en el 90o. percentil? 
+
+d. Se elige aleatoriamente una persona de esta población. ¿Cuál es la probabilidad de que ella mida más de 67 pulgadas? 
+
+e. Se elige aleatoriamente a cinco personas de esta población. ¿Cuál es la probabilidad de que sólo una de ellas mida más de 67 pulgadas?
+
+<br/><br/>
+
+**26** La resistencia de una aleación de aluminio se distribuye normalmente con media de 10 gigapascales (GPa) y desviación estándar de 1.4 GPa. 
+
+a. ¿Cuál es la probabilidad de que una muestra de esta aleación tenga resistencia mayor a 12 GPa? 
+
+b. Determine el primer cuartil de la resistencia de esta aleación. 
+
+c. Determine el 95o. percentil de la resistencia de esta aleación.
+
+
+<br/><br/>
+
+**27.** Para una variable $Z$ con distribución de probabilidad normal estandar determine el área bajo la curva:
+
+a. $P(Z < 1.32)$
+
+b. $P(Z > 1.45)$. 
+
+c. $P(Z > -2.15)$.
+
+d. $P(-2.34 < Z < 1.76)$.
+
+e. $P( -0.50 < Z < -1.35)$
+
+f. $P(0.60 > Z > 1.62)$
+
+g. $P(-1 < Z < 1)$
+
+h. $P(-2 < Z < 2)$
+
+<br/><br/>
+
+**28.** Asuma que $Z$ tiene una distribución normal estándar. Determine el valor de $z$ para las siguientes probabilidades:
+
+a. $P(Z < z) = 0.90$
+
+```{r}
+qnorm(0.90)
+```
+
+
+b. $P(Z < z ) = 0.50$
+
+c. $P(Z > z) = 0.10$
+
+d. $P(Z > z) = 0.90$
+
+e. $P(-z < Z < z) =0.95$
+
+f. $P(-z < Z < z) =0.99$
+
+g. $P(-z < Z < z) =0.68$
+
+h. $P(-z < Z < z) =0.9973$
+
+<br/><br/>
+
+**29.** Para una variable aleatoria $X$ con distribución normal con media 10 y desviación estándar de 2, determine:
+
+a. $P(X < 13)$
+
+b. $P(X > 9)$
+
+c. $P( 6 < X < 14)$
+
+d. $P( 2 < X < 4)$
+
+e. $P(-2 < X < 8)$
+
+**30.** Para $X \sim N(\mu=10, \sigma^{2}=4)$ determine el valor de $x$: 
+
+a. $P(X > x) = 0.50$
+
+b. $P(X > x) = 0.95$
+
+c. $P( x < X < 10) = 0.20$
+
+d. $P( -x < X-10 < x) = 0.95$
+
+e. $P(-x < X-10 < x) = 0.99$
+
+<br/><br/>
+
+**31.** Para una variable $X \sim N(5,16)$ determine:
+
+a. $P(X < 11)$
+
+b. $P(X > 0)$
+
+c. $P(3 < X < 7)$
+
+d. $P(-2 < X < 9)$
+
+e. $P(2 < X < 8)$
+
+f. $P(X > x) = 0.55$
+
+g. $P(x < X < 9) = 0.95$
+
+h. $P(3 < X < x) = 0.99$
+
+
+<br/><br/><br/>
