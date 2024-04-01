@@ -94,9 +94,6 @@ navbar:
         - text: "Módulo 4"
           href: modulo4.html
         - text: "---------"          
-    - text: "Módulo 5"
-  
-          
     - text: "Proyecto"
       menu:
         - text: "Guía proyecto"
