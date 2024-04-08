@@ -41,7 +41,7 @@ Los estudiantes deberán realizar un proyecto que les permita poner en práctica
   
 + Contribuir a la formación integral, al trabajo en equipo y la interrelación de conocimientos de Estadística alrededor de un problema específico.
 
-+ Permitir los estudiantes detectar situaciones en las cuales pueda aplicar las técnicas Estadísticas estudiadas.
++ Permitir a los  estudiantes detectar situaciones en las cuales pueda aplicar las técnicas Estadísticas estudiadas.
 
 + Desarrollar destrezas en el análisis estadístico y la presentación de informes estadísticos. 
 
@@ -57,11 +57,11 @@ El producto de este trabajo deberá ser entregado en formato  **poster** $A1$ (A
   
 ## **Requisitos** 
   
-+ Equipos conformados por hastaq tres  estudiantes. No se permiten trabajos individuales.
++ Equipos debe ser conformado por hasta  tres  estudiantes. No se permiten trabajos individuales.
 
 + Seleccionar un problema de interés propio para el grupo que  permita la aplicación de los conocimientos de estadística vistos en el curso. El tema propuesto deberá contar con el visto bueno del profesor.
 
-+  El contenido del **poster** deberá utilizar por lo menos 6 resultados producto de la inferencia estadística (intervalos de confianza o pruebas de hipótesis, regresión lineal) que respalden los resultados .
++  El contenido del **poster** deberá utilizar las técnicas estadísticas trabajadas en el curso.
 
 + Al final los estudiantes deberán realizar una presentación del trabajo y de los principales hallazgos.
 
