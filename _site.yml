@@ -97,4 +97,4 @@ navbar:
     - text: "Proyecto"
       menu:
         - text: "Guía proyecto"
-          href: recurso000.html
+          href: proyecto.html
