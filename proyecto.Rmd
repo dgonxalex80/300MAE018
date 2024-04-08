@@ -80,7 +80,7 @@ El producto de este trabajo deberá ser entregado en formato  **poster** $A1$ (A
 
   <br/>
   
-### **Primera Entrega : Informe parcial** 
+### **Primera Entrega : Informe parcial** (5%)
 
 Documento en formato pdf que contenga la propuesta seleccionada (problema) 
     
@@ -95,7 +95,7 @@ Documento en formato pdf que contenga la propuesta seleccionada (problema)
   
 <br/><br/>  
 
-### **Entrega del informe final y presentación oral por parte del equipo:**
+### **Entrega del informe final y presentación oral por parte del equipo:** (15%)
 
 * **Poster** en formato impreso  
 
