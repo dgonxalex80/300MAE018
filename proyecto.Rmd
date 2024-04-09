@@ -91,7 +91,7 @@ Documento en formato pdf que contenga la propuesta seleccionada (problema)
 * Metodología
 
   * Fecha :  abril 12 de 2024
-  * Hora : 23:59
+  * Hora : <span style="color:#771011">**16:00**</span>
   
 <br/><br/>  
 
