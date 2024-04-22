@@ -9,9 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="" />
 
 
-<title>About This Website</title>
+<title>segundo.knit</title>
 
 <script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -442,12 +443,178 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">About This Website</h1>
 
 </div>
 
 
-<p>More about this website.</p>
+<p><strong>300MAE018 - ESTADÍSTICA PARA LA TOMA DE DECISIONES</strong>
+<br/></p>
+<p><br/></p>
+<div id="segundo-examen-parcial" class="section level3">
+<h3><strong>SEGUNDO EXAMEN PARCIAL</strong></h3>
+<p>Instrucciones: Apague y guarde su celular. Mientras dure la prueba no
+se podrá ausentarse del salón de clases ni prestar objetos. Concéntrese
+en la prueba y use la hoja cuadriculada entregada para realizar los
+precesos que justifique su respuesta. Marque el cuestionario como la
+hoja de respuestas. Cada punto tiene su valor porcentual descrito en su
+inicio.</p>
+<p><br/><br/></p>
+<div id="nombre" class="section level5">
+<h5>Nombre :</h5>
+</div>
+<div id="fecha-abril-17-de-2024" class="section level5">
+<h5>Fecha: Abril 17 de 2024</h5>
+<p><br/></p>
+<p>Habilidades evaluadas:</p>
+<ul>
+<li><p>Habilidad para aplicar conocimiento de estadística</p></li>
+<li><p>Habilidad para comunicar efectivamente</p></li>
+</ul>
+<p><br/></p>
+</div>
+<div id="punto-1" class="section level4">
+<h4>Punto 1</h4>
+<p>Una aereolínea nacional tiene aviones AIRBUS A-320 con capacidad de
+220 asientos para transporte nacional e internacional. Se estima que la
+probabilidad de que una persona llegue al vuelo es de <span
+class="math inline">\(0.95\)</span>, debido a lo cual la aereolínea
+vende <span class="math inline">\(250\)</span> tiquetes con el fin de
+minimizare la partida del avión con sillas vaciás. Por otro lado la
+administración del aeropuerto penaliza con una multa significativa a las
+aereolíneas que por esta practica deje un pasajero que habiendo comprado
+su tiquete no pueda viajar porque el avión ya tiene ocupado todos sus
+asientos. ¿Qué tan probable es que la aereolínea sea multada por la
+administración del aereopuerto? Recomendaría continuar con esta
+práctica?</p>
+<pre class="r"><code># X :número de pasajeros que asisten al aereopuerto
+# X  tiene distribución binomial con parámetros : n=250 y p =0.95
+# Se requiere calcular : P(X &lt;= 220)
+
+pbinom(220, 250, 0.95)</code></pre>
+<pre><code>## [1] 9.854644e-06</code></pre>
+<p>Para realizar el calculo a mano se puede realizar una aproximación
+binomial a la normal</p>
+<pre class="r"><code># X se aproxima a una distribución normal mu= np =237.7 y signa2 = npq = 11.875
+# Se requiere calcular : P(X &lt;-220) = P(Z &lt;= (220.5-237.5)/11.875)) = P(Z &lt;= -1.43)
+pnorm(-1.43)</code></pre>
+<pre><code>## [1] 0.07635851</code></pre>
+<p>En ambos casos la probabilidad es muy baja, por lo cual es muy poco
+probable que la aereolinea cumpla con hacer que todos sus pasajeros
+tengan un asiento en el vuelo. Hay una alta probabilidad de que la
+aereolinea sea multada. Se recomienda cambiar de estratejia o
+ajustarla.</p>
+<p><br/><br/></p>
+</div>
+<div id="punto-2" class="section level4">
+<h4>Punto 2</h4>
+<p>Una empresa de construcción local descubrió a través de una
+investigación que solo el 20% de todos los trabajos son terminados a
+tiempo, mientras que el 30% sufrían sobrecostos. Además, los sobrecostos
+se presentan en el 75% de las veces en la que los trabajos se terminaron
+a tiempo. Carlos, gerente de la empresa desea conocer que tan probable
+es que un proyecto no tenga sobrecostos y se termine a tiempo. Esto le
+permitirá tomar decisiones en caso de ser necesario. Ayude a Carlos a
+resolver su interrogante.</p>
+<pre class="r"><code># SC : Sobre Costos
+# TA : terminan A Tiempo
+#           | SC    |  SC&#39;  |
+#      -----+-------+-------+------
+#      AT   | 0.15  |       | 0.20
+#      AT&#39;  |       |       |
+#      -----+-------+-------+------ 
+#           | 0.30  |       |
+
+# 0.20 * 0.75 = 0.15
+
+# Con la anterior información se construye la tabla completament
+
+x=  c(0.20*0.75, 0.15, 0.05, 0.65)
+matrix(x, nrow=2)</code></pre>
+<pre><code>##      [,1] [,2]
+## [1,] 0.15 0.05
+## [2,] 0.15 0.65</code></pre>
+<pre class="r"><code># P(SC&#39; n AT) = 0.05</code></pre>
+<p>De acuerdo con la tabla la probabilidad de que un proyecto no tenga
+sobrocostos (SC’) y Termine A Tiempo (AT) es tan solo del 0.05. Lo que
+hace que este evento conjunto sea muy poco probable. Se recomienda
+revisar tanto la forma de costeo como lo relacionado con los tiempo de
+desarrollo de los proyectos.</p>
+<p><br/><br/></p>
+</div>
+<div id="punto-3" class="section level4">
+<h4>Punto 3</h4>
+<p>Uno de los productos mas vendidos en IK, fabricantes de cocinas
+integrales, corresponde a un novedoso modelo de puertas para los
+gabinetes de cocinas. Cada una de las puertas se construye con el
+ensamble de tres partes de madera: <span
+class="math inline">\(P_1\)</span>, <span
+class="math inline">\(P_2\)</span> y <span
+class="math inline">\(P_3\)</span>, que son cortadas y procesadas por
+tres operarios en tres máquinas distintas. Un estudio realizado
+recientemente en estos tres procesos determinó que el ancho de cada una
+de las piezas se distribuye aproximadamente normal con medias: <span
+class="math inline">\(10.4\)</span> cm, <span
+class="math inline">\(7.2\)</span> cm y <span
+class="math inline">\(12.2\)</span> cm y con desviaciones estándar :
+<span class="math inline">\(0.2\)</span> cm, <span
+class="math inline">\(0.1\)</span> cm y <span
+class="math inline">\(0.3\)</span> cm. Para pegar las tres piezas el
+fabricante utiliza una cinta doble faz de espesor constante de <span
+class="math inline">\(0.1\)</span> cm, la cual se puede suponer
+constante. Para garantizar la calidad de los gabinetes se debe obtener
+un ancho en las puertas entre 29.6 y 30.3 cm. El producto que esté por
+debajo de este valor de ser desechado y no podrá ser reutilizado. Por el
+contrario los productos por encima de estas especificaciones descritas
+deberán ser reutilizadas para luego ser medidas nuevamente.</p>
+<p>Se podrá afirmar que el proceso está bajo control siempre y cuando el
+porcentaje de material desechado no supere el <span
+class="math inline">\(5\)</span>% de la prodicción y el material
+reporecesado solo sea de hasta el <span
+class="math inline">\(2\)</span>%.</p>
+<ul>
+<li><p>(a.) Basados en la información anterior, es posible establecer si
+el proceso de fabricación de las puertas está bajo control?. En caso de
+poder hacerlo, realice los cálculos y determine el estado del proceso.
+En todos los casos justifique su respuesta.</p></li>
+<li><p>(b.) Actualmente en la fabrica se procesan diariamente 120
+puertas y se tiene como meta realizar por lo menos <span
+class="math inline">\(100\)</span> puertas dentro de los estándares de
+producción establecidos. Si se supone que la producción mantiene sus
+característica estables, que tan cerca o alejado está poder cumplir este
+requerimiento?</p></li>
+</ul>
+<p><strong>Nota</strong> :</p>
+<p>Si <span class="math inline">\(Y = X_1 + X_2 + X_3\)</span> , con
+<span class="math inline">\(X_1\)</span>, <span
+class="math inline">\(X_2\)</span> y <span
+class="math inline">\(X_3\)</span> distribución normal, entonces : <span
+class="math inline">\(E[Y] = \mu_Y = \mu_{_{X_1}} + \mu_{_{X_2}} +
+\mu_{_{X_3}}\)</span> y <span class="math inline">\(V[Y] =
+\sigma^{2}_{_{Y}} = \sigma^{2}_{_{X_1}} + \sigma^{2}_{_{X_2}} +
+\sigma^{2}_{_{X_3}}\)</span>, si las variables <span
+class="math inline">\(X_1\)</span>, <span
+class="math inline">\(X_2\)</span> y <span
+class="math inline">\(X_3\)</span> son independientes</p>
+<pre class="r"><code># Se debe determinar tanto el valor promedio del ancho de la puerta como su varianza
+# media del ancho E[Y] = E[X1]+E[X2]+E[X3]+ 0.1+0.1 = 10.4 + 7.2 +12.2 + 0.1 + 0.1 = 30
+# varianza del ancho V[Y] = V[X1]+V[X2]+ V[X3] = &gt; 0.2^2 + 0.1^2 +0.3^2 = 0.14
+
+# a. Se requiere calcular : P(29.6 &lt; X &lt; 30.3) = F(30.3) - F(29.6)
+# pnorm(30.3, 30,0.14) = 0.9839377
+# pnorm(29.6, 30,0.14) = 0.002137367
+# porcentaje bajo control
+pnorm(30.3, 30,0.14)-pnorm(29.6, 30,0.14)</code></pre>
+<pre><code>## [1] 0.9818003</code></pre>
+<pre class="r"><code># porcentaje desechado
+pnorm(29.6, 30,0.14)</code></pre>
+<pre><code>## [1] 0.002137367</code></pre>
+<pre class="r"><code># porcentaje reprocesado
+1-pnorm(30.3, 30,0.14)</code></pre>
+<pre><code>## [1] 0.01606229</code></pre>
+<p>El proceso cumple con las politicas establecidas, por tal razón se
+encuentra bajo contol</p>
+</div>
+</div>
 
 
 

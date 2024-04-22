@@ -1,0 +1,127 @@
+---
+title: ' '
+author: ''
+date: ''
+output:
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**300MAE018 - ESTADÍSTICA PARA LA TOMA DE DECISIONES** <br/>
+
+<br/>
+
+### **SEGUNDO EXAMEN PARCIAL**
+
+Instrucciones: Apague y guarde su celular. Mientras dure la prueba no se podrá ausentarse del salón de clases ni prestar objetos. Concéntrese en la prueba y use la hoja cuadriculada entregada para realizar los precesos que justifique su respuesta. Marque el cuestionario como la hoja de respuestas. Cada punto tiene su valor porcentual descrito en su inicio.
+
+<br/><br/>
+
+##### Nombre :
+##### Fecha: Abril 17 de 2024
+
+<br/>
+
+Habilidades evaluadas:
+
+* Habilidad para aplicar conocimiento de estadística
+
+* Habilidad para comunicar efectivamente 
+
+
+<br/>
+
+#### Punto 1 
+
+Una aereolínea nacional tiene aviones AIRBUS A-320 con capacidad de 220 asientos para transporte nacional e internacional. Se estima que la probabilidad de que una persona llegue al vuelo es de $0.95$, debido a lo cual la aereolínea vende $250$ tiquetes con el fin de minimizare la partida del avión con sillas vaciás. Por otro lado la administración del aeropuerto penaliza con una multa significativa a las aereolíneas que por esta practica deje un pasajero que habiendo comprado su tiquete no pueda viajar porque el avión ya tiene ocupado todos sus asientos. ¿Qué tan probable es que la aereolínea sea multada por la administración del aereopuerto? Recomendaría continuar con esta práctica?
+
+
+```{r}
+# X :número de pasajeros que asisten al aereopuerto
+# X  tiene distribución binomial con parámetros : n=250 y p =0.95
+# Se requiere calcular : P(X <= 220)
+
+pbinom(220, 250, 0.95)
+```
+
+Para realizar el calculo a mano se puede realizar una aproximación binomial a la normal
+```{r}
+# X se aproxima a una distribución normal mu= np =237.7 y signa2 = npq = 11.875
+# Se requiere calcular : P(X <-220) = P(Z <= (220.5-237.5)/11.875)) = P(Z <= -1.43)
+pnorm(-1.43)
+
+```
+
+En ambos casos la probabilidad es muy baja, por lo cual es muy poco probable que la aereolinea cumpla con hacer que todos sus pasajeros tengan un asiento en el vuelo. Hay una alta probabilidad de que la aereolinea sea multada. Se recomienda cambiar de estratejia o ajustarla.
+
+
+
+<br/><br/>
+
+#### Punto 2 
+
+Una empresa de construcción local descubrió a través de una investigación que solo el 20\% de todos los trabajos son terminados a tiempo, mientras que el 30\% sufrían sobrecostos. Además, los sobrecostos se presentan en el 75\% de las veces en la que los trabajos se terminaron a tiempo.  Carlos, gerente de la empresa desea conocer que tan probable es que un proyecto no tenga sobrecostos y se termine a tiempo. Esto le permitirá tomar decisiones en caso de ser necesario. Ayude a Carlos a resolver su interrogante.
+
+
+```{r}
+# SC : Sobre Costos
+# TA : terminan A Tiempo
+#           | SC    |  SC'  |
+#      -----+-------+-------+------
+#      AT   | 0.15  |       | 0.20
+#      AT'  |       |       |
+#      -----+-------+-------+------ 
+#           | 0.30  |       |
+
+# 0.20 * 0.75 = 0.15
+
+# Con la anterior información se construye la tabla completament
+
+x=  c(0.20*0.75, 0.15, 0.05, 0.65)
+matrix(x, nrow=2)
+
+# P(SC' n AT) = 0.05
+```
+
+De acuerdo con la tabla la probabilidad de que un proyecto no tenga sobrocostos (SC') y Termine A Tiempo (AT) es tan solo del 0.05. Lo que hace que este evento conjunto sea muy poco probable. Se recomienda revisar tanto la forma de costeo como lo relacionado con los tiempo de desarrollo de los proyectos.
+
+<br/><br/>
+
+#### Punto 3 
+
+Uno de los productos mas vendidos en IK, fabricantes de cocinas integrales, corresponde a un novedoso modelo de puertas para los gabinetes de cocinas. Cada una de las puertas se construye con el ensamble de tres partes de madera: $P_1$, $P_2$ y $P_3$, que son cortadas y procesadas por tres operarios en tres máquinas distintas. Un estudio realizado recientemente en estos tres procesos determinó que el ancho de cada una de las piezas se distribuye aproximadamente normal con medias: $10.4$ cm,  $7.2$ cm y  $12.2$ cm y con desviaciones estándar : $0.2$ cm, $0.1$ cm y $0.3$ cm.  Para pegar las tres piezas el fabricante utiliza una cinta doble faz de espesor constante de $0.1$ cm, la cual se puede suponer constante.  Para garantizar la calidad de los gabinetes se debe obtener un ancho en las puertas entre 29.6 y 30.3 cm. El producto que esté por debajo de este valor de ser desechado y no podrá ser reutilizado. Por el contrario los productos por encima de estas especificaciones descritas deberán ser reutilizadas para luego ser medidas nuevamente.
+
+Se podrá afirmar que el proceso está bajo control siempre y cuando el porcentaje de material desechado no supere el $5$% de la prodicción y el material reporecesado solo sea de hasta el $2$%.
+
+* (a.)  Basados en la información anterior, es posible establecer si el proceso de fabricación de las puertas está bajo control?. En caso de poder hacerlo, realice los cálculos y determine el estado del proceso. En todos los casos justifique su respuesta.
+
+* (b.) Actualmente en la fabrica se procesan diariamente 120 puertas y se tiene como meta realizar por lo menos $100$ puertas dentro de los estándares de producción establecidos. Si se supone que la producción mantiene sus característica estables, que tan cerca o alejado está poder cumplir este requerimiento?
+
+**Nota** :
+
+Si $Y = X_1 + X_2 + X_3$ , con $X_1$, $X_2$ y $X_3$ distribución normal, entonces :  $E[Y] = \mu_Y = \mu_{_{X_1}} +  \mu_{_{X_2}} +  \mu_{_{X_3}}$  y 
+ $V[Y] = \sigma^{2}_{_{Y}} = \sigma^{2}_{_{X_1}} +  \sigma^{2}_{_{X_2}} +  \sigma^{2}_{_{X_3}}$, si las variables $X_1$, $X_2$ y $X_3$ son independientes
+
+```{r}
+# Se debe determinar tanto el valor promedio del ancho de la puerta como su varianza
+# media del ancho E[Y] = E[X1]+E[X2]+E[X3]+ 0.1+0.1 = 10.4 + 7.2 +12.2 + 0.1 + 0.1 = 30
+# varianza del ancho V[Y] = V[X1]+V[X2]+ V[X3] = > 0.2^2 + 0.1^2 +0.3^2 = 0.14
+
+# a. Se requiere calcular : P(29.6 < X < 30.3) = F(30.3) - F(29.6)
+# pnorm(30.3, 30,0.14) = 0.9839377
+# pnorm(29.6, 30,0.14) = 0.002137367
+# porcentaje bajo control
+pnorm(30.3, 30,0.14)-pnorm(29.6, 30,0.14)
+
+# porcentaje desechado
+pnorm(29.6, 30,0.14)
+
+# porcentaje reprocesado
+1-pnorm(30.3, 30,0.14)
+```
+
+El proceso cumple con las politicas establecidas, por tal razón se encuentra bajo contol
+

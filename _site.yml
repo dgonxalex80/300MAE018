@@ -83,17 +83,29 @@ navbar:
           href: asignacion2.html           
         - text: "---------"            
         - text: "Monitoria 4"
-          href: monitoria4.html            
+          href: monitoria4.html  
+        - text: "---------"            
+        - text: "Segundo parcial"
+          href: segundo.html           
+          
     - text: "Módulo 3"
       menu:
         - text: "Módulo 3"
           href: modulo3.html
-        - text: "---------"  
+        - text: "---------" 
+        - text: "Guía 3.1"
+          href: guia301.html  
+        - text: "Inferencia Estadística"
+          href: recurso201.html          
     - text: "Módulo 4"
       menu:
         - text: "Módulo 4"
           href: modulo4.html
-        - text: "---------"          
+        - text: "---------"   
+        
+        
+        
+        
     - text: "Proyecto"
       menu:
         - text: "Guía proyecto"
