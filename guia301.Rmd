@@ -97,7 +97,7 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 
 |                  |                                         |
 |:-----------------|:----------------------------------------|
-| Actividad301     |  10 definiciones ubicadas en el tablero |
+| Actividad301     |  5 definiciones ubicadas en el tablero |
 | Actividad302     |  mapa mental en  hoja de papel          |
 
 
