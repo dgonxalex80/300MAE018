@@ -62,7 +62,7 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 
 |Actividad           | Descripción                    | 
 |:-------------------|:-----------------------------  |
-|**Actividad 301** | Cada estudiante deberá realizar un aporte de por lo menos 10 definiciones con su respectiva referencia bibliográfica del listado que aparece en el siguiente [**tablero**](https://padlet.com/dgonzalez80/inferencia-estad-stica-para-la-toma-de-decisiones-ggs59g4jzxm48pr9)                  |
+|**Actividad 301** | Cada estudiante deberá realizar un aporte de por lo menos 5 definiciones con su respectiva referencia bibliográfica del listado que aparece en el siguiente [**tablero**](https://padlet.com/dgonzalez80/inferencia-estad-stica-para-la-toma-de-decisiones-ggs59g4jzxm48pr9)                  |
 |Trabajo  individual |                            |
 |Fecha               | 26 de abril                |
 |Hora                | al finalizar la sesión     |
@@ -86,9 +86,9 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 
 ## **Criterios de evaluación**
 
-* Reconoce los modelos especiales asociados a contextos  y problemas reales
+* Reconoce los principales conceptos de la inferencia estadística y la relación entre ellos
 
-* Utiliza las herramientas estadística apropiadas en el calculo de probabilidades en la solución de problemas en contexto
+* Reconoce las principales caracteristicas de la media muestral y la proporción muestral
 
 
 <br/><br/>
