@@ -96,7 +96,14 @@ navbar:
         - text: "Guía 3.1"
           href: guia301.html  
         - text: "Inferencia Estadística"
-          href: recurso201.html          
+          href: recurso301.html   
+        - text: "---------" 
+        - text: "Guía 3.2"
+          href: guia302.html  
+        - text: "Inferencia Estadística"
+          href: recurso302.html 
+        - text: "Taller 321"
+          href: taller321.html           
     - text: "Módulo 4"
       menu:
         - text: "Módulo 4"
