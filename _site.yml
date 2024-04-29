@@ -100,7 +100,7 @@ navbar:
         - text: "---------" 
         - text: "Guía 3.2"
           href: guia302.html  
-        - text: "Inferencia Estadística"
+        - text: "Estimación por IdeC"
           href: recurso302.html 
         - text: "Taller 321"
           href: taller321.html           
