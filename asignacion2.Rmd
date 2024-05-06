@@ -36,3 +36,10 @@ knitr::opts_chunk$set(echo = TRUE)
 |14 | Solarte Ballen,Nicolas Ernesto   | normal        |
 |15 | Trujillo Giraldo,Juan Andres     | exponencial   |
 |16 | Verhelst Chaverra,Rudolph        | normal        |
+
+
+
+
+* Uniforme : https://www.youtube.com/watch?v=LdFvvqvZ1YI&t=22s 3
+* binomial : https://www.youtube.com/watch?v=-xNYOXHYigk 6
+* poisson : https://www.youtube.com/watch?v=8GHycOw4g9M 7

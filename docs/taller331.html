@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="dgonzalez" />
+
+
+<title>Taller 331</title>
+
+<script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"> </a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    300MEA018
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Módulo 0
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="modulo0.html">Módulo 0</a>
+    </li>
+    <li>
+      <a href="sumatoria.html">Sumatoria</a>
+    </li>
+    <li>
+      <a href="productoria.html">Productoria</a>
+    </li>
+    <li>
+      <a href="conjuntos.html">Conjuntos</a>
+    </li>
+    <li>
+      <a href="conteo.html">Técnicas de conteo</a>
+    </li>
+    <li>
+      <a href="exponencial.html">Funcición exponencial</a>
+    </li>
+    <li>
+      <a href="logaritmica.html">Función logaritmica</a>
+    </li>
+    <li>
+      <a href="derivacion.html">Derivación</a>
+    </li>
+    <li>
+      <a href="integracion.html">Integración</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Módulo 1
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="modulo1.html">Módulo 1</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="guia101.html">Guía 1.1</a>
+    </li>
+    <li>
+      <a href="recurso101.html">Metodología Estadística</a>
+    </li>
+    <li>
+      <a href="recurso102.html">Bases de datos</a>
+    </li>
+    <li>
+      <a href="recurso103.html">Indicadores estadísticos</a>
+    </li>
+    <li>
+      <a href="caso1.html">Caso de estudio 1</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="guia102.html">Guía 1.2</a>
+    </li>
+    <li>
+      <a href="recurso104.html">Representación gráfica</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="monitoria1.html">Monitoria 1</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Módulo 2
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="modulo2.html">Módulo 2</a>
+    </li>
+    <li>
+      <a href="guia201.html">Guía 2.1</a>
+    </li>
+    <li>
+      <a href="recurso201.html">Probabilidad</a>
+    </li>
+    <li>
+      <a href="taller211.html">Taller 211</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="monitoria2.html">Monitoria 2.1</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="guia202.html">Guía 2.2</a>
+    </li>
+    <li>
+      <a href="recurso202.html">Variable aleatória</a>
+    </li>
+    <li>
+      <a href="taller221.html">Taller 221</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="monitoria3.html">Monitoria 3</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="guia203.html">Guía 2.3</a>
+    </li>
+    <li>
+      <a href="recurso203.html">Modelos especiales</a>
+    </li>
+    <li>
+      <a href="taller231.html">Taller 231</a>
+    </li>
+    <li>
+      <a href="asignacion2.html">asignacion video</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="monitoria4.html">Monitoria 4</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="segundo.html">Segundo parcial</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Módulo 3
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="modulo3.html">Módulo 3</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="guia301.html">Guía 3.1</a>
+    </li>
+    <li>
+      <a href="recurso301.html">Inferencia Estadística</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="guia302.html">Guía 3.2</a>
+    </li>
+    <li>
+      <a href="recurso302.html">Estimación por IdeC</a>
+    </li>
+    <li>
+      <a href="taller321.html">Taller 321</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="guia303.html">Guía 3.3</a>
+    </li>
+    <li>
+      <a href="recurso303.html">Pruebas de hipótesis</a>
+    </li>
+    <li>
+      <a href="taller331.html">Taller 331</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Módulo 4
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="modulo4.html">Módulo 4</a>
+    </li>
+    <li class="divider"></li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Proyecto
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="proyecto.html">Guía proyecto</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+<div class="btn-group pull-right float-right">
+<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore"><strong>Taller 331</strong></h1>
+<h3 class="subtitle"><strong>Módulo 3</strong></h3>
+<h4 class="author">dgonzalez</h4>
+
+</div>
+
+
+<p></br></br></br></p>
+<div id="ejercicios-propuestos" class="section level2">
+<h2><strong>EJERCICIOS PROPUESTOS</strong></h2>
+<p></br></br></p>
+<p><strong>1</strong>. Suponga que se estudia la compra de una nueva
+maquina para una empresa. Se comprara la maquina si la proporción de la
+producción que necesita ser reprocesados por tener defectos es inferior
+al 5%. Se examina una muestra de 40 artículos construidos por la maquina
+y 3 necesitan ser reprocesados . ¿ Que decisión se toma? ( Se compra o
+no la maquina?)</p>
+<p></br></br></br></p>
+<p><strong>2</strong>. Su ponga que una empresa desarrolla un curso de
+entrenamiento para sus empleados, formando dos grupos y aplicándoles dos
+métodos distintos de entrenamiento. El primer grupo lo componen 36
+empleados que obtuvieron un puntaje promedio de 6 ( en escala de 0 a 10
+puntos) y una desviación estándar de 4 puntos y el segundo grupo de 40
+empleados cuyo puntaje promedio fue de 8.2 y una desviación de 4.3. Se
+puede afirmar que el método aplicado al segundo grupo es superior al
+aplicado al primero? Que supuestos debe de tener en cuenta?</p>
+<p></br></br></br></p>
+<p><strong>3</strong>. Los Administradores de una ensambladora de
+automóviles requieren decidir sobre cuál de dos de las marcas de
+neumáticos deben comprar. La marca FB o la marca KT. Con el fin de tomar
+una decisión basada en evidencias estadísticas, deciden realizar un
+experimento en el que usan 12 neumáticos de cada marca. Los neumáticos
+se utilizan hasta su terminación. Los resultados obtenidos son los
+siguientes:</p>
+<pre class="r"><code>FB = c(41.8, 41.6, 31.5, 48.7, 40.8, 31.2, 36.5, 36.2, 32.8, 36.3, 38.6, 30.5) 
+KT = c(40.5, 38.4, 44.5, 34.9, 44.1, 44.7, 44.2, 47.1, 39.8, 43.9, 44.2, 40.2)
+
+cat(&quot;marca FB :&quot;,FB, &quot;\n&quot;)</code></pre>
+<pre><code>marca FB : 41.8 41.6 31.5 48.7 40.8 31.2 36.5 36.2 32.8 36.3 38.6 30.5 </code></pre>
+<pre class="r"><code>cat(&quot;marca KT :&quot;,KT, &quot;\n&quot;)</code></pre>
+<pre><code>marca KT : 40.5 38.4 44.5 34.9 44.1 44.7 44.2 47.1 39.8 43.9 44.2 40.2 </code></pre>
+<p>Cuál marca de neumáticos recomendaría comprar. Justifique su
+respuesta. Suponga que la distancia recorrida por un neumático se
+distribuye aproximadamente normal y un <span
+class="math inline">\(\alpha=0.05\)</span>.</p>
+<p></br></br></br></p>
+<p><strong>4</strong>. Un Administrador desea establecer si existen
+diferencias entre dos métodos diferentes de realizar el ensamble de una
+casa prefabricada. Para comprobarlo recoge información de ambos métodos
+que se presentan a continuación:</p>
+<pre class="r"><code>PE = c(32, 37, 35, 28, 41, 44, 35, 31, 34)
+NP = c(35, 31, 29, 25, 34, 40, 27, 32, 31)
+
+cat(&quot;Procedimiento estándar : &quot;,PE, &quot;\n&quot;)</code></pre>
+<pre><code>Procedimiento estándar :  32 37 35 28 41 44 35 31 34 </code></pre>
+<pre class="r"><code>cat(&quot;Nuevo procedimiento    : &quot;,NP, &quot;\n&quot;)</code></pre>
+<pre><code>Nuevo procedimiento    :  35 31 29 25 34 40 27 32 31 </code></pre>
+<p>Presentan los datos suficiente evidencia estadística para afirmar que
+el nuevo método es más eficiente que el estándar? (utilice un <span
+class="math inline">\(\alpha=0.05\)</span>).</p>
+<p></br></br></br></p>
+<p><strong>5</strong>. Un director de un gimnasio quiere determinar si
+un instructor de ejercicio debe ser contratado o no para su campaña
+estrella “Reducción de peso”, Para tomar la decisión le dice que pruebe
+con 16 de las personas que habitualmente concurren tomadas al azar. Los
+datos que se tomaron antes (<span class="math inline">\(x_{1}\)</span>)
+y después (<span class="math inline">\(x_{2}\)</span>) de haber
+realizado un mes de ejercicios son los siguientes:</p>
+<table>
+<colgroup>
+<col width="7%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="7%" />
+<col width="6%" />
+<col width="4%" />
+<col width="6%" />
+<col width="4%" />
+<col width="4%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="5%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">id</th>
+<th align="left">1</th>
+<th align="left">2</th>
+<th align="left">3</th>
+<th align="left">4</th>
+<th align="left">5</th>
+<th align="left">6</th>
+<th align="left">7</th>
+<th align="left">8</th>
+<th align="left">9</th>
+<th align="left">10</th>
+<th align="left">11</th>
+<th align="left">12</th>
+<th align="left">13</th>
+<th align="left">14</th>
+<th align="left">15</th>
+<th align="left">16</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(x_{1}\)</span></td>
+<td align="left">104</td>
+<td align="left">89</td>
+<td align="left">84</td>
+<td align="left">106</td>
+<td align="left">90</td>
+<td align="left">96</td>
+<td align="left">79</td>
+<td align="left">90</td>
+<td align="left">85</td>
+<td align="left">76</td>
+<td align="left">91</td>
+<td align="left">82</td>
+<td align="left">100</td>
+<td align="left">89</td>
+<td align="left">121</td>
+<td align="left">72</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(x_{2}\)</span></td>
+<td align="left">98</td>
+<td align="left">85</td>
+<td align="left">85</td>
+<td align="left">103</td>
+<td align="left">88</td>
+<td align="left">95</td>
+<td align="left">79</td>
+<td align="left">90</td>
+<td align="left">82</td>
+<td align="left">76</td>
+<td align="left">89</td>
+<td align="left">81</td>
+<td align="left">99</td>
+<td align="left">86</td>
+<td align="left">111</td>
+<td align="left">70</td>
+</tr>
+</tbody>
+</table>
+<p>Emplee y realice las pruebas de hipótesis a un nivel de significancia
+del 0.01 para determinar si el programa que ofrece el nuevo instructor
+es eficaz. Suponga que la variable peso se distribuye aproximadamente
+normal.</p>
+<p></br></br></br></p>
+<p><strong>6</strong>. Se realizan pruebas de un nuevo lector láser
+manual para uso en inventarios y el lector utilizado actualmente, con el
+fin de decidir si se adquiere el primero. Se obtienen los datos
+siguientes sobre el número de códigos de barra de 7 pulgadas que pueden
+leerse por segundo. Sea <span class="math inline">\(X_{1}\)</span>:
+número de códigos leído por segundo con el dispositivo nuevo y <span
+class="math inline">\(X_{2}\)</span> el correspondiente al dispositivo
+antiguo.</p>
+<table>
+<colgroup>
+<col width="35%" />
+<col width="34%" />
+<col width="29%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(n_{1}=61\)</span></td>
+<td align="left"><span
+class="math inline">\(\bar{x}_{1}=40\)</span></td>
+<td align="left"><span
+class="math inline">\(s^{2}_{1}=24.9\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(n_{2}=61\)</span></td>
+<td align="left"><span
+class="math inline">\(\bar{x}_{2}=29\)</span></td>
+<td align="left"><span
+class="math inline">\(s^{2}_{2}=22.7\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>De acuerdo con la información suministrada, es posible preferir
+alguno de ellos?. En caso de poderlo realizar con cual se quedaría?
+Justifique su respuesta. En cada caso determine las pruebas de
+hipótesis, el estadístico de prueba apropiado, el <span
+class="math inline">\(valor-p\)</span> obtenido y las conclusiones
+resultantes.</p>
+<p></br></br></br></p>
+<p><strong>7</strong>. Un empresario registro el número de artículos
+producidos durante 10 días, para un grupo de 15 obreros que trabajaban
+con base en un salario fijo (Grupo 1). El industrial introdujo un plan
+de incentivos para otros 15 obreros y registro su producción durante
+otros 10 días (Grupo 2). El número de artículos producidos por cada uno
+de los grupos fue :</p>
+<pre class="r"><code>G1 =c(75, 76, 74, 80, 72, 78, 76, 73, 72, 75)       
+G2 =c(86, 78, 86, 84, 81, 79, 78, 84, 88, 80) 
+
+cat(&quot;Grupo 1 : &quot;, G1, &quot;\n&quot;)</code></pre>
+<pre><code>Grupo 1 :  75 76 74 80 72 78 76 73 72 75 </code></pre>
+<pre class="r"><code>cat(&quot;Grupo 2 : &quot;, G2)</code></pre>
+<pre><code>Grupo 2 :  86 78 86 84 81 79 78 84 88 80</code></pre>
+<p>Suponiendo que los salarios pagados a cada grupo son equivalentes. Se
+puede concluir que el plan de incentivos es efectivo?</p>
+<p></br></br></br></p>
+<p><strong>8</strong>. En una muestra de 200 clientes, el 20% indica una
+preferencia por tamaño especial de pizza. Con posterioridad a una
+campaña publicitaria realizada en radio y televisión promoviendo dicho
+producto, se selecciono una muestra de igual tamaño. En esta ultima
+muestra el 22% de los clientes indico preferencia por el producto. De
+acuerdo con estos resultados y un nivel de significancia del 5% , podría
+decirse que la campaña publicitaria no fue efectiva?</p>
+<p></br></br></br></p>
+<p><strong>9</strong>. Los siguientes son los datos de las horas hombre
+que se pierden en promedio por accidentes en 10 plantas industriales
+antes (A) y después (D) de la implantación de un programa de seguridad
+industrial:</p>
+<pre class="r"><code>base9 =data.frame(id = 1:10,
+            A =c(45, 73, 46, 124, 30, 57, 83, 34, 26, 17), 
+            D =c(36, 60, 44, 119, 35, 51, 77, 29, 24, 11)
+)
+kableExtra::kable(base9)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="right">id</th>
+<th align="right">A</th>
+<th align="right">D</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">45</td>
+<td align="right">36</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">73</td>
+<td align="right">60</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">46</td>
+<td align="right">44</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">124</td>
+<td align="right">119</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">30</td>
+<td align="right">35</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="right">57</td>
+<td align="right">51</td>
+</tr>
+<tr class="odd">
+<td align="right">7</td>
+<td align="right">83</td>
+<td align="right">77</td>
+</tr>
+<tr class="even">
+<td align="right">8</td>
+<td align="right">34</td>
+<td align="right">29</td>
+</tr>
+<tr class="odd">
+<td align="right">9</td>
+<td align="right">26</td>
+<td align="right">24</td>
+</tr>
+<tr class="even">
+<td align="right">10</td>
+<td align="right">17</td>
+<td align="right">11</td>
+</tr>
+</tbody>
+</table>
+<p>Utilice un nivel de significancia de <span
+class="math inline">\(0.05\)</span> para probar si el programa de
+seguridad implantado es eficaz. Suponga que esta variable se distribuye
+aproximadamente normal.</p>
+<p></br></br></br></p>
+<p><strong>10</strong>. La compañía de dulces Mars publica en su sitio
+web información relacionada con los porcentajes de los distintos colores
+de sus dulces M&amp;M para la variedad de chocolate con leche.</p>
+<table>
+<colgroup>
+<col width="18%" />
+<col width="13%" />
+<col width="12%" />
+<col width="12%" />
+<col width="13%" />
+<col width="14%" />
+<col width="15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Color</th>
+<th align="center">café</th>
+<th align="center">amarillo</th>
+<th align="center">rojo</th>
+<th align="center">azul</th>
+<th align="center">naranja</th>
+<th align="center">verde</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Porcentaje (%)</td>
+<td align="center">13</td>
+<td align="center">14</td>
+<td align="center">13</td>
+<td align="center">24</td>
+<td align="center">20</td>
+<td align="center">16</td>
+</tr>
+</tbody>
+</table>
+<p>Se realiza una verificación mediante el conteo delos dulces
+contenidos e n una bolsa de 14 onzas de dulces M&amp;M, obteniendo los
+siguientes resultados: 70 duces cafés, 72 amarillos, 61 rojos, 118
+azules, 108 naranjas y 85 verdes.</p>
+<p>Se podria afirmar que los datos anteriores respaldan la información
+suministrada por la compañía en su sitio web? Sustente su respuesta.</p>
+<p></br></br></br></p>
+<p><strong>11</strong>. En una planta ensambladora de camiones la
+supervisión diaria de las soldaduras generó la siguiente información
+:</p>
+<pre class="r"><code>x=c(470,445,257,191,171,129,42,28,17)
+m = matrix(x, nrow = 3)
+colnames(m) = c(&quot;Alta&quot;, &quot;Moderada&quot;, &quot;Baja&quot;)
+rownames(m) = c(&quot;dia&quot;, &quot;tarde&quot;, &quot;noche&quot;)
+m</code></pre>
+<pre><code>      Alta Moderada Baja
+dia    470      191   42
+tarde  445      171   28
+noche  257      129   17</code></pre>
+<p>¿Se puede concluir que la calidad varia con los turnos?, en otras
+palabras se puede concluir que la calidad de las soldaduras es
+independiente de los turnos? . Utilice un nivel de significancia <span
+class="math inline">\(\alpha=0.05\)</span>.</p>
+<p></br></br></br></p>
+<p><strong>12</strong>. Los siguientes datos corresponde a las notas
+obtenidas por un grupo de estudiantes de la asignatura Matemáticas
+Fundamentales. Si la distribución de los datos es normal, podría afirmar
+que la prueba realizada es una prueba normalizada. En caso contrario
+serviría para estudiar problemas relacionados con su aprendizaje. Para
+un <span class="math inline">\(\alpha= 0;05\)</span>, se podría afirmar
+que los datos proceden de una distribución normal? . Si se requiere
+realizar una prueba de hipótesis sobre la media de la nota <span
+class="math inline">\(H_{o}:\mu \leq 3.3\)</span> vs <span
+class="math inline">\(H_{a}: \mu &gt; 3.3\)</span>, ¿Que prueba se
+realizaría?</p>
+<pre class="r"><code>notas =c(3.4, 2.8, 4.2, 2.1, 2.8, 2.4, 3.5, 4.2, 3.1, 4.1, 2.4, 3.4, 4.1, 4.0, 2.4, 4.1, 3.4, 4.4, 3.8, 3.7, 2.2, 3.6, 2.3, 3.7, 2.8, 4.1, 2.3, 4.6, 4.6, 5.2, 2.4, 2.4, 2.7, 3.8, 4.6, 4.4, 4.2, 4.4, 2.4, 3.3, 3.8, 2.9, 3.1, 2.7, 3.6, 3.8, 4.4, 3.9, 2.8, 3.7)
+
+cat(&quot;Notas matemáticas fundamentales : \n&quot;,notas)</code></pre>
+<pre><code>Notas matemáticas fundamentales : 
+ 3.4 2.8 4.2 2.1 2.8 2.4 3.5 4.2 3.1 4.1 2.4 3.4 4.1 4 2.4 4.1 3.4 4.4 3.8 3.7 2.2 3.6 2.3 3.7 2.8 4.1 2.3 4.6 4.6 5.2 2.4 2.4 2.7 3.8 4.6 4.4 4.2 4.4 2.4 3.3 3.8 2.9 3.1 2.7 3.6 3.8 4.4 3.9 2.8 3.7</code></pre>
+<p></br></br></br></p>
+<div id="códigos-en-r-pruebas-paramétricas" class="section level3">
+<h3><strong>Códigos en R pruebas paramétricas</strong></h3>
+<pre>
+# Entrada de datos 
+x1=c(7, 13, 6, 5, 5, 10, 8, 6, 7)
+x2=c(3,7,2,3,6,2,1,0,2)
+
+z.test(datos,mu=10,stdev=4, conf.level=98)
+t.test(datos, mu=10,conf.level=0.98)
+t.test(datos, mu=10,conf.level=0.98,alternative="greater")
+t.test(datos, mu=10,conf.level=0.98,alternative="less)
+prop.test(x,n, p=0.20, conf.level=0.98)
+</pre>
+<p></br></br></br></p>
+<pre>
+Dos poblaciones \begin{verbatim}
+t.test(x1,x2,  paired=TRUE)
+t.test(x1,x2,  paired=FALSE, var.equal=TRUE, conf.level=0-98)
+t.test(x1,x2,  paired=FALSE, var.equal=FALSE, conf.level=0.98)
+var.test(x,y)
+prop.test(c(x1,x2), c(n1,n2))
+
+</pre>
+<p></br></br></br></p>
+</div>
+<div id="códigos-en-r-pruebas-no-paramétricas" class="section level3">
+<h3><strong>Códigos en R pruebas no paramétricas</strong></h3>
+<pre>
+ runs.test(x)
+ 
+ obs=c(10,15,20)
+ esp=c(0.333,0.333,0.334)
+ chisq.test(obs,p=esp)  
+
+pruebas de normalidad
+
+x=rnorm(200,100,25)
+hist(x)
+qqnorm(x)
+qqline(x)   
+    
+shapiro.test(x)
+</pre>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

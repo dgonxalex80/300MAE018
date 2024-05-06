@@ -20,8 +20,8 @@ library(knitr)
 library(readxl)
 library(tidyverse)
 
-# install.packages("devtools")
-# devtools::install_github("dgonxalex80/paquete018")
+#install.packages("devtools")
+#devtools::install_github("dgonxalex80/paquete018")
 library(paquete018)
 # 
 #install.packages('remotes')  # solo una vez

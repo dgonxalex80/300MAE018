@@ -1,0 +1,234 @@
+---
+title: "**Taller 331**"  
+author: "dgonzalez "
+subtitle: "**Módulo 3**" 
+output:
+  html_document:
+    toc: no
+    toc_depth: 2
+    toc_float: yes
+    code_folding: hide
+    css: style.css
+---   
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA)
+library(tidyverse)
+#Colombia<- readRDS("data/Colombia.RDS")
+
+
+# colores
+c0= "#F7AA00"
+c1= "#235784"
+c2= "#40A8C4"
+c3= "#EEF6F7"
+
+c4= "#11224D"
+c5= "#5B84C4"
+
+paleta4=c(c0,c1,c2,c4)
+
+library(summarytools)
+```
+
+</br></br></br>
+
+
+
+## **EJERCICIOS PROPUESTOS** 
+
+</br></br>
+
+
+**1**. Suponga que se estudia la compra de una nueva maquina para una empresa. Se comprara la maquina si la proporción de la producción que necesita ser reprocesados por tener   defectos es inferior al 5\%. Se examina una muestra de 40 artículos construidos  por la maquina y 3 necesitan ser reprocesados . ¿ Que decisión se toma? ( Se compra o no la maquina?)
+
+</br></br></br>
+
+**2**.	Su ponga que una empresa desarrolla un curso de entrenamiento para sus empleados, formando dos grupos y aplicándoles dos métodos distintos de entrenamiento. El primer grupo lo componen 36 empleados que obtuvieron un puntaje promedio de 6 ( en escala de 0 a 10 puntos) y una desviación estándar de 4 puntos y el segundo grupo de 40 empleados cuyo puntaje promedio fue de 8.2 y una desviación de 4.3. Se puede afirmar que el método aplicado al segundo grupo es superior al aplicado al primero? 
+	Que supuestos debe de tener en cuenta?
+
+</br></br></br>
+
+**3**.  Los Administradores de una ensambladora de automóviles requieren decidir sobre cuál de dos de las marcas de neumáticos deben comprar. La marca FB o la marca KT. Con el fin de tomar una decisión basada en evidencias estadísticas, deciden realizar un experimento en el que usan 12 neumáticos de cada marca. Los neumáticos se utilizan hasta su terminación. Los resultados obtenidos son los siguientes: 
+	
+```{r}
+FB = c(41.8, 41.6, 31.5, 48.7, 40.8, 31.2, 36.5, 36.2, 32.8, 36.3, 38.6, 30.5) 
+KT = c(40.5, 38.4, 44.5, 34.9, 44.1, 44.7, 44.2, 47.1, 39.8, 43.9, 44.2, 40.2)
+
+cat("marca FB :",FB, "\n")
+cat("marca KT :",KT, "\n")
+```
+	
+Cuál marca de neumáticos recomendaría comprar. Justifique su respuesta. Suponga que la distancia recorrida por un neumático se distribuye aproximadamente normal y un $\alpha=0.05$.
+
+</br></br></br>
+
+**4**. Un Administrador desea establecer si existen diferencias entre dos métodos diferentes de realizar el ensamble de una casa prefabricada. Para comprobarlo recoge información de ambos métodos que se presentan a continuación: 
+
+```{r}
+PE = c(32, 37, 35, 28, 41, 44, 35, 31, 34)
+NP = c(35, 31, 29, 25, 34, 40, 27, 32, 31)
+
+cat("Procedimiento estándar : ",PE, "\n")
+cat("Nuevo procedimiento    : ",NP, "\n")
+```
+
+Presentan los datos suficiente evidencia estadística para afirmar que el nuevo método es más eficiente que el estándar? (utilice un $\alpha=0.05$).
+
+	
+</br></br></br>
+
+**5**. Un director de un gimnasio quiere determinar si un instructor de ejercicio debe ser contratado o no para su campaña estrella “Reducción de peso”, Para tomar la decisión le dice que pruebe con 16 de las personas que habitualmente concurren tomadas al azar. Los datos que se tomaron antes ($x_{1}$) y después ($x_{2}$) de haber realizado un mes de ejercicios son los siguientes:
+	
+|id     | 1    |  2   |  3   | 4     | 5    | 6  | 7    | 8  | 9  | 10   | 11   | 12   | 13    | 14   | 15  | 16  |
+|:------|:-----|:-----|:-----|:------|:-----|:---|:-----|:---|:---|:-----|:-----|:-----|:-----|:-----|:-----|:----|
+$x_{1}$ | 104  | 89   | 84   | 106   | 90   | 96 | 79   | 90 | 85 | 76   | 91   | 82   | 100   | 89   | 121 | 72  |
+$x_{2}$ | 98   | 85   | 85   | 103   | 88   | 95 | 79   | 90 | 82 | 76   | 89   | 81   |  99   | 86   | 111 | 70  |
+		
+Emplee y realice las pruebas de hipótesis a un nivel de significancia del 0.01 para determinar si el programa que ofrece el nuevo instructor es eficaz. Suponga que la variable peso se distribuye aproximadamente normal.
+
+
+</br></br></br>
+
+**6**. Se realizan pruebas de un nuevo lector láser manual para uso en inventarios y el lector utilizado actualmente, con el fin de decidir si se adquiere el primero. Se obtienen los datos siguientes sobre el número de códigos de barra de 7 pulgadas que pueden leerse por segundo. Sea $X_{1}$: número de códigos leído por segundo con el dispositivo nuevo y $X_{2}$ el correspondiente al dispositivo antiguo.
+
+|                               |                              |                          |
+|:------------------------------|:-----------------------------|:-------------------------|	
+|$n_{1}=61$                     | $\bar{x}_{1}=40$             |  $s^{2}_{1}=24.9$        |
+|$n_{2}=61$                     | $\bar{x}_{2}=29$             |  $s^{2}_{2}=22.7$        |
+
+
+De acuerdo con la información suministrada, es posible preferir alguno de ellos?. En caso de poderlo realizar con cual se quedaría? Justifique su respuesta. En cada caso determine las pruebas de hipótesis, el estadístico de prueba apropiado, el $valor-p$ obtenido y las conclusiones resultantes.
+	
+</br></br></br>
+
+**7**. Un empresario registro el número de artículos producidos durante 10 días, para un grupo de 15 obreros que trabajaban con base en un salario fijo (Grupo 1). El industrial introdujo un plan de incentivos para otros 15 obreros y registro su producción durante otros 10 días (Grupo 2). El número de artículos producidos por cada uno de los grupos fue :  
+	
+```{r}
+G1 =c(75, 76, 74, 80, 72, 78, 76, 73, 72, 75)       
+G2 =c(86, 78, 86, 84, 81, 79, 78, 84, 88, 80) 
+
+cat("Grupo 1 : ", G1, "\n")
+cat("Grupo 2 : ", G2)
+
+```
+	
+Suponiendo que los salarios pagados a cada grupo son equivalentes. Se puede concluir que el plan de incentivos es efectivo?
+
+
+</br></br></br>
+
+**8**. En una muestra de 200 clientes, el 20\% indica una preferencia por tamaño especial de pizza.  Con posterioridad a una campaña publicitaria realizada en radio y televisión promoviendo dicho producto, se selecciono una muestra de igual tamaño.  En esta ultima muestra el 22\% de los clientes indico preferencia por el producto. De acuerdo con estos resultados y un nivel de significancia del 5\% , podría decirse que la campaña publicitaria no fue efectiva? 
+
+	
+</br></br></br>
+
+**9**.	Los siguientes son los datos de las horas hombre que se pierden en promedio por accidentes en 10 plantas industriales antes (A) y después (D) de la implantación de un programa de seguridad industrial:
+
+```{r}
+
+base9 =data.frame(id = 1:10,
+            A =c(45, 73, 46, 124, 30, 57, 83, 34, 26, 17), 
+            D =c(36, 60, 44, 119, 35, 51, 77, 29, 24, 11)
+)
+kableExtra::kable(base9)
+
+```
+
+Utilice un nivel de significancia de $0.05$ para probar si el programa de seguridad implantado es eficaz. Suponga que esta variable se distribuye aproximadamente normal.
+
+</br></br></br>
+
+**10**.  La compañía de dulces Mars publica en su sitio web información relacionada con los porcentajes de los distintos colores de sus dulces M\&M para la variedad de chocolate con leche.
+
+|Color          | café      | amarillo | rojo     | azul      | naranja     | verde      |
+|:-------------:|:---------:|:--------:|:--------:|:---------:|:----------:|:-----------:|
+|Porcentaje (\%)|13         | 14       | 13       |   24      |    20      |   16        | 
+
+
+	
+Se realiza una verificación mediante el conteo delos dulces contenidos e n una bolsa de 14 onzas de dulces M\&M, obteniendo los siguientes resultados: 70 duces cafés, 72 amarillos, 61 rojos, 118 azules, 108 naranjas y 85 verdes. 
+	
+Se podria afirmar que los datos anteriores respaldan la información suministrada por la compañía en su sitio web? Sustente su respuesta.
+	
+</br></br></br>
+
+**11**. En una planta ensambladora de camiones la supervisión diaria de las soldaduras generó la siguiente información :
+
+
+```{r}
+
+x=c(470,445,257,191,171,129,42,28,17)
+m = matrix(x, nrow = 3)
+colnames(m) = c("Alta", "Moderada", "Baja")
+rownames(m) = c("dia", "tarde", "noche")
+m
+```
+
+
+¿Se puede concluir que la calidad varia con los turnos?, en otras palabras se puede concluir que la calidad de las soldaduras es independiente de los turnos? . Utilice un nivel de significancia $\alpha=0.05$.
+	
+</br></br></br>
+
+**12**. Los siguientes datos corresponde a las notas obtenidas por un grupo de estudiantes de la asignatura Matemáticas Fundamentales. Si la distribución de los datos es normal, podría afirmar que la prueba realizada es una prueba normalizada. En caso contrario serviría para estudiar problemas relacionados con su aprendizaje. Para un $\alpha= 0;05$, se podría afirmar que los datos proceden de una distribución normal? . Si se requiere realizar una prueba de hipótesis sobre la media de la nota $H_{o}:\mu \leq 3.3$ vs $H_{a}: \mu > 3.3$, ¿Que prueba se realizaría? 
+
+
+```{r}
+notas =c(3.4, 2.8, 4.2, 2.1, 2.8, 2.4, 3.5, 4.2, 3.1, 4.1, 2.4, 3.4, 4.1, 4.0, 2.4, 4.1, 3.4, 4.4, 3.8, 3.7, 2.2, 3.6, 2.3, 3.7, 2.8, 4.1, 2.3, 4.6, 4.6, 5.2, 2.4, 2.4, 2.7, 3.8, 4.6, 4.4, 4.2, 4.4, 2.4, 3.3, 3.8, 2.9, 3.1, 2.7, 3.6, 3.8, 4.4, 3.9, 2.8, 3.7)
+
+cat("Notas matemáticas fundamentales : \n",notas)
+```	
+
+
+
+
+</br></br></br>
+
+### **Códigos en R pruebas paramétricas**
+
+<pre>
+# Entrada de datos 
+x1=c(7, 13, 6, 5, 5, 10, 8, 6, 7)
+x2=c(3,7,2,3,6,2,1,0,2)
+
+z.test(datos,mu=10,stdev=4, conf.level=98)
+t.test(datos, mu=10,conf.level=0.98)
+t.test(datos, mu=10,conf.level=0.98,alternative="greater")
+t.test(datos, mu=10,conf.level=0.98,alternative="less)
+prop.test(x,n, p=0.20, conf.level=0.98)
+</pre>
+
+</br></br></br>
+
+<pre>
+Dos poblaciones \begin{verbatim}
+t.test(x1,x2,  paired=TRUE)
+t.test(x1,x2,  paired=FALSE, var.equal=TRUE, conf.level=0-98)
+t.test(x1,x2,  paired=FALSE, var.equal=FALSE, conf.level=0.98)
+var.test(x,y)
+prop.test(c(x1,x2), c(n1,n2))
+
+</pre>
+
+</br></br></br>
+
+### **Códigos en R pruebas no paramétricas**
+
+ 
+ <pre>
+ runs.test(x)
+ 
+ obs=c(10,15,20)
+ esp=c(0.333,0.333,0.334)
+ chisq.test(obs,p=esp)  
+
+pruebas de normalidad
+
+x=rnorm(200,100,25)
+hist(x)
+qqnorm(x)
+qqline(x)	
+	
+shapiro.test(x)
+</pre>
+
